@@ -1,0 +1,508 @@
+[04-Dec-2024 17:50:35 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[04-Dec-2024 17:50:35 UTC] WordPress database error Duplicate entry '9840883833' for key 'PRIMARY' for query INSERT INTO `custom_customer` (`sheet_number`, `check_in_time`, `mobile_number`) VALUES (28383, '2024-12-03 16:54:01', '9840883833') made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, sync_data_to_wp
+[04-Dec-2024 17:50:35 UTC] This is a custom log message.
+[04-Dec-2024 17:50:35 UTC] 
+[04-Dec-2024 17:53:59 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[04-Dec-2024 17:54:00 UTC] This is a custom log message.
+[04-Dec-2024 17:54:00 UTC] 1
+[04-Dec-2024 17:57:52 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[04-Dec-2024 17:57:53 UTC] WordPress database error Duplicate entry '9840882833' for key 'PRIMARY' for query INSERT INTO `custom_customer` (`sheet_number`, `check_in_time`, `mobile_number`) VALUES (28383, '2024-12-03 16:54:01', '9840882833') made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, sync_data_to_wp
+[04-Dec-2024 20:02:01 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[04-Dec-2024 20:02:01 UTC] WordPress database error Duplicate entry '6374681019' for key 'PRIMARY' for query INSERT INTO `custom_customer` (`sheet_number`, `check_in_time`, `mobile_number`) VALUES (28367, '2024-12-03 15:57:35', '6374681019') made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, sync_data_to_wp
+[04-Dec-2024 20:02:01 UTC] PHP Fatal error:  Uncaught TypeError: strtotime(): Argument #1 ($datetime) must be of type string, array given in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php:157
+Stack trace:
+#0 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php(157): strtotime(Array)
+#1 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php(116): check_interest_time('6374681019')
+#2 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php(57): enable_interest_flag('6374681019')
+#3 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\rest-api\class-wp-rest-server.php(1292): sync_data_to_wp(Object(WP_REST_Request))
+#4 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\rest-api\class-wp-rest-server.php(1125): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/custom/v1/sync...', Array, NULL)
+#5 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\rest-api\class-wp-rest-server.php(439): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#6 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\rest-api.php(449): WP_REST_Server->serve_request('/custom/v1/sync...')
+#7 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\class-wp-hook.php(324): rest_api_loaded(Object(WP))
+#8 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#9 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#10 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\class-wp.php(418): do_action_ref_array('parse_request', Array)
+#11 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\class-wp.php(813): WP->parse_request('')
+#12 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\functions.php(1336): WP->main('')
+#13 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-blog-header.php(16): wp()
+#14 C:\Users\99220\Local Sites\pachchaelai\app\public\index.php(17): require('C:\\Users\\99220\\...')
+#15 {main}
+  thrown in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php on line 157
+[04-Dec-2024 20:06:13 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[04-Dec-2024 20:09:59 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[04-Dec-2024 20:09:59 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "current_time" in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php:40
+Stack trace:
+#0 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\rest-api\class-wp-rest-server.php(1292): sync_data_to_wp(Object(WP_REST_Request))
+#1 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\rest-api\class-wp-rest-server.php(1125): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/custom/v1/sync...', Array, NULL)
+#2 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\rest-api\class-wp-rest-server.php(439): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#3 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\rest-api.php(449): WP_REST_Server->serve_request('/custom/v1/sync...')
+#4 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\class-wp-hook.php(324): rest_api_loaded(Object(WP))
+#5 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#6 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#7 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\class-wp.php(418): do_action_ref_array('parse_request', Array)
+#8 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\class-wp.php(813): WP->parse_request('')
+#9 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\functions.php(1336): WP->main('')
+#10 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-blog-header.php(16): wp()
+#11 C:\Users\99220\Local Sites\pachchaelai\app\public\index.php(17): require('C:\\Users\\99220\\...')
+#12 {main}
+  thrown in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php on line 40
+[04-Dec-2024 20:10:13 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[04-Dec-2024 20:10:13 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "current_time" in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php:40
+Stack trace:
+#0 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\rest-api\class-wp-rest-server.php(1292): sync_data_to_wp(Object(WP_REST_Request))
+#1 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\rest-api\class-wp-rest-server.php(1125): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/custom/v1/sync...', Array, NULL)
+#2 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\rest-api\class-wp-rest-server.php(439): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#3 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\rest-api.php(449): WP_REST_Server->serve_request('/custom/v1/sync...')
+#4 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\class-wp-hook.php(324): rest_api_loaded(Object(WP))
+#5 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#6 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#7 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\class-wp.php(418): do_action_ref_array('parse_request', Array)
+#8 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\class-wp.php(813): WP->parse_request('')
+#9 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\functions.php(1336): WP->main('')
+#10 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-blog-header.php(16): wp()
+#11 C:\Users\99220\Local Sites\pachchaelai\app\public\index.php(17): require('C:\\Users\\99220\\...')
+#12 {main}
+  thrown in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php on line 40
+[04-Dec-2024 20:10:15 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[04-Dec-2024 20:10:15 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "current_time" in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php:40
+Stack trace:
+#0 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\rest-api\class-wp-rest-server.php(1292): sync_data_to_wp(Object(WP_REST_Request))
+#1 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\rest-api\class-wp-rest-server.php(1125): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/custom/v1/sync...', Array, NULL)
+#2 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\rest-api\class-wp-rest-server.php(439): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#3 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\rest-api.php(449): WP_REST_Server->serve_request('/custom/v1/sync...')
+#4 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\class-wp-hook.php(324): rest_api_loaded(Object(WP))
+#5 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#6 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#7 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\class-wp.php(418): do_action_ref_array('parse_request', Array)
+#8 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\class-wp.php(813): WP->parse_request('')
+#9 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\functions.php(1336): WP->main('')
+#10 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-blog-header.php(16): wp()
+#11 C:\Users\99220\Local Sites\pachchaelai\app\public\index.php(17): require('C:\\Users\\99220\\...')
+#12 {main}
+  thrown in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php on line 40
+[04-Dec-2024 20:11:32 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[04-Dec-2024 20:11:32 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "current_time" in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php:40
+Stack trace:
+#0 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\rest-api\class-wp-rest-server.php(1292): sync_data_to_wp(Object(WP_REST_Request))
+#1 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\rest-api\class-wp-rest-server.php(1125): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/custom/v1/sync...', Array, NULL)
+#2 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\rest-api\class-wp-rest-server.php(439): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#3 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\rest-api.php(449): WP_REST_Server->serve_request('/custom/v1/sync...')
+#4 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\class-wp-hook.php(324): rest_api_loaded(Object(WP))
+#5 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#6 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#7 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\class-wp.php(418): do_action_ref_array('parse_request', Array)
+#8 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\class-wp.php(813): WP->parse_request('')
+#9 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\functions.php(1336): WP->main('')
+#10 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-blog-header.php(16): wp()
+#11 C:\Users\99220\Local Sites\pachchaelai\app\public\index.php(17): require('C:\\Users\\99220\\...')
+#12 {main}
+  thrown in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php on line 40
+[04-Dec-2024 20:13:31 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[04-Dec-2024 20:17:05 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[04-Dec-2024 20:17:05 UTC] 2024-12-04 20:17:05
+[04-Dec-2024 20:19:11 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[05-Dec-2024 01:49:11 Asia/Kolkata] 2024-12-05 01:49:11
+[05-Dec-2024 01:49:54 Asia/Kolkata] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[05-Dec-2024 01:49:54 Asia/Kolkata] 2024-12-05 01:49:54
+[05-Dec-2024 01:50:32 Asia/Kolkata] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[05-Dec-2024 01:51:37 Asia/Kolkata] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[05-Dec-2024 01:52:12 Asia/Kolkata] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[05-Dec-2024 01:54:30 Asia/Kolkata] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[04-Dec-2024 20:26:42 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[04-Dec-2024 20:28:04 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[04-Dec-2024 20:28:04 UTC] WordPress database error Duplicate entry '978763' for key 'PRIMARY' for query INSERT INTO `custom_customer` (`sheet_number`, `check_in_time`, `mobile_number`, `interest_flag`, `interest_time`) VALUES (28305, '2024-12-03 11:31:52', '978763', 1, '2024-12-05 01:58:04') made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, sync_data_to_wp
+[04-Dec-2024 20:28:04 UTC] PHP Fatal error:  Uncaught TypeError: strtotime(): Argument #1 ($datetime) must be of type string, array given in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php:162
+Stack trace:
+#0 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php(162): strtotime(Array)
+#1 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php(121): check_interest_time('978763')
+#2 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php(62): enable_interest_flag('978763')
+#3 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\rest-api\class-wp-rest-server.php(1292): sync_data_to_wp(Object(WP_REST_Request))
+#4 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\rest-api\class-wp-rest-server.php(1125): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/custom/v1/sync...', Array, NULL)
+#5 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\rest-api\class-wp-rest-server.php(439): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#6 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\rest-api.php(449): WP_REST_Server->serve_request('/custom/v1/sync...')
+#7 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\class-wp-hook.php(324): rest_api_loaded(Object(WP))
+#8 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#9 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#10 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\class-wp.php(418): do_action_ref_array('parse_request', Array)
+#11 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\class-wp.php(813): WP->parse_request('')
+#12 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\functions.php(1336): WP->main('')
+#13 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-blog-header.php(16): wp()
+#14 C:\Users\99220\Local Sites\pachchaelai\app\public\index.php(17): require('C:\\Users\\99220\\...')
+#15 {main}
+  thrown in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php on line 162
+[04-Dec-2024 20:28:54 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[04-Dec-2024 20:28:54 UTC] WordPress database error Duplicate entry '978763' for key 'PRIMARY' for query INSERT INTO `custom_customer` (`sheet_number`, `check_in_time`, `mobile_number`, `interest_flag`, `interest_time`) VALUES (28305, '2024-12-03 11:31:52', '978763', 1, '2024-12-05 01:58:54') made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, sync_data_to_wp
+[04-Dec-2024 20:28:54 UTC] PHP Fatal error:  Uncaught TypeError: strtotime(): Argument #1 ($datetime) must be of type string, array given in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php:162
+Stack trace:
+#0 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php(162): strtotime(Array)
+#1 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php(121): check_interest_time('978763')
+#2 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php(62): enable_interest_flag('978763')
+#3 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\rest-api\class-wp-rest-server.php(1292): sync_data_to_wp(Object(WP_REST_Request))
+#4 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\rest-api\class-wp-rest-server.php(1125): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/custom/v1/sync...', Array, NULL)
+#5 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\rest-api\class-wp-rest-server.php(439): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#6 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\rest-api.php(449): WP_REST_Server->serve_request('/custom/v1/sync...')
+#7 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\class-wp-hook.php(324): rest_api_loaded(Object(WP))
+#8 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#9 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#10 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\class-wp.php(418): do_action_ref_array('parse_request', Array)
+#11 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\class-wp.php(813): WP->parse_request('')
+#12 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\functions.php(1336): WP->main('')
+#13 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-blog-header.php(16): wp()
+#14 C:\Users\99220\Local Sites\pachchaelai\app\public\index.php(17): require('C:\\Users\\99220\\...')
+#15 {main}
+  thrown in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php on line 162
+[04-Dec-2024 20:29:32 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[04-Dec-2024 20:32:04 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[04-Dec-2024 20:32:04 UTC] WordPress database error Duplicate entry '978763' for key 'PRIMARY' for query INSERT INTO `custom_customer` (`sheet_number`, `check_in_time`, `mobile_number`, `interest_flag`, `interest_time`) VALUES (28305, '2024-12-03 11:31:52', '978763', 1, '2024-12-05 02:02:04') made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, sync_data_to_wp
+[04-Dec-2024 20:32:04 UTC] PHP Fatal error:  Uncaught TypeError: error_log(): Argument #1 ($message) must be of type string, array given in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php:160
+Stack trace:
+#0 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php(160): error_log(Array)
+#1 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php(121): check_interest_time('978763')
+#2 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php(62): enable_interest_flag('978763')
+#3 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\rest-api\class-wp-rest-server.php(1292): sync_data_to_wp(Object(WP_REST_Request))
+#4 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\rest-api\class-wp-rest-server.php(1125): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/custom/v1/sync...', Array, NULL)
+#5 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\rest-api\class-wp-rest-server.php(439): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#6 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\rest-api.php(449): WP_REST_Server->serve_request('/custom/v1/sync...')
+#7 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\class-wp-hook.php(324): rest_api_loaded(Object(WP))
+#8 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#9 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#10 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\class-wp.php(418): do_action_ref_array('parse_request', Array)
+#11 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\class-wp.php(813): WP->parse_request('')
+#12 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\functions.php(1336): WP->main('')
+#13 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-blog-header.php(16): wp()
+#14 C:\Users\99220\Local Sites\pachchaelai\app\public\index.php(17): require('C:\\Users\\99220\\...')
+#15 {main}
+  thrown in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php on line 160
+[04-Dec-2024 20:34:16 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[04-Dec-2024 20:34:16 UTC] WordPress database error Duplicate entry '978763' for key 'PRIMARY' for query INSERT INTO `custom_customer` (`sheet_number`, `check_in_time`, `mobile_number`, `interest_flag`, `interest_time`) VALUES (28305, '2024-12-03 11:31:52', '978763', 1, '2024-12-05 02:04:16') made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, sync_data_to_wp
+[04-Dec-2024 20:34:16 UTC] Array
+(
+    [0] => stdClass Object
+        (
+            [interest_time] => 2024-12-05 01:51:37
+        )
+
+)
+
+[04-Dec-2024 20:34:16 UTC] PHP Fatal error:  Uncaught TypeError: strtotime(): Argument #1 ($datetime) must be of type string, array given in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php:165
+Stack trace:
+#0 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php(165): strtotime(Array)
+#1 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php(121): check_interest_time('978763')
+#2 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php(62): enable_interest_flag('978763')
+#3 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\rest-api\class-wp-rest-server.php(1292): sync_data_to_wp(Object(WP_REST_Request))
+#4 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\rest-api\class-wp-rest-server.php(1125): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/custom/v1/sync...', Array, NULL)
+#5 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\rest-api\class-wp-rest-server.php(439): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#6 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\rest-api.php(449): WP_REST_Server->serve_request('/custom/v1/sync...')
+#7 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\class-wp-hook.php(324): rest_api_loaded(Object(WP))
+#8 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#9 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#10 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\class-wp.php(418): do_action_ref_array('parse_request', Array)
+#11 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\class-wp.php(813): WP->parse_request('')
+#12 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\functions.php(1336): WP->main('')
+#13 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-blog-header.php(16): wp()
+#14 C:\Users\99220\Local Sites\pachchaelai\app\public\index.php(17): require('C:\\Users\\99220\\...')
+#15 {main}
+  thrown in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php on line 165
+[04-Dec-2024 20:34:58 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[04-Dec-2024 20:34:59 UTC] WordPress database error Duplicate entry '978763' for key 'PRIMARY' for query INSERT INTO `custom_customer` (`sheet_number`, `check_in_time`, `mobile_number`, `interest_flag`, `interest_time`) VALUES (28305, '2024-12-03 11:31:52', '978763', 1, '2024-12-05 02:04:59') made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, sync_data_to_wp
+[04-Dec-2024 20:34:59 UTC] Array
+(
+    [0] => stdClass Object
+        (
+            [interest_time] => 2024-12-05 01:51:37
+        )
+
+)
+
+[04-Dec-2024 20:34:59 UTC] 2024-12-05 01:51:37
+[04-Dec-2024 20:34:59 UTC] PHP Fatal error:  Uncaught TypeError: strtotime(): Argument #1 ($datetime) must be of type string, array given in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php:166
+Stack trace:
+#0 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php(166): strtotime(Array)
+#1 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php(121): check_interest_time('978763')
+#2 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php(62): enable_interest_flag('978763')
+#3 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\rest-api\class-wp-rest-server.php(1292): sync_data_to_wp(Object(WP_REST_Request))
+#4 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\rest-api\class-wp-rest-server.php(1125): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/custom/v1/sync...', Array, NULL)
+#5 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\rest-api\class-wp-rest-server.php(439): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#6 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\rest-api.php(449): WP_REST_Server->serve_request('/custom/v1/sync...')
+#7 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\class-wp-hook.php(324): rest_api_loaded(Object(WP))
+#8 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#9 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#10 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\class-wp.php(418): do_action_ref_array('parse_request', Array)
+#11 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\class-wp.php(813): WP->parse_request('')
+#12 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\functions.php(1336): WP->main('')
+#13 C:\Users\99220\Local Sites\pachchaelai\app\public\wp-blog-header.php(16): wp()
+#14 C:\Users\99220\Local Sites\pachchaelai\app\public\index.php(17): require('C:\\Users\\99220\\...')
+#15 {main}
+  thrown in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php on line 166
+[04-Dec-2024 20:35:48 UTC] PHP Parse error:  syntax error, unexpected token "," in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php on line 162
+[04-Dec-2024 20:37:19 UTC] PHP Parse error:  syntax error, unexpected token "," in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php on line 162
+[04-Dec-2024 20:37:26 UTC] PHP Parse error:  syntax error, unexpected token "," in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php on line 162
+[04-Dec-2024 20:37:27 UTC] PHP Parse error:  syntax error, unexpected token "," in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php on line 162
+[04-Dec-2024 20:37:33 UTC] PHP Parse error:  syntax error, unexpected token "," in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php on line 162
+[04-Dec-2024 20:37:33 UTC] PHP Parse error:  syntax error, unexpected token "," in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php on line 162
+[04-Dec-2024 20:37:36 UTC] PHP Parse error:  syntax error, unexpected token "," in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php on line 162
+[04-Dec-2024 20:37:37 UTC] PHP Parse error:  syntax error, unexpected token "," in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php on line 162
+[04-Dec-2024 20:37:43 UTC] PHP Parse error:  syntax error, unexpected token "," in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php on line 162
+[04-Dec-2024 20:37:44 UTC] PHP Parse error:  syntax error, unexpected token "," in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php on line 162
+[04-Dec-2024 20:37:53 UTC] PHP Parse error:  syntax error, unexpected token "," in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php on line 162
+[04-Dec-2024 20:38:01 UTC] PHP Parse error:  syntax error, unexpected token "," in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php on line 162
+[04-Dec-2024 20:38:43 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[04-Dec-2024 20:38:43 UTC] WordPress database error Duplicate entry '978763' for key 'PRIMARY' for query INSERT INTO `custom_customer` (`sheet_number`, `check_in_time`, `mobile_number`, `interest_flag`, `interest_time`) VALUES (28305, '2024-12-03 11:31:52', '978763', 1, '2024-12-05 02:08:43') made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, sync_data_to_wp
+[04-Dec-2024 20:42:21 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[04-Dec-2024 20:42:21 UTC] WordPress database error Duplicate entry '978763' for key 'PRIMARY' for query INSERT INTO `custom_customer` (`sheet_number`, `check_in_time`, `mobile_number`, `interest_flag`, `interest_time`) VALUES (28305, '2024-12-03 11:31:52', '978763', 1, '2024-12-05 02:12:21') made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, sync_data_to_wp
+[04-Dec-2024 20:42:21 UTC] 978763
+[04-Dec-2024 20:42:21 UTC] 
+[04-Dec-2024 20:43:51 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[04-Dec-2024 20:43:51 UTC] WordPress database error Duplicate entry '978763' for key 'PRIMARY' for query INSERT INTO `custom_customer` (`sheet_number`, `check_in_time`, `mobile_number`, `interest_flag`, `interest_time`) VALUES (28305, '2024-12-03 11:31:52', '978763', 1, '2024-12-05 02:13:51') made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, sync_data_to_wp
+[04-Dec-2024 20:43:51 UTC] 978763
+[04-Dec-2024 20:43:51 UTC] 
+[04-Dec-2024 20:44:47 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[04-Dec-2024 20:44:47 UTC] WordPress database error Duplicate entry '978763' for key 'PRIMARY' for query INSERT INTO `custom_customer` (`sheet_number`, `check_in_time`, `mobile_number`, `interest_flag`, `interest_time`) VALUES (28305, '2024-12-03 11:31:52', '978763', 1, '2024-12-05 02:14:47') made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, sync_data_to_wp
+[04-Dec-2024 20:44:47 UTC] 978763
+[04-Dec-2024 20:44:47 UTC] -18410
+[04-Dec-2024 20:44:47 UTC] 
+[04-Dec-2024 20:44:47 UTC] -18410
+[04-Dec-2024 20:45:48 UTC] PHP Parse error:  syntax error, unexpected variable "$time_diff" in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php on line 174
+[04-Dec-2024 20:46:18 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[04-Dec-2024 20:46:19 UTC] WordPress database error Duplicate entry '978763' for key 'PRIMARY' for query INSERT INTO `custom_customer` (`sheet_number`, `check_in_time`, `mobile_number`, `interest_flag`, `interest_time`) VALUES (28305, '2024-12-03 11:31:52', '978763', 1, '2024-12-05 02:16:19') made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, sync_data_to_wp
+[04-Dec-2024 20:46:19 UTC] 978763
+[04-Dec-2024 20:46:19 UTC] 1733345179
+[04-Dec-2024 20:46:19 UTC] -18318
+[04-Dec-2024 20:46:19 UTC] 
+[04-Dec-2024 20:46:19 UTC] 1733345179
+[04-Dec-2024 20:46:19 UTC] -18318
+[04-Dec-2024 20:47:48 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[04-Dec-2024 20:47:48 UTC] WordPress database error Duplicate entry '978763' for key 'PRIMARY' for query INSERT INTO `custom_customer` (`sheet_number`, `check_in_time`, `mobile_number`, `interest_flag`, `interest_time`) VALUES (28305, '2024-12-03 11:31:52', '978763', 1, '2024-12-05 02:17:48') made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, sync_data_to_wp
+[04-Dec-2024 20:47:48 UTC] 978763
+[04-Dec-2024 20:47:48 UTC] 3371
+[04-Dec-2024 20:47:48 UTC] 
+[04-Dec-2024 20:47:48 UTC] 3371
+[04-Dec-2024 20:49:10 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[04-Dec-2024 20:49:10 UTC] WordPress database error Duplicate entry '978763' for key 'PRIMARY' for query INSERT INTO `custom_customer` (`sheet_number`, `check_in_time`, `mobile_number`, `interest_flag`, `interest_time`) VALUES (28305, '2024-12-03 11:31:52', '978763', 1, '2024-12-05 02:19:10') made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, sync_data_to_wp
+[04-Dec-2024 20:49:10 UTC] 978763
+[04-Dec-2024 20:49:10 UTC] 1
+[04-Dec-2024 20:50:01 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[04-Dec-2024 20:50:01 UTC] WordPress database error Duplicate entry '978763' for key 'PRIMARY' for query INSERT INTO `custom_customer` (`sheet_number`, `check_in_time`, `mobile_number`, `interest_flag`, `interest_time`) VALUES (28305, '2024-12-03 11:31:52', '978763', 1, '2024-12-05 02:20:01') made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, sync_data_to_wp
+[04-Dec-2024 20:50:01 UTC] 978763
+[04-Dec-2024 20:50:01 UTC] 1
+[04-Dec-2024 20:51:03 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[04-Dec-2024 20:51:03 UTC] WordPress database error Duplicate entry '978763' for key 'PRIMARY' for query INSERT INTO `custom_customer` (`sheet_number`, `check_in_time`, `mobile_number`, `interest_flag`, `interest_time`) VALUES (28305, '2024-12-03 11:31:52', '978763', 1, '2024-12-05 02:21:03') made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, sync_data_to_wp
+[04-Dec-2024 20:51:03 UTC] 978763
+[04-Dec-2024 20:51:03 UTC] 
+[04-Dec-2024 20:52:16 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[04-Dec-2024 20:52:16 UTC] WordPress database error Duplicate entry '978763' for key 'PRIMARY' for query INSERT INTO `custom_customer` (`sheet_number`, `check_in_time`, `mobile_number`, `interest_flag`, `interest_time`) VALUES (28305, '2024-12-03 11:31:52', '978763', 1, '2024-12-05 02:22:16') made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, sync_data_to_wp
+[04-Dec-2024 20:52:16 UTC] 978763
+[04-Dec-2024 20:52:16 UTC] 1
+[04-Dec-2024 21:21:31 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[04-Dec-2024 21:21:31 UTC] WordPress database error Duplicate entry '978763' for key 'PRIMARY' for query INSERT INTO `custom_customer` (`sheet_number`, `check_in_time`, `mobile_number`, `interest_flag`, `interest_time`) VALUES (28305, '2024-12-03 11:31:52', '978763', 1, '2024-12-05 02:51:31') made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, sync_data_to_wp
+[04-Dec-2024 21:21:31 UTC] WordPress database error Unknown column 'mobile_number' in 'where clause' for query SELECT order_time FROM custom_order WHERE mobile_number = '978763' made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, sync_data_to_wp, enable_interest_flag, check_order_time
+[04-Dec-2024 21:21:31 UTC] PHP Warning:  Undefined array key 0 in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php on line 161
+[04-Dec-2024 21:21:31 UTC] PHP Warning:  Attempt to read property "interest_time" on null in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php on line 161
+[04-Dec-2024 21:21:31 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php on line 161
+[04-Dec-2024 21:22:02 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[04-Dec-2024 21:22:02 UTC] WordPress database error Duplicate entry '978763' for key 'PRIMARY' for query INSERT INTO `custom_customer` (`sheet_number`, `check_in_time`, `mobile_number`, `interest_flag`, `interest_time`) VALUES (28305, '2024-12-03 11:31:52', '978763', 1, '2024-12-05 02:52:02') made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, sync_data_to_wp
+[04-Dec-2024 21:22:02 UTC] WordPress database error Unknown column 'mobile_number' in 'where clause' for query SELECT order_time FROM custom_order WHERE mobile_number = '978763' made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, sync_data_to_wp, enable_interest_flag, check_order_time
+[04-Dec-2024 21:22:02 UTC] PHP Warning:  Undefined array key 0 in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php on line 161
+[04-Dec-2024 21:22:02 UTC] PHP Warning:  Attempt to read property "interest_time" on null in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php on line 161
+[04-Dec-2024 21:22:02 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php on line 161
+[04-Dec-2024 21:22:56 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[04-Dec-2024 21:22:56 UTC] WordPress database error Duplicate entry '978763' for key 'PRIMARY' for query INSERT INTO `custom_customer` (`sheet_number`, `check_in_time`, `mobile_number`, `interest_flag`, `interest_time`) VALUES (28305, '2024-12-03 11:31:52', '978763', 1, '2024-12-05 02:52:56') made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, sync_data_to_wp
+[04-Dec-2024 21:22:56 UTC] WordPress database error Unknown column 'mobile_number' in 'where clause' for query SELECT order_time FROM custom_order WHERE mobile_number = '978763' made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, sync_data_to_wp, enable_interest_flag, check_order_time
+[04-Dec-2024 21:22:56 UTC] PHP Warning:  Undefined array key 0 in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php on line 161
+[04-Dec-2024 21:22:56 UTC] PHP Warning:  Attempt to read property "interest_time" on null in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php on line 161
+[04-Dec-2024 21:22:56 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php on line 161
+[04-Dec-2024 21:24:10 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[04-Dec-2024 21:24:10 UTC] WordPress database error Duplicate entry '978763' for key 'PRIMARY' for query INSERT INTO `custom_customer` (`sheet_number`, `check_in_time`, `mobile_number`, `interest_flag`, `interest_time`) VALUES (28305, '2024-12-03 11:31:52', '978763', 1, '2024-12-05 02:54:10') made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, sync_data_to_wp
+[04-Dec-2024 21:24:10 UTC] WordPress database error Unknown column 'mobile_number' in 'where clause' for query SELECT order_time FROM custom_order WHERE mobile_number = '978763' made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, sync_data_to_wp, enable_interest_flag, check_order_time
+[04-Dec-2024 21:24:10 UTC] PHP Warning:  Undefined array key 0 in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php on line 161
+[04-Dec-2024 21:24:10 UTC] PHP Warning:  Attempt to read property "interest_time" on null in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php on line 161
+[04-Dec-2024 21:24:10 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php on line 161
+[04-Dec-2024 21:25:56 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[04-Dec-2024 21:25:56 UTC] WordPress database error Duplicate entry '978763' for key 'PRIMARY' for query INSERT INTO `custom_customer` (`sheet_number`, `check_in_time`, `mobile_number`, `interest_flag`, `interest_time`) VALUES (28305, '2024-12-03 11:31:52', '978763', 1, '2024-12-05 02:55:56') made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, sync_data_to_wp
+[04-Dec-2024 21:25:56 UTC] PHP Warning:  Undefined property: stdClass::$interest_time in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php on line 161
+[04-Dec-2024 21:25:56 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php on line 161
+[04-Dec-2024 21:27:42 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[04-Dec-2024 21:27:42 UTC] WordPress database error Duplicate entry '978763' for key 'PRIMARY' for query INSERT INTO `custom_customer` (`sheet_number`, `check_in_time`, `mobile_number`, `interest_flag`, `interest_time`) VALUES (28305, '2024-12-03 11:31:52', '978763', 1, '2024-12-05 02:57:42') made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, sync_data_to_wp
+[04-Dec-2024 21:27:42 UTC] Array
+(
+    [0] => stdClass Object
+        (
+            [order_time] => 2024-11-22 21:26:37
+        )
+
+)
+
+[04-Dec-2024 21:27:42 UTC] PHP Warning:  Undefined property: stdClass::$interest_time in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php on line 161
+[04-Dec-2024 21:27:42 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php on line 161
+[04-Dec-2024 21:29:12 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[04-Dec-2024 21:29:12 UTC] WordPress database error Duplicate entry '978763' for key 'PRIMARY' for query INSERT INTO `custom_customer` (`sheet_number`, `check_in_time`, `mobile_number`, `interest_flag`, `interest_time`) VALUES (28305, '2024-12-03 11:31:52', '978763', 1, '2024-12-05 02:59:12') made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, sync_data_to_wp
+[04-Dec-2024 21:29:12 UTC] PHP Warning:  Undefined variable $order_time in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php on line 161
+[04-Dec-2024 21:29:12 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php on line 161
+[04-Dec-2024 21:29:12 UTC] PHP Warning:  Attempt to read property "order_time" on null in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php on line 161
+[04-Dec-2024 21:29:12 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php on line 161
+[04-Dec-2024 21:29:52 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[04-Dec-2024 21:29:52 UTC] WordPress database error Duplicate entry '978763' for key 'PRIMARY' for query INSERT INTO `custom_customer` (`sheet_number`, `check_in_time`, `mobile_number`, `interest_flag`, `interest_time`) VALUES (28305, '2024-12-03 11:31:52', '978763', 1, '2024-12-05 02:59:52') made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, sync_data_to_wp
+[04-Dec-2024 21:29:52 UTC] PHP Warning:  Undefined variable $order_time in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php on line 161
+[04-Dec-2024 21:29:52 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php on line 161
+[04-Dec-2024 21:29:52 UTC] PHP Warning:  Attempt to read property "order_time" on null in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php on line 161
+[04-Dec-2024 21:29:52 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php on line 161
+[04-Dec-2024 21:31:14 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[04-Dec-2024 21:31:14 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[04-Dec-2024 21:31:15 UTC] WordPress database error Unknown column 'order_time' in 'field list' for query INSERT INTO `custom_customer` (`sheet_number`, `check_in_time`, `mobile_number`, `interest_flag`, `order_time`) VALUES (28305, '2024-12-03 11:31:52', '978763', 1, '2024-12-05 03:01:15') made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, sync_data_to_wp
+[04-Dec-2024 21:31:15 UTC] Array
+(
+    [0] => stdClass Object
+        (
+            [order_time] => 2024-11-28 21:29:37
+        )
+
+)
+
+[04-Dec-2024 21:31:15 UTC] WordPress database error Unknown column 'order_time' in 'field list' for query INSERT INTO `custom_customer` (`sheet_number`, `check_in_time`, `mobile_number`, `interest_flag`, `order_time`) VALUES (28305, '2024-12-03 11:31:52', '978763', 1, '2024-12-05 03:01:15') made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, sync_data_to_wp
+[04-Dec-2024 21:31:15 UTC] Array
+(
+    [0] => stdClass Object
+        (
+            [order_time] => 2024-11-28 21:29:37
+        )
+
+)
+
+[04-Dec-2024 21:32:45 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[04-Dec-2024 21:32:45 UTC] WordPress database error Duplicate entry '978763' for key 'PRIMARY' for query INSERT INTO `custom_customer` (`sheet_number`, `check_in_time`, `mobile_number`, `interest_flag`, `interest_time`) VALUES (28305, '2024-12-03 11:31:52', '978763', 1, '2024-12-05 03:02:45') made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, sync_data_to_wp
+[04-Dec-2024 21:32:45 UTC] Array
+(
+    [0] => stdClass Object
+        (
+            [order_time] => 2024-11-28 21:29:37
+        )
+
+)
+
+[04-Dec-2024 21:32:51 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[04-Dec-2024 21:32:51 UTC] WordPress database error Duplicate entry '978763' for key 'PRIMARY' for query INSERT INTO `custom_customer` (`sheet_number`, `check_in_time`, `mobile_number`, `interest_flag`, `interest_time`) VALUES (28305, '2024-12-03 11:31:52', '978763', 1, '2024-12-05 03:02:51') made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, sync_data_to_wp
+[04-Dec-2024 21:32:51 UTC] Array
+(
+    [0] => stdClass Object
+        (
+            [order_time] => 2024-11-28 21:29:37
+        )
+
+)
+
+[04-Dec-2024 21:36:21 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[04-Dec-2024 21:36:21 UTC] WordPress database error Duplicate entry '978763' for key 'PRIMARY' for query INSERT INTO `custom_customer` (`sheet_number`, `check_in_time`, `mobile_number`, `interest_flag`, `interest_time`) VALUES (28305, '2024-12-03 11:31:52', '978763', 1, '2024-12-05 03:06:21') made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, sync_data_to_wp
+[04-Dec-2024 21:36:21 UTC] Array
+(
+    [0] => stdClass Object
+        (
+            [order_time] => 2024-11-28 21:29:37
+        )
+
+)
+
+[04-Dec-2024 21:36:21 UTC] 1733348182
+[04-Dec-2024 21:37:49 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[04-Dec-2024 21:37:49 UTC] WordPress database error Duplicate entry '978763' for key 'PRIMARY' for query INSERT INTO `custom_customer` (`sheet_number`, `check_in_time`, `mobile_number`, `interest_flag`, `interest_time`) VALUES (28305, '2024-12-03 11:31:52', '978763', 1, '2024-12-05 03:07:49') made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, sync_data_to_wp
+[04-Dec-2024 21:37:49 UTC] Array
+(
+    [0] => stdClass Object
+        (
+            [order_time] => 2024-11-28 21:29:37
+        )
+
+)
+
+[04-Dec-2024 21:37:49 UTC] 1732829377
+[04-Dec-2024 21:40:02 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[04-Dec-2024 21:40:02 UTC] WordPress database error Duplicate entry '978763' for key 'PRIMARY' for query INSERT INTO `custom_customer` (`sheet_number`, `check_in_time`, `mobile_number`, `interest_flag`, `interest_time`) VALUES (28305, '2024-12-03 11:31:52', '978763', 1, '2024-12-05 03:10:02') made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, sync_data_to_wp
+[04-Dec-2024 21:42:51 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[04-Dec-2024 21:42:51 UTC] WordPress database error Duplicate entry '978763' for key 'PRIMARY' for query INSERT INTO `custom_customer` (`sheet_number`, `check_in_time`, `mobile_number`, `interest_flag`, `interest_time`) VALUES (28305, '2024-12-03 11:31:52', '978763', 1, '2024-12-05 03:12:51') made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, sync_data_to_wp
+[04-Dec-2024 21:43:47 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[04-Dec-2024 21:43:47 UTC] WordPress database error Duplicate entry '978763' for key 'PRIMARY' for query INSERT INTO `custom_customer` (`sheet_number`, `check_in_time`, `mobile_number`, `interest_flag`, `interest_time`) VALUES (28305, '2024-12-03 11:31:52', '978763', 1, '2024-12-05 03:13:47') made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, sync_data_to_wp
+[04-Dec-2024 21:45:16 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[04-Dec-2024 21:45:16 UTC] WordPress database error Duplicate entry '978763' for key 'PRIMARY' for query INSERT INTO `custom_customer` (`sheet_number`, `check_in_time`, `mobile_number`, `interest_flag`, `interest_time`) VALUES (28305, '2024-12-03 11:31:52', '978763', 1, '2024-12-05 03:15:16') made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, sync_data_to_wp
+[04-Dec-2024 21:45:16 UTC] Array
+(
+    [0] => stdClass Object
+        (
+            [order_time] => 2024-11-27 21:42:37
+        )
+
+)
+
+[04-Dec-2024 21:45:59 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[04-Dec-2024 21:45:59 UTC] WordPress database error Duplicate entry '978763' for key 'PRIMARY' for query INSERT INTO `custom_customer` (`sheet_number`, `check_in_time`, `mobile_number`, `interest_flag`, `interest_time`) VALUES (28305, '2024-12-03 11:31:52', '978763', 1, '2024-12-05 03:15:59') made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, sync_data_to_wp
+[04-Dec-2024 21:45:59 UTC] Array
+(
+    [0] => stdClass Object
+        (
+            [order_time] => 2024-11-27 21:42:37
+        )
+
+)
+
+[04-Dec-2024 22:20:41 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[04-Dec-2024 22:20:41 UTC] WordPress database error Duplicate entry '978763' for key 'PRIMARY' for query INSERT INTO `custom_customer` (`sheet_number`, `check_in_time`, `mobile_number`, `interest_flag`, `interest_time`) VALUES (28305, '2024-12-03 11:31:52', '978763', 1, '2024-12-05 03:50:41') made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, sync_data_to_wp
+[04-Dec-2024 22:20:41 UTC] Array
+(
+    [0] => stdClass Object
+        (
+            [order_time] => 2024-11-27 21:42:37
+        )
+
+    [1] => stdClass Object
+        (
+            [order_time] => 2024-12-03 06:01:52
+        )
+
+)
+
+[04-Dec-2024 22:25:43 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[04-Dec-2024 22:25:43 UTC] WordPress database error Duplicate entry '978763' for key 'PRIMARY' for query INSERT INTO `custom_customer` (`sheet_number`, `check_in_time`, `mobile_number`, `interest_flag`, `interest_time`) VALUES (28305, '2024-12-03 11:31:52', '978763', 1, '2024-12-05 03:55:43') made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, sync_data_to_wp
+[04-Dec-2024 22:25:43 UTC] Array
+(
+    [0] => stdClass Object
+        (
+            [order_time] => 2024-11-27 21:42:37
+        )
+
+    [1] => stdClass Object
+        (
+            [order_time] => 2024-11-03 06:01:52
+        )
+
+)
+
+[04-Dec-2024 22:27:15 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[04-Dec-2024 22:27:16 UTC] WordPress database error Duplicate entry '978763' for key 'PRIMARY' for query INSERT INTO `custom_customer` (`sheet_number`, `check_in_time`, `mobile_number`, `interest_flag`, `interest_time`) VALUES (28305, '2024-12-03 11:31:52', '978763', 1, '2024-12-05 03:57:16') made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, sync_data_to_wp
+[04-Dec-2024 22:27:16 UTC] Array
+(
+    [0] => stdClass Object
+        (
+            [order_time] => 2024-11-27 22:27:37
+        )
+
+    [1] => stdClass Object
+        (
+            [order_time] => 2024-11-03 06:01:52
+        )
+
+)
+
+[04-Dec-2024 22:28:39 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[04-Dec-2024 22:28:39 UTC] WordPress database error Duplicate entry '978763' for key 'PRIMARY' for query INSERT INTO `custom_customer` (`sheet_number`, `check_in_time`, `mobile_number`, `interest_flag`, `interest_time`) VALUES (28305, '2024-12-03 11:31:52', '978763', 1, '2024-12-05 03:58:39') made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, sync_data_to_wp
+[04-Dec-2024 22:28:39 UTC] Array
+(
+    [0] => stdClass Object
+        (
+            [order_time] => 2024-11-27 22:27:37
+        )
+
+    [1] => stdClass Object
+        (
+            [order_time] => 2024-11-03 06:01:52
+        )
+
+)
+
