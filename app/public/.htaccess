@@ -12,5 +12,12 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.php [L]
 </IfModule>
+<IfModule mod_headers.c>
+    # Allow cross-origin requests
+    Header set Access-Control-Allow-Origin "https://script.google.com"
+    Header set Access-Control-Allow-Methods "GET, POST, OPTIONS"
+    Header set Access-Control-Allow-Headers "Content-Type"
+</IfModule>
+
 
 # END WordPress
