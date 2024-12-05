@@ -17,14 +17,54 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 
 function register_custom_endpoint() {
+    // Push to custom_customer table
     register_rest_route('custom/v1', '/sync-data', array(
         'methods' => 'POST',
         'callback' => 'sync_data_to_wp',
         'permission_callback' => '__return_true', // Remove in prod
     ));
+
+    register_rest_route('custom/v1', '/fetch-leads', array(
+        'methods'             => 'GET',
+        'callback'            => 'fetch_leads',
+        'permission_callback' => '__return_true',
+    ));
 }
     	
 add_action('rest_api_init', 'register_custom_endpoint');
+
+function fetch_leads(WP_REST_Request $request) {
+    global $wpdb;
+    $table_name = 'custom_customer';
+
+    $limit = 10;
+    
+    $leads = $wpdb->get_results(
+        $wpdb->prepare(
+            "SELECT mobile_number, check_in_time, interest_time FROM $table_name WHERE interest_flag = 1 order by interest_time desc LIMIT %d",
+            $limit
+        )
+    );
+
+    if (!empty($leads)) {
+        return new WP_REST_Response(
+            array(
+                'success' => true,
+                'message' => 'Leads fetched successfully.',
+                'data' => $leads,
+            ), 
+            200
+        );
+    }
+
+    return new WP_REST_Response(
+        array(
+            'success' => false,
+            'message' => 'No leads found.',
+        ), 
+        404
+    );
+}
 
 function sync_data_to_wp(WP_REST_Request $request) {
     $data = $request->get_json_params();
@@ -175,13 +215,50 @@ function check_order_time($mobileNumber, $productID) {
     }
 }
 
+function enqueue_my_custom_script() {
+    if (is_page('caller-page')) {
+        wp_enqueue_script(
+            'caller-page-script',
+            get_template_directory_uri() . '../../../plugins/custom/js/caller-page.js',
+            null,
+            true
+        );
+    }
+}
+add_action('wp_enqueue_scripts', 'enqueue_my_custom_script');
+
+function enqueue_datatables_scripts() {
+    // Enqueue DataTables CSS from CDN
+    wp_enqueue_style('datatables-css', 'https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css');
+
+    // Enqueue jQuery (since DataTables requires jQuery)
+    wp_enqueue_script('jquery');
+
+    // Enqueue DataTables JS from CDN
+    wp_enqueue_script('datatables-js', 'https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js', array('jquery'), null, true);
+
+    // Add custom JS for initializing DataTables
+    wp_add_inline_script('datatables-js', "
+        jQuery(document).ready(function($) {
+            $('#leadsTable').DataTable({
+                columnDefs: [
+                    {
+                        targets: [0],
+                        type: 'numeric'
+                    }
+                ]
+            });
+        });
+    ");
+}
+
+add_action('wp_enqueue_scripts', 'enqueue_datatables_scripts');
+
 function add_cors_headers() {
-    // Allow cross-origin requests from Google Apps Script
-    header("Access-Control-Allow-Origin: https://script.google.com");
+
+    header("Access-Control-Allow-Origin: http://pachchaelai.local");
     header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
-    header("Access-Control-Allow-Headers: Content-Type");
+    header("Access-Control-Allow-Headers: Content-Type, Authorization");
 }
 
 add_action('init', 'add_cors_headers');
-
-
