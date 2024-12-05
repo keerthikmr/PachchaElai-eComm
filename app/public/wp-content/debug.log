@@ -506,3 +506,270 @@ Stack trace:
 
 )
 
+[04-Dec-2024 23:01:03 UTC] Automatic updates starting...
+[04-Dec-2024 23:01:05 UTC]   Automatic plugin updates starting...
+[04-Dec-2024 23:01:05 UTC]   Automatic plugin updates complete.
+[04-Dec-2024 23:01:06 UTC] Automatic updates complete.
+[04-Dec-2024 23:04:34 UTC] PHP Warning:  Undefined array key "description" in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\woo-razorpay\checkout-block.php on line 42
+[04-Dec-2024 23:04:34 UTC] PHP Warning:  Undefined array key "description" in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\woo-razorpay\checkout-block.php on line 42
+[04-Dec-2024 23:04:34 UTC] PHP Warning:  Undefined array key "description" in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\woo-razorpay\checkout-block.php on line 42
+[04-Dec-2024 23:15:48 UTC] PHP Warning:  Undefined array key "description" in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\woo-razorpay\checkout-block.php on line 42
+[04-Dec-2024 23:15:48 UTC] PHP Warning:  Undefined array key "description" in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\woo-razorpay\checkout-block.php on line 42
+[04-Dec-2024 23:15:48 UTC] PHP Warning:  Undefined array key "description" in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\woo-razorpay\checkout-block.php on line 42
+[04-Dec-2024 23:17:54 UTC] PHP Warning:  Undefined array key "description" in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\woo-razorpay\checkout-block.php on line 42
+[04-Dec-2024 23:17:54 UTC] PHP Warning:  Undefined array key "description" in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\woo-razorpay\checkout-block.php on line 42
+[04-Dec-2024 23:17:54 UTC] PHP Warning:  Undefined array key "description" in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\woo-razorpay\checkout-block.php on line 42
+[05-Dec-2024 16:51:23 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No connection could be made because the target machine actively refused it in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\class-wpdb.php on line 1982
+[05-Dec-2024 16:56:35 UTC] PHP Warning:  Undefined array key "description" in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\woo-razorpay\checkout-block.php on line 42
+[05-Dec-2024 16:56:35 UTC] PHP Warning:  Undefined array key "description" in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\woo-razorpay\checkout-block.php on line 42
+[05-Dec-2024 16:56:35 UTC] PHP Warning:  Undefined array key "description" in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\woo-razorpay\checkout-block.php on line 42
+[05-Dec-2024 17:22:32 UTC] PHP Warning:  Undefined array key "description" in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\woo-razorpay\checkout-block.php on line 42
+[05-Dec-2024 17:29:01 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d' at line 1 for query SELECT * FROM custom_customer WHERE interest_flag = 1 order by interest_time desc LIMIT %d made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, fetch_leads
+[05-Dec-2024 17:30:35 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d' at line 1 for query SELECT * FROM custom_customer WHERE interest_flag = 1 order by interest_time desc LIMIT %d made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, fetch_leads
+[05-Dec-2024 17:31:44 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d' at line 1 for query SELECT * FROM custom_customer WHERE interest_flag = 1 order by interest_time desc LIMIT %d made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, fetch_leads
+[05-Dec-2024 17:31:44 UTC] 
+[05-Dec-2024 17:59:59 UTC] PHP Warning:  wp_version_check(): An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/forums/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\functions.php on line 6114
+[05-Dec-2024 18:07:30 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d' at line 1 for query SELECT * FROM custom_customer WHERE interest_flag = 1 order by interest_time desc LIMIT %d made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, fetch_leads
+[05-Dec-2024 18:07:30 UTC] 
+[05-Dec-2024 18:10:05 UTC] Array
+(
+    [0] => stdClass Object
+        (
+            [mobile_number] => 6374681
+            [sheet_number] => 28367
+            [check_in_time] => 2024-12-03 15:57:35
+            [interest_flag] => 1
+            [interest_time] => 2024-12-05 01:59:32
+        )
+
+    [1] => stdClass Object
+        (
+            [mobile_number] => 65565656
+            [sheet_number] => 28340
+            [check_in_time] => 2024-12-03 14:02:49
+            [interest_flag] => 1
+            [interest_time] => 2024-12-05 01:56:42
+        )
+
+    [2] => stdClass Object
+        (
+            [mobile_number] => 231111
+            [sheet_number] => 28340
+            [check_in_time] => 2024-12-03 14:02:49
+            [interest_flag] => 1
+            [interest_time] => 2024-12-05 01:54:30
+        )
+
+    [3] => stdClass Object
+        (
+            [mobile_number] => 231
+            [sheet_number] => 28340
+            [check_in_time] => 2024-12-03 14:02:49
+            [interest_flag] => 1
+            [interest_time] => 2024-12-05 01:52:12
+        )
+
+    [4] => stdClass Object
+        (
+            [mobile_number] => 978763
+            [sheet_number] => 28305
+            [check_in_time] => 2024-12-03 11:31:52
+            [interest_flag] => 1
+            [interest_time] => 2024-11-27 21:22:37
+        )
+
+    [5] => stdClass Object
+        (
+            [mobile_number] => 9840883833
+            [sheet_number] => 3255
+            [check_in_time] => 2024-12-03 16:03:42
+            [interest_flag] => 1
+            [interest_time] => 2024-10-27 19:51:31
+        )
+
+    [6] => stdClass Object
+        (
+            [mobile_number] => 636109340
+            [sheet_number] => 28340
+            [check_in_time] => 2024-12-03 14:02:49
+            [interest_flag] => 1
+            [interest_time] => 0000-00-00 00:00:00
+        )
+
+    [7] => stdClass Object
+        (
+            [mobile_number] => 6361093405
+            [sheet_number] => 28340
+            [check_in_time] => 2024-12-03 14:02:49
+            [interest_flag] => 1
+            [interest_time] => 0000-00-00 00:00:00
+        )
+
+    [8] => stdClass Object
+        (
+            [mobile_number] => 8903575880
+            [sheet_number] => 28280
+            [check_in_time] => 2024-12-03 00:43:54
+            [interest_flag] => 1
+            [interest_time] => 0000-00-00 00:00:00
+        )
+
+    [9] => stdClass Object
+        (
+            [mobile_number] => 97876
+            [sheet_number] => 28305
+            [check_in_time] => 2024-12-03 11:31:52
+            [interest_flag] => 1
+            [interest_time] => 0000-00-00 00:00:00
+        )
+
+)
+
+[05-Dec-2024 18:12:16 UTC] WordPress database error Operand should contain 1 column(s) for query SELECT (mobile_number, check_in_time, interest_time) FROM custom_customer WHERE interest_flag = 1 order by interest_time desc LIMIT 10 made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, fetch_leads
+[05-Dec-2024 18:12:16 UTC] Array
+(
+)
+
+[05-Dec-2024 18:12:29 UTC] Array
+(
+    [0] => stdClass Object
+        (
+            [mobile_number] => 6374681
+            [check_in_time] => 2024-12-03 15:57:35
+            [interest_time] => 2024-12-05 01:59:32
+        )
+
+    [1] => stdClass Object
+        (
+            [mobile_number] => 65565656
+            [check_in_time] => 2024-12-03 14:02:49
+            [interest_time] => 2024-12-05 01:56:42
+        )
+
+    [2] => stdClass Object
+        (
+            [mobile_number] => 231111
+            [check_in_time] => 2024-12-03 14:02:49
+            [interest_time] => 2024-12-05 01:54:30
+        )
+
+    [3] => stdClass Object
+        (
+            [mobile_number] => 231
+            [check_in_time] => 2024-12-03 14:02:49
+            [interest_time] => 2024-12-05 01:52:12
+        )
+
+    [4] => stdClass Object
+        (
+            [mobile_number] => 978763
+            [check_in_time] => 2024-12-03 11:31:52
+            [interest_time] => 2024-11-27 21:22:37
+        )
+
+    [5] => stdClass Object
+        (
+            [mobile_number] => 9840883833
+            [check_in_time] => 2024-12-03 16:03:42
+            [interest_time] => 2024-10-27 19:51:31
+        )
+
+    [6] => stdClass Object
+        (
+            [mobile_number] => 636109340
+            [check_in_time] => 2024-12-03 14:02:49
+            [interest_time] => 0000-00-00 00:00:00
+        )
+
+    [7] => stdClass Object
+        (
+            [mobile_number] => 6361093405
+            [check_in_time] => 2024-12-03 14:02:49
+            [interest_time] => 0000-00-00 00:00:00
+        )
+
+    [8] => stdClass Object
+        (
+            [mobile_number] => 8903575880
+            [check_in_time] => 2024-12-03 00:43:54
+            [interest_time] => 0000-00-00 00:00:00
+        )
+
+    [9] => stdClass Object
+        (
+            [mobile_number] => 97876
+            [check_in_time] => 2024-12-03 11:31:52
+            [interest_time] => 0000-00-00 00:00:00
+        )
+
+)
+
+[05-Dec-2024 18:17:46 UTC] PHP Warning:  Undefined array key "description" in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\woo-razorpay\checkout-block.php on line 42
+[05-Dec-2024 18:17:46 UTC] PHP Warning:  Undefined array key "description" in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\woo-razorpay\checkout-block.php on line 42
+[05-Dec-2024 18:17:46 UTC] PHP Warning:  Undefined array key "description" in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\woo-razorpay\checkout-block.php on line 42
+[05-Dec-2024 18:54:14 UTC] PHP Warning:  Undefined array key "description" in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\woo-razorpay\checkout-block.php on line 42
+[05-Dec-2024 18:54:14 UTC] PHP Warning:  Undefined array key "description" in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\woo-razorpay\checkout-block.php on line 42
+[05-Dec-2024 18:54:14 UTC] PHP Warning:  Undefined array key "description" in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\woo-razorpay\checkout-block.php on line 42
+[05-Dec-2024 19:21:11 UTC] PHP Warning:  Undefined array key "description" in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\woo-razorpay\checkout-block.php on line 42
+[05-Dec-2024 19:28:21 UTC] PHP Warning:  Undefined array key "description" in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\woo-razorpay\checkout-block.php on line 42
+[05-Dec-2024 19:28:21 UTC] PHP Warning:  Undefined array key "description" in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\woo-razorpay\checkout-block.php on line 42
+[05-Dec-2024 19:28:21 UTC] PHP Warning:  Undefined array key "description" in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\woo-razorpay\checkout-block.php on line 42
+[05-Dec-2024 19:38:28 UTC] PHP Warning:  Undefined array key "description" in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\woo-razorpay\checkout-block.php on line 42
+[05-Dec-2024 19:38:28 UTC] PHP Warning:  Undefined array key "description" in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\woo-razorpay\checkout-block.php on line 42
+[05-Dec-2024 19:38:28 UTC] PHP Warning:  Undefined array key "description" in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\woo-razorpay\checkout-block.php on line 42
+[05-Dec-2024 19:38:31 UTC] PHP Warning:  Undefined array key "description" in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\woo-razorpay\checkout-block.php on line 42
+[05-Dec-2024 19:38:31 UTC] PHP Warning:  Undefined array key "description" in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\woo-razorpay\checkout-block.php on line 42
+[05-Dec-2024 19:38:31 UTC] PHP Warning:  Undefined array key "description" in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\woo-razorpay\checkout-block.php on line 42
+[05-Dec-2024 20:06:33 UTC] PHP Warning:  Undefined array key "description" in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\woo-razorpay\checkout-block.php on line 42
+[05-Dec-2024 20:06:33 UTC] PHP Warning:  Undefined array key "description" in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\woo-razorpay\checkout-block.php on line 42
+[05-Dec-2024 20:06:33 UTC] PHP Warning:  Undefined array key "description" in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\woo-razorpay\checkout-block.php on line 42
+[05-Dec-2024 20:15:39 UTC] PHP Warning:  Undefined array key "description" in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\woo-razorpay\checkout-block.php on line 42
+[05-Dec-2024 20:15:39 UTC] PHP Warning:  Undefined array key "description" in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\woo-razorpay\checkout-block.php on line 42
+[05-Dec-2024 20:15:39 UTC] PHP Warning:  Undefined array key "description" in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\woo-razorpay\checkout-block.php on line 42
+[05-Dec-2024 20:41:10 UTC] PHP Warning:  wp_version_check(): An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/forums/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\functions.php on line 6114
+[05-Dec-2024 20:41:35 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No connection could be made because the target machine actively refused it in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\class-wpdb.php on line 1982
+[05-Dec-2024 20:41:36 UTC] PHP Notice:  fwrite(): Write of 49 bytes failed with errno=22 Invalid argument in phar://C:/Users/99220/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Loggers/Base.php on line 66
+[05-Dec-2024 20:42:43 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No connection could be made because the target machine actively refused it in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\class-wpdb.php on line 1982
+[05-Dec-2024 20:42:50 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No connection could be made because the target machine actively refused it in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\class-wpdb.php on line 1982
+[05-Dec-2024 20:42:50 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No connection could be made because the target machine actively refused it in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-includes\class-wpdb.php on line 1982
+[05-Dec-2024 20:59:11 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[05-Dec-2024 21:02:56 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[05-Dec-2024 21:02:56 UTC] WordPress database error Duplicate entry '9840883833' for key 'PRIMARY' for query INSERT INTO `custom_customer` (`sheet_number`, `check_in_time`, `mobile_number`, `interest_flag`, `interest_time`) VALUES (28383, '2024-12-03 16:54:01', '9840883833', 1, '2024-12-06 02:32:56') made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, sync_data_to_wp
+[05-Dec-2024 21:02:56 UTC] Array
+(
+)
+
+[05-Dec-2024 21:02:56 UTC] PHP Warning:  Undefined array key 0 in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php on line 203
+[05-Dec-2024 21:02:56 UTC] PHP Warning:  Attempt to read property "order_time" on null in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php on line 203
+[05-Dec-2024 21:02:56 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\custom\functions.php on line 203
+[05-Dec-2024 21:03:39 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[05-Dec-2024 21:09:31 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[05-Dec-2024 21:14:31 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[05-Dec-2024 21:15:53 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[05-Dec-2024 21:18:02 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[05-Dec-2024 21:18:47 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[05-Dec-2024 21:23:34 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[05-Dec-2024 21:26:29 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[05-Dec-2024 21:28:17 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[05-Dec-2024 21:32:26 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[05-Dec-2024 21:33:17 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[05-Dec-2024 21:35:48 UTC] PHP Warning:  Undefined array key "description" in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\woo-razorpay\checkout-block.php on line 42
+[05-Dec-2024 21:35:49 UTC] PHP Warning:  Undefined array key "description" in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\woo-razorpay\checkout-block.php on line 42
+[05-Dec-2024 21:35:49 UTC] PHP Warning:  Undefined array key "description" in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\plugins\woo-razorpay\checkout-block.php on line 42
+[05-Dec-2024 21:35:55 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[05-Dec-2024 21:36:17 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[05-Dec-2024 21:36:30 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[05-Dec-2024 21:37:14 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[05-Dec-2024 21:46:14 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[05-Dec-2024 21:46:44 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[05-Dec-2024 21:47:55 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[05-Dec-2024 21:48:32 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[05-Dec-2024 21:50:16 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[05-Dec-2024 21:54:35 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[05-Dec-2024 21:55:13 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[05-Dec-2024 21:55:26 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[05-Dec-2024 21:56:01 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[05-Dec-2024 21:56:27 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[05-Dec-2024 21:57:26 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[05-Dec-2024 21:58:02 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
+[05-Dec-2024 21:59:49 UTC] PHP Notice:  unserialize(): Error at offset 316 of 7900 bytes in C:\Users\99220\Local Sites\pachchaelai\app\public\wp-content\mu-plugins\local-by-flywheel-live-link-helper.php on line 198
