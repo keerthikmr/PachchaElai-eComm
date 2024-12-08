@@ -28,6 +28,38 @@ function register_custom_endpoint() {
         'methods'             => 'GET',
         'callback'            => 'fetch_leads',
         'permission_callback' => '__return_true',
+        'args' => array(
+            'helper_id' => array(
+                'required' => true,
+                'validate_callback' => function($param, $request, $key) {
+                    return is_numeric($param);
+                }
+            )
+        ))
+    );
+
+    register_rest_route('custom/v1', '/set-hold-flag', array(
+        'methods'             => 'POST',
+        'callback'            => 'set_hold_flag',
+        'permission_callback' => '__return_true',
+    ));
+    
+    register_rest_route('custom/v1', '/remove-hold-flag', array(
+        'methods'             => 'POST',
+        'callback'            => 'remove_hold_flag',
+        'permission_callback' => '__return_true',
+    ));
+
+    register_rest_route('custom/v1', '/set-no-interest-flag', array(
+        'methods'             => 'POST',
+        'callback'            => 'set_no_interest_flag',
+        'permission_callback' => '__return_true',
+    ));
+
+    register_rest_route('custom/v1', '/get-helper-id', array(
+        'methods'             => 'POST',
+        'callback'            => 'get_helper_id',
+        'permission_callback' => '__return_true',
     ));
 }
     	
@@ -36,16 +68,49 @@ add_action('rest_api_init', 'register_custom_endpoint');
 function fetch_leads(WP_REST_Request $request) {
     global $wpdb;
     $table_name = 'custom_customer';
-
-    $limit = 10;
     
-    $leads = $wpdb->get_results(
+    $helper_id = $request->get_param('helper_id');
+    
+    $count_current = $wpdb->get_results(
         $wpdb->prepare(
-            "SELECT mobile_number, check_in_time, interest_time FROM $table_name WHERE interest_flag = 1 order by interest_time desc LIMIT %d",
-            $limit
+            "SELECT COUNT(*) FROM $table_name WHERE helper_id = %d AND hold_flag = 0",
+            $helper_id
         )
     );
 
+    if ($count_current[0]->{"COUNT(*)"} <= 10) {
+        $assign_more = 10 - $count_current[0]->{"COUNT(*)"};
+
+        $unatten_leads = $wpdb->get_results(
+            $wpdb->prepare(
+                "SELECT mobile_number FROM $table_name WHERE interest_flag = 1 AND helper_id IS NULL ORDER BY interest_time DESC LIMIT %d",
+                $assign_more
+            )
+        );
+
+        if (!empty($unatten_leads)) {
+            
+            // Assign the lead to the caller
+            foreach ($unatten_leads as $lead) {
+                $wpdb->update(
+                    $table_name,
+                    array( 'helper_id' => $helper_id ),
+                    array( 'mobile_number' => $lead->mobile_number ),
+                    array( '%d' ),
+                    array( '%d' )
+                );
+            }
+        }
+    }
+
+    // Get customers who don't already have a caller assigned and also have the interest flag 1
+    $leads = $wpdb->get_results(
+        $wpdb->prepare(
+            "SELECT mobile_number, check_in_time, interest_time, interest_flag, hold_flag FROM $table_name WHERE helper_id = %d ORDER BY interest_time",
+            $helper_id
+        )
+    );
+    
     if (!empty($leads)) {
         return new WP_REST_Response(
             array(
@@ -62,7 +127,7 @@ function fetch_leads(WP_REST_Request $request) {
             'success' => false,
             'message' => 'No leads found.',
         ), 
-        404
+        500
     );
 }
 
@@ -151,6 +216,124 @@ function sync_data_to_wp(WP_REST_Request $request) {
     );
 }
 
+function set_hold_flag(WP_REST_Request $request) {
+
+    $mobile_number = $request->get_param('mobile_number');
+    $helper_id = $request->get_param('helper_id');
+    error_log(print_r($helper_id, true));
+    global $wpdb;
+
+    $table_name ='custom_customer';
+
+    $hold_count = $wpdb->get_results(
+        $wpdb->prepare(
+            "SELECT COUNT(*) FROM $table_name WHERE helper_id = %d AND hold_flag = 1",
+            $helper_id
+        )
+    );
+
+    error_log(print_r($hold_count, true));
+
+    if ($hold_count[0]->{"COUNT(*)"} >= 20) {
+        return new WP_REST_Response(array(
+            'success' => false,
+            'message' => 'Hold limit reached.',
+        ), 500);
+    }
+
+    $updated = $wpdb->update(
+        $table_name,
+        array('hold_flag' => 1),
+        array('mobile_number' => $mobile_number),
+        array('%d'),
+        array('%s')
+    );
+
+    if ($updated !== false) {
+        return new WP_REST_Response(array(
+            'success' => true,
+            'message' => 'Hold flag updated successfully.',
+        ), 200);
+    }
+
+    return new WP_REST_Response(array(
+        'success' => false,
+        'message' => 'Hold flag update failed',
+    ), 500);
+}
+
+function remove_hold_flag(WP_REST_Request $request) {
+
+    $mobile_number = $request->get_param('mobile_number');
+
+    if (empty($mobile_number)) {
+        return new WP_REST_Response(array(
+            'success' => false,
+            'message' => 'Mobile number is required.',
+        ), 400);
+    }
+
+    global $wpdb;
+
+    $table_name ='custom_customer';
+
+    $updated = $wpdb->update(
+        $table_name,
+        array('hold_flag' => 0),
+        array('mobile_number' => $mobile_number),
+        array('%d'),
+        array('%s')
+    );
+
+    if ($updated !== false) {
+        return new WP_REST_Response(array(
+            'success' => true,
+            'message' => 'Hold flag updated successfully.',
+        ), 200);
+    }
+
+    return new WP_REST_Response(array(
+        'success' => false,
+        'message' => 'Failed to update the hold flag. Please check the mobile number.',
+    ), 500);
+}
+
+function set_no_interest_flag(WP_REST_Request $request) {
+
+    $mobile_number = $request->get_param('mobile_number');
+
+    if (empty($mobile_number)) {
+        return new WP_REST_Response(array(
+            'success' => false,
+            'message' => 'Mobile number is required.',
+        ), 400);
+    }
+
+    global $wpdb;
+
+    $table_name ='custom_customer';
+
+    $updated = $wpdb->update(
+        $table_name,
+        array('interest_flag' => 0),
+        array('mobile_number' => $mobile_number),
+        array('%d'),
+        array('%s')
+    );
+
+    if ($updated !== false) {
+        return new WP_REST_Response(array(
+            'success' => true,
+            'message' => 'Interest flag disabled.',
+        ), 200);
+    }
+
+    return new WP_REST_Response(array(
+        'success' => false,
+        'message' => 'Failed to disable interst flag.',
+    ), 500);
+}
+
 function check_duplicates($customerNumber) {
     global $wpdb;
     $table_name = 'custom_customer';
@@ -213,6 +396,39 @@ function check_order_time($mobileNumber, $productID) {
     } else {
         return false; // Order is recent, dismiss request
     }
+}
+
+function get_helper_id(WP_REST_Request $request) {
+    $mobile_number = $request->get_param('mobile_number');
+
+    global $wpdb;
+    $table_name = 'custom_customer';
+    
+    $helper_id = $wpdb->get_results(
+        $wpdb->prepare(
+            "SELECT helper_id FROM $table_name WHERE mobile_number = %s",
+            $mobile_number
+        )
+    );
+
+    if (!empty($helper_id)) {
+        return new WP_REST_Response(
+            array(
+                'success' => true,
+                'message' => 'Helper found.',
+                'data' => $helper_id,
+            ), 
+            200
+        );
+    }
+
+    return new WP_REST_Response(
+        array(
+            'success' => false,
+            'message' => 'Helper not found.',
+        ), 
+        500
+    );
 }
 
 function enqueue_my_custom_script() {
