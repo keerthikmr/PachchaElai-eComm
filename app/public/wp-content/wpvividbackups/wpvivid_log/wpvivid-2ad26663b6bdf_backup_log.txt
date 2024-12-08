@@ -1,0 +1,134 @@
+Log created: 2024-12-07 23:28:57
+Type: backup
+[2024-12-07 23:29:01][notice]Start backing up.
+[2024-12-07 23:29:01][notice]server info fcgi:On max execution time: 180 wp version:6.7.1 php version:8.2.23 db version:8.0.16 php ini:safe_mode: memory_limit:256M memory_get_usage:104.43 MB memory_get_peak_usage:105.59 MB extensions:PDO enabled curl enabled zlib enabled   is_multisite:0
+[2024-12-07 23:29:01][notice]Prepare to backup backup_db files.
+[2024-12-07 23:29:02][notice]Start exporting database.
+[2024-12-07 23:29:02][notice]Preparing to dump table wp_fbv_attachment_folder
+[2024-12-07 23:29:02][notice]Preparing to dump table wp_mailpoet_automation_triggers
+[2024-12-07 23:29:02][notice]Preparing to dump table wp_mailpoet_automations
+[2024-12-07 23:29:02][notice]Preparing to dump table wp_mailpoet_forms
+[2024-12-07 23:29:02][notice]Preparing to dump table wp_mailpoet_log
+[2024-12-07 23:29:02][notice]Preparing to dump table wp_mailpoet_statistics_bounces
+[2024-12-07 23:29:02][notice]Preparing to dump table wp_wc_category_lookup
+[2024-12-07 23:29:02][notice]Preparing to dump table wp_wc_reserved_stock
+[2024-12-07 23:29:02][notice]Preparing to dump table wp_woocommerce_shipping_zone_methods
+[2024-12-07 23:29:02][notice]Preparing to dump table wp_woocommerce_shipping_zones
+[2024-12-07 23:29:02][notice]Preparing to dump table wp_actionscheduler_claims
+[2024-12-07 23:29:02][notice]Preparing to dump table wp_actionscheduler_groups
+[2024-12-07 23:29:02][notice]Preparing to dump table wp_fbv
+[2024-12-07 23:29:02][notice]Preparing to dump table wp_links
+[2024-12-07 23:29:02][notice]Preparing to dump table wp_mailpoet_automation_runs
+[2024-12-07 23:29:02][notice]Preparing to dump table wp_mailpoet_automation_versions
+[2024-12-07 23:29:02][notice]Preparing to dump table wp_mailpoet_custom_fields
+[2024-12-07 23:29:03][notice]Preparing to dump table wp_mailpoet_dynamic_segment_filters
+[2024-12-07 23:29:03][notice]Preparing to dump table wp_mailpoet_feature_flags
+[2024-12-07 23:29:03][notice]Preparing to dump table wp_mailpoet_migrations
+[2024-12-07 23:29:03][notice]Preparing to dump table wp_mailpoet_newsletter_option
+[2024-12-07 23:29:03][notice]Preparing to dump table wp_mailpoet_newsletter_option_fields
+[2024-12-07 23:29:03][notice]Preparing to dump table wp_mailpoet_newsletter_posts
+[2024-12-07 23:29:03][notice]Preparing to dump table wp_mailpoet_newsletter_segment
+[2024-12-07 23:29:03][notice]Preparing to dump table wp_mailpoet_scheduled_task_subscribers
+[2024-12-07 23:29:03][notice]Preparing to dump table wp_mailpoet_settings
+[2024-12-07 23:29:03][notice]Preparing to dump table wp_mailpoet_statistics_forms
+[2024-12-07 23:29:03][notice]Preparing to dump table wp_mailpoet_subscriber_custom_field
+[2024-12-07 23:29:03][notice]Preparing to dump table wp_mailpoet_subscriber_ips
+[2024-12-07 23:29:03][notice]Preparing to dump table wp_mailpoet_tags
+[2024-12-07 23:29:03][notice]Preparing to dump table wp_mailpoet_user_agents
+[2024-12-07 23:29:03][notice]Preparing to dump table wp_mailpoet_user_flags
+[2024-12-07 23:29:03][notice]Preparing to dump table wp_term_relationships
+[2024-12-07 23:29:03][notice]Preparing to dump table wp_wc_product_attributes_lookup
+[2024-12-07 23:29:03][notice]Preparing to dump table wp_wc_product_download_directories
+[2024-12-07 23:29:03][notice]Preparing to dump table wp_wc_rate_limits
+[2024-12-07 23:29:03][notice]Preparing to dump table wp_wc_tax_rate_classes
+[2024-12-07 23:29:03][notice]Preparing to dump table wp_wc_webhooks
+[2024-12-07 23:29:03][notice]Preparing to dump table wp_woocommerce_attribute_taxonomies
+[2024-12-07 23:29:03][notice]Preparing to dump table wp_woocommerce_log
+[2024-12-07 23:29:03][notice]Preparing to dump table wp_woocommerce_order_items
+[2024-12-07 23:29:04][notice]Preparing to dump table wp_woocommerce_payment_tokens
+[2024-12-07 23:29:04][notice]Preparing to dump table wp_woocommerce_sessions
+[2024-12-07 23:29:04][notice]Preparing to dump table wp_commentmeta
+[2024-12-07 23:29:04][notice]Preparing to dump table wp_mailpoet_automation_run_subjects
+[2024-12-07 23:29:04][notice]Preparing to dump table wp_mailpoet_newsletters
+[2024-12-07 23:29:04][notice]Preparing to dump table wp_mailpoet_scheduled_tasks
+[2024-12-07 23:29:04][notice]Preparing to dump table wp_mailpoet_segments
+[2024-12-07 23:29:04][notice]Preparing to dump table wp_mailpoet_sending_queues
+[2024-12-07 23:29:04][notice]Preparing to dump table wp_mailpoet_statistics_newsletters
+[2024-12-07 23:29:04][notice]Preparing to dump table wp_mailpoet_stats_notifications
+[2024-12-07 23:29:04][notice]Preparing to dump table wp_mailpoet_subscriber_segment
+[2024-12-07 23:29:04][notice]Preparing to dump table wp_mailpoet_subscriber_tag
+[2024-12-07 23:29:04][notice]Preparing to dump table wp_term_taxonomy
+[2024-12-07 23:29:04][notice]Preparing to dump table wp_termmeta
+[2024-12-07 23:29:04][notice]Preparing to dump table wp_terms
+[2024-12-07 23:29:04][notice]Preparing to dump table wp_usermeta
+[2024-12-07 23:29:04][notice]Preparing to dump table wp_wc_customer_lookup
+[2024-12-07 23:29:04][notice]Preparing to dump table wp_wc_download_log
+[2024-12-07 23:29:04][notice]Preparing to dump table wp_wc_order_coupon_lookup
+[2024-12-07 23:29:04][notice]Preparing to dump table wp_wc_order_operational_data
+[2024-12-07 23:29:05][notice]Preparing to dump table wp_wc_order_tax_lookup
+[2024-12-07 23:29:05][notice]Preparing to dump table wp_wc_orders_meta
+[2024-12-07 23:29:05][notice]Preparing to dump table wp_woocommerce_api_keys
+[2024-12-07 23:29:05][notice]Preparing to dump table wp_woocommerce_order_itemmeta
+[2024-12-07 23:29:05][notice]Preparing to dump table wp_woocommerce_payment_tokenmeta
+[2024-12-07 23:29:05][notice]Preparing to dump table wp_woocommerce_shipping_zone_locations
+[2024-12-07 23:29:05][notice]Preparing to dump table wp_woocommerce_tax_rate_locations
+[2024-12-07 23:29:05][notice]Preparing to dump table wp_mailpoet_automation_run_logs
+[2024-12-07 23:29:05][notice]Preparing to dump table wp_mailpoet_newsletter_links
+[2024-12-07 23:29:05][notice]Preparing to dump table wp_mailpoet_statistics_clicks
+[2024-12-07 23:29:05][notice]Preparing to dump table wp_mailpoet_statistics_unsubscribes
+[2024-12-07 23:29:05][notice]Preparing to dump table wp_users
+[2024-12-07 23:29:05][notice]Preparing to dump table wp_wc_admin_note_actions
+[2024-12-07 23:29:05][notice]Preparing to dump table wp_wc_admin_notes
+[2024-12-07 23:29:05][notice]Preparing to dump table wp_wc_order_stats
+[2024-12-07 23:29:05][notice]Preparing to dump table wp_wc_order_addresses
+[2024-12-07 23:29:05][notice]Preparing to dump table wp_wc_order_product_lookup
+[2024-12-07 23:29:05][notice]Preparing to dump table wp_woocommerce_downloadable_product_permissions
+[2024-12-07 23:29:05][notice]Preparing to dump table wp_woocommerce_tax_rates
+[2024-12-07 23:29:05][notice]Preparing to dump table wp_mailpoet_statistics_opens
+[2024-12-07 23:29:05][notice]Preparing to dump table wp_mailpoet_statistics_woocommerce_purchases
+[2024-12-07 23:29:06][notice]Preparing to dump table wp_postmeta
+[2024-12-07 23:29:06][notice]Preparing to dump table wp_comments
+[2024-12-07 23:29:06][notice]Preparing to dump table wp_wc_orders
+[2024-12-07 23:29:06][notice]Preparing to dump table wp_wc_product_meta_lookup
+[2024-12-07 23:29:06][notice]Preparing to dump table wp_mailpoet_subscribers
+[2024-12-07 23:29:06][notice]Preparing to dump table wp_posts
+[2024-12-07 23:29:06][notice]Preparing to dump table wp_actionscheduler_logs
+[2024-12-07 23:29:06][notice]Preparing to dump table wp_actionscheduler_actions
+[2024-12-07 23:29:06][notice]Preparing to dump table wp_mailpoet_newsletter_templates
+[2024-12-07 23:29:06][notice]Preparing to dump table wp_options
+[2024-12-07 23:29:06][notice]Exporting database finished.
+[2024-12-07 23:29:06][notice]Start compressing database
+[2024-12-07 23:29:07][notice]Prepare to zip file. file: pachchaelai.local_wpvivid-2ad26663b6bdf_2024-12-07-23-28_backup_db.sql
+[2024-12-07 23:29:07][notice]Adding zip files completed.pachchaelai.local_wpvivid-2ad26663b6bdf_2024-12-07-23-28_backup_db.part001.zip, filesize: 448.73 KB
+[2024-12-07 23:29:07][notice]Compressing database completed
+[2024-12-07 23:29:07][notice]Backing up backup_db completed.
+[2024-12-07 23:29:07][notice]Prepare to backup backup_themes files.
+[2024-12-07 23:29:08][notice]Compressing zip file:pachchaelai.local_wpvivid-2ad26663b6bdf_2024-12-07-23-28_backup_themes.part001.zip index:559
+[2024-12-07 23:29:38][notice]Compressing zip file:pachchaelai.local_wpvivid-2ad26663b6bdf_2024-12-07-23-28_backup_themes.part001.zip success. index:559 file size:15.35 MB
+[2024-12-07 23:29:38][notice]Backing up backup_themes completed.
+[2024-12-07 23:29:38][notice]Prepare to backup backup_plugin files.
+[2024-12-07 23:33:56][notice]Start backing up.
+[2024-12-07 23:33:56][notice]server info fcgi:On max execution time: 180 wp version:6.7.1 php version:8.2.23 db version:8.0.16 php ini:safe_mode: memory_limit:256M memory_get_usage:92.71 MB memory_get_peak_usage:93.86 MB extensions:PDO enabled curl enabled zlib enabled   is_multisite:0
+[2024-12-07 23:33:57][notice]Prepare to backup backup_plugin files.
+[2024-12-07 23:34:14][notice]Compressing zip file:pachchaelai.local_wpvivid-2ad26663b6bdf_2024-12-07-23-28_backup_plugin.part001.zip index:16771
+[2024-12-07 23:39:29][notice]Start backing up.
+[2024-12-07 23:39:29][notice]server info fcgi:On max execution time: 180 wp version:6.7.1 php version:8.2.23 db version:8.0.16 php ini:safe_mode: memory_limit:256M memory_get_usage:92.71 MB memory_get_peak_usage:93.86 MB extensions:PDO enabled curl enabled zlib enabled   is_multisite:0
+[2024-12-07 23:39:29][notice]Prepare to backup backup_plugin files.
+[2024-12-07 23:39:46][notice]Compressing zip file:pachchaelai.local_wpvivid-2ad26663b6bdf_2024-12-07-23-28_backup_plugin.part001.zip index:16771
+[2024-12-07 23:42:52][notice]Start backing up.
+[2024-12-07 23:42:52][notice]server info fcgi:On max execution time: 180 wp version:6.7.1 php version:8.2.23 db version:8.0.16 php ini:safe_mode: memory_limit:256M memory_get_usage:92.71 MB memory_get_peak_usage:93.86 MB extensions:PDO enabled curl enabled zlib enabled   is_multisite:0
+[2024-12-07 23:42:53][notice]Prepare to backup backup_plugin files.
+[2024-12-07 23:43:10][notice]Compressing zip file:pachchaelai.local_wpvivid-2ad26663b6bdf_2024-12-07-23-28_backup_plugin.part001.zip index:16771
+[2024-12-07 23:46:17][notice]Start backing up.
+[2024-12-07 23:46:17][notice]server info fcgi:On max execution time: 180 wp version:6.7.1 php version:8.2.23 db version:8.0.16 php ini:safe_mode: memory_limit:256M memory_get_usage:92.71 MB memory_get_peak_usage:93.86 MB extensions:PDO enabled curl enabled zlib enabled   is_multisite:0
+[2024-12-07 23:46:17][notice]Prepare to backup backup_plugin files.
+[2024-12-07 23:46:34][notice]Compressing zip file:pachchaelai.local_wpvivid-2ad26663b6bdf_2024-12-07-23-28_backup_plugin.part001.zip index:16771
+[2024-12-07 23:49:47][notice]Start backing up.
+[2024-12-07 23:49:47][notice]server info fcgi:On max execution time: 180 wp version:6.7.1 php version:8.2.23 db version:8.0.16 php ini:safe_mode: memory_limit:256M memory_get_usage:92.71 MB memory_get_peak_usage:93.86 MB extensions:PDO enabled curl enabled zlib enabled   is_multisite:0
+[2024-12-07 23:49:47][notice]Prepare to backup backup_plugin files.
+[2024-12-07 23:50:04][notice]Compressing zip file:pachchaelai.local_wpvivid-2ad26663b6bdf_2024-12-07-23-28_backup_plugin.part001.zip index:16771
+[2024-12-07 23:53:08][notice]Start backing up.
+[2024-12-07 23:53:08][notice]server info fcgi:On max execution time: 180 wp version:6.7.1 php version:8.2.23 db version:8.0.16 php ini:safe_mode: memory_limit:256M memory_get_usage:92.71 MB memory_get_peak_usage:93.86 MB extensions:PDO enabled curl enabled zlib enabled   is_multisite:0
+[2024-12-07 23:53:08][notice]Prepare to backup backup_plugin files.
+[2024-12-07 23:53:25][notice]Compressing zip file:pachchaelai.local_wpvivid-2ad26663b6bdf_2024-12-07-23-28_backup_plugin.part001.zip index:16771
+[2024-12-07 23:56:19][error]Backup the file ends with an error Too many resumption attempts.
