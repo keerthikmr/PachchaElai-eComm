@@ -1,8 +1,31 @@
 const encodedCredentials = btoa("chicken" + ":" + "pleasant"); // change to nonce in prod
 const apiSuffix = "https://sturdy-lake.localsite.io/wp-json/custom/v1/";
 
-function set_done(mobile_number) {
-  console.log("Marking as done for mobile number:", mobile_number);
+function setDone(mobileNumber) {
+  const apiUrl = apiSuffix + "mark-done/";
+
+  fetch(apiUrl, {
+    method: "POST",
+    headers: {
+      Authorization: "Basic " + encodedCredentials,
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      mobile_number: mobileNumber,
+    }),
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      if (data.success) {
+        removeCustomer(mobileNumber);
+        console.log("Lead marked as done");
+      } else {
+        console.error("Error: " + data.message);
+      }
+    })
+    .catch((error) => {
+      console.error("Error making the request:", error);
+    });
 }
 
 function setNoInterestFlag(button, mobileNumber) {
@@ -204,6 +227,25 @@ function populateTable(leads) {
     ];
 
     table.row.add(rowData);
+  });
+
+  table.draw();
+}
+
+function removeCustomer(mobileNumber) {
+  const tableElement = document.querySelector("#leadsTable");
+  const table = new DataTable(tableElement);
+
+  table.rows().every(function () {
+    const rowData = this.data();
+    console.log(rowData);
+    if (!rowData) {
+      console.error("Row data is undefined");
+      return;
+    }
+    if (rowData[0] == mobileNumber) {
+      this.remove();
+    }
   });
 
   table.draw();
