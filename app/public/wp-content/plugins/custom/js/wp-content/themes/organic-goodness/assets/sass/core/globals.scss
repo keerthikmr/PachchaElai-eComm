@@ -1,0 +1,62 @@
+@mixin imageHover() {
+    transform: translateZ(0);
+    transition: $global--transition;
+
+    &:hover {
+        opacity: .9;
+    }
+}
+
+@mixin globalLinkUnderline( $color, $hover_color ) {
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: $color;
+    text-underline-position: under;
+    text-decoration-thickness: 1px;
+
+    &:hover, &:focus, &:active {
+        text-decoration-color: $hover_color;
+    }
+}
+
+@mixin secondaryButton( $color ) {
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+    color: $color;
+
+    &:hover, &:focus {
+        box-shadow: none;
+        opacity: .75;
+    }
+}
+
+.no-list-style {
+    list-style: none;
+}
+
+.svg-icon {
+    display: inline-block;
+    margin-right: $size__element-small-spacing;
+    position: relative;
+    vertical-align: middle;
+    transition: $global--transition;
+}
+
+.relative {
+    @include generateResponsive() {
+        position: relative;
+    }
+}
+
+.absolute {
+    @include generateResponsive() {
+        position: absolute;
+    }
+}
+
+.fixed {
+    @include generateResponsive() {
+        position: fixed;
+    }
+}

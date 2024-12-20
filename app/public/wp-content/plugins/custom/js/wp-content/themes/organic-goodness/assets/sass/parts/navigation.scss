@@ -1,0 +1,116 @@
+.post-navigation {
+    display: block;
+    padding-top: $size__site-gutter-tablet;
+
+    @include media(medium, up) {
+        white-space: nowrap;
+    }
+
+    @include media(large, up) {
+        grid-gap: $size__site-gutter-desktop;
+        padding-top: $size__site-gutter-desktop;
+    }
+
+    .navigation-single {
+        display: inline-block;
+        word-break: break-word;
+        max-width: 50%;
+        width: 50%;
+        white-space: normal;
+        vertical-align: middle;
+
+        @include media(medium, down) {
+            max-width: 100%;
+            width: 100%;
+        }
+
+        &:first-child {
+
+            @include media(medium, up) {
+                padding-right: calc( #{$size__site-gutter-mobile} / 2 );
+            }
+
+            @include media(large, up) {
+                padding-right: $size__site-gutter-mobile;
+            }
+
+            @include media(xlarge, up) {
+                padding-right: $size__site-gutter-tablet;
+            }
+        }
+
+        &:last-child:not(:only-child) {
+            margin-top: $size__site-gutter-tablet;
+
+            @include media(medium, up) {
+                margin-top: 0;
+                padding-left: calc( #{$size__site-gutter-mobile} / 2 );
+            }
+
+            @include media(large, up) {
+                padding-left: $size__site-gutter-mobile;
+            }
+
+            @include media(xlarge, up) {
+                padding-left: $size__site-gutter-tablet;
+            }
+        }
+
+        .nav-post-info {
+            background-color: $global--body-color-2;
+            border-radius: $global--border-radius;
+            padding: $size__site-gutter-mobile;
+
+            @include media(medium, up) {
+                padding: $size__site-gutter-tablet;
+            }
+
+            @include media(xlarge, up) {
+                padding: $size__site-gutter-desktop;
+            }
+
+            .meta-size {
+                display: block;
+                margin-bottom: $size__site-gutter-tablet;
+
+                @include media(medium, down) {
+                    margin-bottom: $size__site-gutter-mobile;
+                }
+            }
+
+            img {
+                display: block;
+                margin-right: auto;
+                margin-left: auto;
+                margin-bottom: $size__site-gutter-tablet;
+
+                @include media(medium, down) {
+                    margin-bottom: $size__site-gutter-mobile;
+                }
+            }
+
+            h3 {
+                margin-top: 0;
+                transition: $global--transition;
+
+                @include globalLinkUnderline( transparent, $global--body-color-1 );
+
+                @include media(medium, down) {
+                    line-height: $global--line-height-body;
+                }
+
+                @include media(medium, only) {
+                    font-size: $global--font-size-h4;
+                }
+            }
+
+            p {
+                margin-bottom: 0;
+
+                @include media(medium, down) {
+                    display: none;
+                }
+            }
+        }
+    }
+}

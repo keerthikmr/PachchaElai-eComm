@@ -1,0 +1,321 @@
+#secondary-menu-list {
+    display: inline-block;
+    margin: 0 $size__element-spacing 0 0;
+
+    @include media(large, down) {
+        display: none;
+    }
+}
+
+ul#menu-site-tools {
+    display: inline-block;
+    margin: 0 $size__element-xsmall-spacing 0 0;
+    padding: 0;
+    position: relative;
+
+    > li {
+        margin-top: -3px;
+        padding: 0 $size__element-spacing 0 0;
+        vertical-align: middle;
+
+        @include media(medium, down) {
+            padding: 0 $size__element-small-spacing 0 0;
+        }
+
+        &:last-child {
+            padding-right: 0;
+        }
+
+        .menu-icon {
+            &:before {
+                top: 0;
+            }
+
+            &:focus, &:hover {
+                box-shadow: 0px 0px 20px 5px rgba(0,0,0,0);
+            }
+
+            &:focus-visible {
+                color: $global--body-color-3;
+                outline: 0;
+            }
+        }
+
+        &#search-site-tool {
+            display: inline-block;
+
+            @include media(medium, up) {
+                position: relative;
+            }
+
+            .menu-icon {
+                background-color: transparent;
+                cursor: pointer;
+                display: block;
+                position: relative;
+                margin: 0;
+                padding: 0;
+                height: $size__icon-default;
+                width: $size__icon-default;
+
+                @include beforeIcon( $icon__search, $size__icon-default, $size__icon-default, $global--body-color-2 );
+
+                &:before {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    transition: $global--transition;
+
+                    @include media(large, up) {
+                        top: 2px;
+                        left: 2px;
+                    }
+                }
+
+                &:hover, &:focus-visible {
+                    @include beforeIcon( $icon__search, $size__icon-default, $size__icon-default, $global--body-color-3 );
+                }
+            }
+
+            &.open {
+                .menu-icon {
+                    @include beforeIcon( $icon__close, $size__icon-default, $size__icon-default, $global--body-color-2 );
+
+                    &:hover, &:focus-visible {
+                        @include beforeIcon( $icon__close, $size__icon-default, $size__icon-default, $global--body-color-3 );
+                    }
+                }
+            }
+
+            .search-wrapper {
+                background-color: $global--body-color-2;
+                border-radius: $global--border-radius;
+                color: $global--body-color-1;
+                box-shadow: none;
+                box-sizing: border-box;
+                list-style: none;
+                left: auto;
+                margin: 0;
+                min-width: 400px;
+                opacity: 0;
+                overflow: hidden;
+                padding: 0;
+                pointer-events: none;
+                position: absolute;
+                right: 0;
+                visibility: hidden;
+                top: calc( 100% + #{$size__element-spacing} );
+                text-align: left;
+                width: 100%;
+                z-index: 1000;
+                transition: $global--transition;
+
+                @include media(medium, down) {
+                    min-width: calc( 100vw - 2*#{$size__site-gutter-mobile} );
+                    right: -2.5px;
+                    top: calc( 100% + #{$size__site-gutter-mobile} );
+                }
+
+                &.open {
+                    box-shadow: -2px 2px 81px -27px rgba(0,0,0,0.29);
+                    opacity: 1;
+                    max-height: calc( 100vh - 100px );
+                    pointer-events: auto;
+                    visibility: visible;
+                }
+
+                form {
+                    box-sizing: border-box;
+                    position: relative;
+                    text-align: center;
+            		transition: $global--transition;
+
+                    label {
+                        display: inline-block;
+                        margin-bottom: 0;
+                        width: calc( 100% - 65px );
+
+                        input[type="search"] {
+                            width: 100%;
+                        }
+                    }
+
+                    input[type="search"] {
+                        background-color: transparent;
+                        border-radius: 0;
+                        border: 0;
+                        color: $global--body-color-1;
+                        display: inline-block;
+                        line-height: $global--line-height-body;
+                        outline: 0;
+                        width: calc( 100% - #{$size__icon-default-medium} - 2*#{$size__element-small-spacing} );
+
+                        &::placeholder {
+                            color: $global--body-color-1-medium;
+                        }
+                    }
+
+                    button[type="submit"],
+                    input[type="submit"] {
+                        box-sizing: content-box;
+                        background-color: transparent;
+                        cursor: pointer;
+                        display: inline-block;
+                        font-size: 0;
+                        padding: 0;
+                        margin: 0 $size__element-small-spacing 0 0;
+                        height: $size__icon-default-medium;
+                        width: $size__icon-default-medium;
+                        vertical-align: middle;
+                        z-index: 1;
+
+                        &:hover, &:focus {
+                            box-shadow: none;
+                        }
+                    }
+
+                    @include beforeIcon( $icon__search, $size__icon-default, $size__icon-default, $global--body-color-1 );
+
+                    &:before {
+                        position: absolute;
+                        left: auto;
+                        right: $size__element-spacing;
+                        top: calc( #{$size__element-spacing} - 4px );
+                        z-index: -1;
+                    }
+                }
+            }
+        }
+
+        &#my-account-site-tool {
+            display: inline-block;
+
+            .menu-icon {
+                display: block;
+                position: relative;
+                height: $size__icon-default;
+                width: $size__icon-default;
+
+                a {
+                    display: block;
+                    height: 100%;
+                    position: absolute;
+                    width: 100%;
+                }
+
+                @include beforeIcon( $icon__account, $size__icon-default, $size__icon-default, $global--body-color-2 );
+
+                &:hover, &:focus-visible {
+                    @include beforeIcon( $icon__account, $size__icon-default, $size__icon-default, $global--body-color-3 );
+                }
+
+                &:before {
+                    position: absolute;
+                    top: 0;
+                    left: 2px;
+                    transition: $global--transition;
+                }
+
+                @include media(large, up) {
+                    &:before {
+                        top: 1px;
+                    }
+                }
+            }
+        }
+
+        &#shopping-bag-site-tool {
+            display: inline-block;
+            position: relative;
+            padding-right: 0;
+            z-index: 1001;
+
+            @include media(large, down) {
+                padding-right: 0;
+            }
+
+            &:after {
+                @include media(medium, up) {
+                    border-radius: 50%;
+                    background-color: $global--body-color-1;
+                    content: '';
+                    opacity: 0;
+                    height: $size__icon-default-large + $size__element-xsmall-spacing;
+                    left: -11px;
+                    position: absolute;
+                    top: -50%;
+                    visibility: hidden;
+                    width: $size__icon-default-large + $size__element-xsmall-spacing;
+                    z-index: 1001;
+                    transition: $global--transition;
+                }
+            }
+
+            &.open {
+                &:after {
+                    opacity: 1;
+                    visibility: visible;
+                    transition: none;
+                }
+            }
+
+            .menu-icon {
+                background-color: transparent;
+                cursor: pointer;
+                display: block;
+                margin: 0;
+                padding: 0;
+                position: relative;
+                height: $size__icon-default;
+                width: $size__icon-default;
+                z-index: 1002;
+
+                @include beforeIcon( $icon__shopping_bag, $size__icon-default, $size__icon-default, $global--body-color-2 );
+
+                &:before {
+                    position: absolute;
+                    left: 2px;
+                    transition: $global--transition;
+
+                    @include media(large, up) {
+                        top: 2px;
+                    }
+                }
+
+                &:hover, &:focus-visible  {
+                    @include beforeIcon( $icon__shopping_bag, $size__icon-default, $size__icon-default, $global--body-color-3 );
+
+                    .bag-product-count {
+                        @include beforeIcon( $icon__circle, $size__icon-default-small, $size__icon-default-small, $global--body-color-3 );
+
+                        span {
+                            color: $global--body-color-3;
+                        }
+                    }
+                }
+
+                .bag-product-count {
+                    align-items: center;
+                    background-color: $global--body-color-1;
+                    border-radius: 50%;
+                    color: $global--body-color-2;
+                    display: inline-flex;
+                    justify-content: center;
+                    position: absolute;
+                    bottom: -5px;
+                    right: -7px;
+                    left: auto;
+
+                    @include beforeIcon( $icon__circle, $size__icon-default-small, $size__icon-default-small, $global--body-color-2 );
+
+                    span {
+                        font-size: 10px;
+                        font-weight: bold;
+                        position: absolute;
+                        transition: $global--transition;
+                    }
+                }
+            }
+        }
+    }
+}

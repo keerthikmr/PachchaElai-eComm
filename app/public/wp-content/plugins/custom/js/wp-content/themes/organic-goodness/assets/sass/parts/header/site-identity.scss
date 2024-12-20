@@ -1,0 +1,45 @@
+.custom-logo-link {
+    display: block;
+    font-size: 0;
+
+    img {
+        border-radius: 0;
+        max-height: var(--global--mobile-logo-height);
+        width: auto;
+
+        @include media(large, up) {
+            max-height: var(--global--logo-height);
+        }
+    }
+}
+
+.site-logo.hidden-md-down {
+    .custom-logo-link img {
+        @include media(medium, up) {
+            max-height: var(--global--logo-height);
+        }
+    }
+}
+
+.site-title a {
+    color: $global--body-color-2;
+    display: block;
+    font-size: $global--font-size-h4;
+    font-weight: bold;
+    line-height: $global--line-height-heading;
+    margin: 0 auto $size__element-xsmall-spacing;
+    width: fit-content;
+    @include globalLinkUnderline( transparent, $global--body-color-2 );
+
+    @include media(medium, down) {
+        font-size: $global--font-size-base;
+    }
+
+    @include media(large, down) {
+        margin: 0 0 $size__element-xsmall-spacing 0;
+    }
+}
+
+.site-tagline {
+    font-size: smaller;
+}

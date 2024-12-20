@@ -1,0 +1,278 @@
+.entry-header {
+
+    &.singular-header {
+        .entry-header-inner {
+            @include media(medium, up) {
+                padding-left: $size__site-gutter-tablet;
+                padding-right: $size__site-gutter-tablet;
+            }
+
+            @include media(large, up) {
+                padding-left: $size__site-gutter-desktop;
+                padding-right: $size__site-gutter-desktop;
+            }
+        }
+    }
+
+    &.main-header {
+        margin-bottom: $size__site-gutter-tablet;
+
+        .home & {
+            @include media(xlarge, up) {
+                margin-bottom: 0;
+            }
+        }
+
+        @include media(medium, down) {
+            margin-top: $size__site-gutter-mobile;
+
+            .entry-header-featured-image {
+                margin-top: -#{$size__site-gutter-mobile};
+            }
+    	}
+
+        .entry-title {
+            margin-top: $size__site-gutter-tablet;
+        }
+    }
+
+    &.singular-header,
+    &.main-header {
+
+        @include media(medium, up) {
+            margin-bottom: $size__site-gutter-tablet;
+    	}
+
+        @include media(xlarge, up) {
+            margin-bottom: $size__site-gutter-desktop;
+    	}
+    }
+
+    &.not-found.main-header {
+        .archive-subtitle,
+        .search-form-wrapper {
+            max-width: $size__content-width;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .search-form-wrapper {
+            form {
+                display: flex;
+                flex-direction: row;
+
+                label,
+                .search-submit {
+                    margin: 0;
+                }
+
+                label {
+                    flex-grow: 1;
+                    margin-right: $size__element-spacing;
+                }
+
+                .search-submit {
+                    cursor: pointer;
+                }
+
+                @include media(medium, down) {
+                    flex-direction: column;
+
+                    label {
+                        margin-right: 0;
+                        margin-bottom: $size__element-spacing;
+                    }
+                }
+            }
+        }
+    }
+
+    .entry-header-featured-image {
+        max-width: $size__content-width;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    h1.archive-title {
+        margin-top: $size__site-gutter-tablet;
+        margin-bottom: 0;
+
+        @include media(large, up) {
+            margin-bottom: $size__site-gutter-tablet;
+        }
+    }
+
+    .archive-subtitle {
+        margin-top: $size__site-gutter-tablet;
+
+        p {
+            margin: 0;
+        }
+    }
+
+    ul.categories-list {
+        margin-bottom: 0;
+        margin-top: $size__site-gutter-tablet;
+    }
+
+    figure.featured-media {
+        font-size: 0;
+
+        .page & {
+            @include alignMarginBottom();
+        }
+
+        a, img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .site-logo {
+        left: 0;
+        right: auto;
+        max-height: $size__icon-default-large;
+        max-width: $size__icon-default-large;
+        position: absolute;
+        top: $size__element-xsmall-spacing;
+        width: auto;
+
+        @include media(large, down) {
+            display: none;
+        }
+    }
+
+    .post-meta {
+
+        li {
+            display: inline-block;
+            line-height: 1;
+            padding: 0;
+
+            + li {
+                &:before {
+                    content: '—';
+                }
+            }
+        }
+
+        .post-featured {
+            display: inline-block;
+
+            + li {
+                display: inline-block;
+
+                &:before {
+                    content: none;
+                }
+            }
+
+            .meta-icon {
+                @include icon( $icon__star_full, $size__icon-default-smaller, $size__icon-default-smaller );
+
+        		background-color: $global--body-color-2;
+        		display: inline-block;
+                margin-right: $size__element-xsmall-spacing;
+                position: relative;
+                top: 2px;
+            }
+
+            .svg-icon {
+                fill: $global--body-color-2;
+                height: $size__icon-default-smaller;
+                width: $size__icon-default-smaller;
+                margin-right: 0;
+            }
+        }
+
+        .post-categories {
+            a {
+                color: $global--body-color-2;
+            }
+        }
+    }
+
+    .post-meta-page-top {
+        .post-comment-link {
+
+            @include media(medium, up) {
+                right: $size__site-gutter-tablet;
+            }
+
+            @include media(xlarge, up) {
+                right: $size__site-gutter-desktop;
+            }
+        }
+    }
+
+    .post-meta-single-bottom {
+        margin-top: $size__site-gutter-mobile;
+
+        @include media(medium, up) {
+            margin-top: $size__site-gutter-tablet;
+    	}
+    }
+
+    .entry-title {
+        margin-bottom: $size__element-spacing;
+
+        a {
+            line-height: $global--line-height-heading;
+            @include globalLinkUnderline( transparent, $global--body-color-2 );
+
+            @include media(medium, down) {
+                line-height: $global--line-height-heading;
+            }
+        }
+    }
+
+    .excerpt {
+        margin-top: calc( #{$size__element-spacing} + #{$size__element-small-spacing} );
+    }
+}
+
+.entry-header,
+.woocommerce-product-loop-header,
+.woocommerce-MyAccount-navigation {
+    ul, ul.categories-list {
+        padding-left: 0;
+
+        li {
+            display: inline-block;
+            line-height: 1;
+            overflow: visible;
+            padding-right: calc( #{$size__element-spacing} / 2 );
+            padding-left: calc( #{$size__element-spacing} / 2 );
+
+            @include media(medium, down) {
+                padding-bottom: $size__element-xsmall-spacing;
+            }
+
+            &:first-child {
+                @include media(medium, up) {
+                    padding-left: 0;
+                }
+            }
+
+            &.current-cat {
+                a {
+                    background-size: 100%;
+                }
+            }
+
+            &.cat-item-0 {
+                .blog & {
+                    a {
+                        background-size: 100%;
+                    }
+                }
+            }
+
+            a {
+                color: $global--body-color-2;
+                @include globalLinkUnderline( transparent, $global--body-color-2 );
+            }
+        }
+    }
+}

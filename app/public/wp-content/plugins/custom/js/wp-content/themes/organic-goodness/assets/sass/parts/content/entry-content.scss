@@ -1,0 +1,46 @@
+.entry-content {
+    > * {
+        @include alignCenter();
+
+        &.alignwide {
+            @include alignWide();
+        }
+
+        &.alignfull {
+            @include alignFull();
+        }
+    }
+
+    a.wp-block-button__link {
+        text-decoration: none;
+
+        &:hover, &:focus, &:active {
+            text-decoration: none;
+        }
+    }
+
+    .post-tags {
+        padding-top: $size__site-gutter-tablet;
+        text-align: center;
+
+        .meta-icon {
+            @include beforeIcon( $icon__tag, $size__icon-default-small, $size__icon-default-small, $global--body-color-2 );
+
+            &:before {
+                display: inline-block;
+                margin-right: $size__element-xsmall-spacing;
+            }
+        }
+
+        a {
+            color: $global--body-color-2;
+            text-decoration-line: underline;
+            text-decoration-style: solid;
+            text-decoration-color: transparent;
+        }
+    }
+}
+
+.attachment .entry-attachment {
+    text-align: center;
+}

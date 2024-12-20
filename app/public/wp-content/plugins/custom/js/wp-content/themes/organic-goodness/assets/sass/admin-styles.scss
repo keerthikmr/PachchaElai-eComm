@@ -1,0 +1,22 @@
+@import 'variables';
+@import 'core/media';
+@import 'core/spacings';
+
+// block editor
+.edit-post-visual-editor .editor-styles-wrapper {
+    font-family: var(--global--font-primary);
+    letter-spacing: $global--letter-spacing;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html.interface-interface-skeleton__html-container,
+div.editor-styles-wrapper,
+.block-editor-block-list__layout.is-root-container {
+    font-family: $global--base-font-family;
+	font-size: $global--font-size-base;
+}
+
+.post-type-post .editor-styles-wrapper .editor-post-title .editor-post-title__input {
+    font-size: $global--font-size-post-title;
+}

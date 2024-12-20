@@ -1,0 +1,55 @@
+.woocommerce-login-form-wrapper {
+    @include media(large, up) {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: $size__wide-width;
+    }
+
+    > h2,
+    > .woocommerce-form {
+        @include alignCenter();
+    }
+
+    .col2-set {
+        .col-1,
+        .col-2 {
+            @include media(medium, up) {
+                width: 46%;
+            }
+        }
+
+        .col-1 {
+            @include media(medium, up) {
+                float: left;
+            }
+        }
+
+        .col-2 {
+            @include media(medium, down) {
+                margin-top: $size__site-gutter-desktop;
+            }
+
+            @include media(medium, up) {
+                float: right;
+            }
+        }
+    }
+}
+
+form.login,
+form.register {
+    border: 0;
+    margin: 0;
+    padding: 0;
+
+    .woocommerce-form-login__rememberme {
+        display: block;
+    }
+}
+
+form.lost_reset_password {
+    p.woocommerce-form-row {
+        float: none;
+        width: 100%;
+    }
+}

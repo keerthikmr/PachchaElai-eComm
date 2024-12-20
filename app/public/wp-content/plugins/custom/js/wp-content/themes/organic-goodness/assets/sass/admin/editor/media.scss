@@ -1,0 +1,122 @@
+.wp-block-gallery,
+.wp-block-gallery.has-nested-images {
+
+    &.caption-row {
+        .blocks-gallery-item {
+            figure {
+                flex-direction: column;
+
+                figcaption {
+                    position: relative;
+                }
+            }
+        }
+    }
+
+    &.alignfull {
+        padding: 0 $size__element-spacing;
+    }
+
+    .blocks-gallery-item,
+    figure.wp-block-image {
+        padding: 0;
+
+        figcaption {
+            background: none;
+            color: $global--body-color-2;
+            font-size: small;
+            line-height: 1.4;
+            padding: $size__element-small-spacing;
+            text-align: center;
+
+            a {
+                color: $global--body-color-1;
+                @include globalLinkUnderline( $global--body-color-1-medium, $global--body-color-1 );
+            }
+        }
+    }
+}
+
+.wp-block-image {
+    
+    &:not(.is-style-rounded) img {
+        border-radius: $global--border-radius-images;
+    }
+
+    figcaption {
+        margin-top: $size__element-spacing;
+    }
+
+    &.aligncenter {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.wp-block-image.alignfull {
+    img {
+        border-radius: 0;
+    }
+
+    figcaption {
+        padding-right: $size__element-spacing;
+        padding-left: $size__element-spacing;
+    }
+}
+
+.wp-block-media-text {
+    .wp-block-media-text__content {
+        margin: 0;
+    }
+}
+
+.wp-block-media-text.alignfull {
+    .wp-block-media-text__media {
+        img {
+            border-radius: 0 $global--border-radius-images $global--border-radius-images 0;
+        }
+    }
+
+    &.has-media-on-the-right {
+        img {
+            border-radius: $global--border-radius-images 0 0 $global--border-radius-images;
+        }
+    }
+}
+
+.wp-block-cover {
+    border-radius: $global--border-radius-images;
+    padding: $size__site-gutter-mobile;
+
+    @include media(large, up) {
+        padding: $size__site-gutter-tablet;
+    }
+
+    &:before,
+    .has-background-dim,
+    .has-background-dim:before,
+    img {
+        border-radius: $global--border-radius-images;
+    }
+
+    .wp-block-cover__inner-container {
+        > *:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.wp-block-cover.alignfull {
+    border-radius: 0;
+
+    @include media(large, up) {
+        padding: $size__site-gutter-desktop;
+    }
+
+    &:before,
+    .has-background-dim,
+    .has-background-dim:before,
+    img {
+        border-radius: 0;
+    }
+}

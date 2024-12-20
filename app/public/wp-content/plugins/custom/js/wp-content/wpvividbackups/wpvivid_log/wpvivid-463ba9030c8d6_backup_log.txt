@@ -1,0 +1,147 @@
+Log created: 2024-12-12 19:52:33
+Type: backup
+[2024-12-12 19:52:34][notice]Start backing up.
+[2024-12-12 19:52:34][notice]server info fcgi:Off max execution time: 300 wp version:6.7.1 php version:8.2.26 db version:10.11.10 php ini:safe_mode: memory_limit:512M memory_get_usage:29.41 MB memory_get_peak_usage:31.49 MB extensions:PDO enabled curl enabled zlib enabled   is_multisite:0
+[2024-12-12 19:52:34][notice]Prepare to backup backup_db files.
+[2024-12-12 19:52:34][notice]Start exporting database.
+[2024-12-12 19:52:34][notice]Preparing to dump table wp_mailpoet_automation_triggers
+[2024-12-12 19:52:34][notice]Preparing to dump table wp_mailpoet_automations
+[2024-12-12 19:52:34][notice]Preparing to dump table wp_mailpoet_forms
+[2024-12-12 19:52:34][notice]Preparing to dump table wp_mailpoet_log
+[2024-12-12 19:52:34][notice]Preparing to dump table wp_mailpoet_statistics_bounces
+[2024-12-12 19:52:34][notice]Preparing to dump table wp_wc_category_lookup
+[2024-12-12 19:52:34][notice]Preparing to dump table wp_wc_reserved_stock
+[2024-12-12 19:52:34][notice]Preparing to dump table wp_woocommerce_shipping_zone_methods
+[2024-12-12 19:52:34][notice]Preparing to dump table wp_woocommerce_shipping_zones
+[2024-12-12 19:52:34][notice]Preparing to dump table wp_actionscheduler_claims
+[2024-12-12 19:52:34][notice]Preparing to dump table wp_actionscheduler_groups
+[2024-12-12 19:52:34][notice]Preparing to dump table wp_links
+[2024-12-12 19:52:34][notice]Preparing to dump table wp_mailpoet_automation_versions
+[2024-12-12 19:52:34][notice]Preparing to dump table wp_mailpoet_custom_fields
+[2024-12-12 19:52:34][notice]Preparing to dump table wp_mailpoet_dynamic_segment_filters
+[2024-12-12 19:52:34][notice]Preparing to dump table wp_mailpoet_feature_flags
+[2024-12-12 19:52:34][notice]Preparing to dump table wp_mailpoet_migrations
+[2024-12-12 19:52:34][notice]Preparing to dump table wp_mailpoet_newsletter_option
+[2024-12-12 19:52:34][notice]Preparing to dump table wp_mailpoet_newsletter_option_fields
+[2024-12-12 19:52:34][notice]Preparing to dump table wp_mailpoet_newsletter_posts
+[2024-12-12 19:52:34][notice]Preparing to dump table wp_mailpoet_newsletter_segment
+[2024-12-12 19:52:34][notice]Preparing to dump table wp_mailpoet_scheduled_task_subscribers
+[2024-12-12 19:52:34][notice]Preparing to dump table wp_mailpoet_settings
+[2024-12-12 19:52:35][notice]Preparing to dump table wp_mailpoet_statistics_forms
+[2024-12-12 19:52:35][notice]Preparing to dump table wp_mailpoet_subscriber_custom_field
+[2024-12-12 19:52:35][notice]Preparing to dump table wp_mailpoet_subscriber_ips
+[2024-12-12 19:52:35][notice]Preparing to dump table wp_mailpoet_tags
+[2024-12-12 19:52:35][notice]Preparing to dump table wp_mailpoet_user_agents
+[2024-12-12 19:52:35][notice]Preparing to dump table wp_mailpoet_user_flags
+[2024-12-12 19:52:35][notice]Preparing to dump table wp_term_relationships
+[2024-12-12 19:52:35][notice]Preparing to dump table wp_wc_product_attributes_lookup
+[2024-12-12 19:52:35][notice]Preparing to dump table wp_wc_product_download_directories
+[2024-12-12 19:52:35][notice]Preparing to dump table wp_wc_rate_limits
+[2024-12-12 19:52:35][notice]Preparing to dump table wp_wc_tax_rate_classes
+[2024-12-12 19:52:35][notice]Preparing to dump table wp_wc_webhooks
+[2024-12-12 19:52:35][notice]Preparing to dump table wp_woocommerce_attribute_taxonomies
+[2024-12-12 19:52:35][notice]Preparing to dump table wp_woocommerce_log
+[2024-12-12 19:52:35][notice]Preparing to dump table wp_woocommerce_order_items
+[2024-12-12 19:52:35][notice]Preparing to dump table wp_woocommerce_payment_tokens
+[2024-12-12 19:52:35][notice]Preparing to dump table wp_woocommerce_prl_frequencies
+[2024-12-12 19:52:35][notice]Preparing to dump table wp_woocommerce_prl_generator_queue
+[2024-12-12 19:52:35][notice]Preparing to dump table wp_commentmeta
+[2024-12-12 19:52:35][notice]Preparing to dump table wp_mailpoet_automation_run_subjects
+[2024-12-12 19:52:35][notice]Preparing to dump table wp_mailpoet_scheduled_tasks
+[2024-12-12 19:52:35][notice]Preparing to dump table wp_mailpoet_segments
+[2024-12-12 19:52:35][notice]Preparing to dump table wp_mailpoet_sending_queues
+[2024-12-12 19:52:35][notice]Preparing to dump table wp_mailpoet_statistics_newsletters
+[2024-12-12 19:52:35][notice]Preparing to dump table wp_mailpoet_stats_notifications
+[2024-12-12 19:52:35][notice]Preparing to dump table wp_mailpoet_subscriber_segment
+[2024-12-12 19:52:35][notice]Preparing to dump table wp_mailpoet_subscriber_tag
+[2024-12-12 19:52:35][notice]Preparing to dump table wp_term_taxonomy
+[2024-12-12 19:52:35][notice]Preparing to dump table wp_termmeta
+[2024-12-12 19:52:35][notice]Preparing to dump table wp_terms
+[2024-12-12 19:52:35][notice]Preparing to dump table wp_usermeta
+[2024-12-12 19:52:35][notice]Preparing to dump table wp_wc_customer_lookup
+[2024-12-12 19:52:35][notice]Preparing to dump table wp_wc_download_log
+[2024-12-12 19:52:35][notice]Preparing to dump table wp_wc_order_coupon_lookup
+[2024-12-12 19:52:35][notice]Preparing to dump table wp_wc_order_operational_data
+[2024-12-12 19:52:35][notice]Preparing to dump table wp_wc_order_tax_lookup
+[2024-12-12 19:52:35][notice]Preparing to dump table wp_wc_orders_meta
+[2024-12-12 19:52:35][notice]Preparing to dump table wp_woocommerce_api_keys
+[2024-12-12 19:52:35][notice]Preparing to dump table wp_woocommerce_gc_cardsmeta
+[2024-12-12 19:52:35][notice]Preparing to dump table wp_woocommerce_order_itemmeta
+[2024-12-12 19:52:35][notice]Preparing to dump table wp_woocommerce_payment_tokenmeta
+[2024-12-12 19:52:35][notice]Preparing to dump table wp_woocommerce_prl_deploymentmeta
+[2024-12-12 19:52:35][notice]Preparing to dump table wp_woocommerce_shipping_zone_locations
+[2024-12-12 19:52:35][notice]Preparing to dump table wp_woocommerce_tax_rate_locations
+[2024-12-12 19:52:35][notice]Preparing to dump table wp_mailpoet_newsletter_links
+[2024-12-12 19:52:35][notice]Preparing to dump table wp_mailpoet_newsletters
+[2024-12-12 19:52:35][notice]Preparing to dump table wp_mailpoet_statistics_clicks
+[2024-12-12 19:52:35][notice]Preparing to dump table wp_mailpoet_statistics_unsubscribes
+[2024-12-12 19:52:35][notice]Preparing to dump table wp_users
+[2024-12-12 19:52:36][notice]Preparing to dump table wp_wc_admin_note_actions
+[2024-12-12 19:52:36][notice]Preparing to dump table wp_wc_admin_notes
+[2024-12-12 19:52:36][notice]Preparing to dump table wp_wc_order_stats
+[2024-12-12 19:52:36][notice]Preparing to dump table wp_woocommerce_prl_amplifier_cache
+[2024-12-12 19:52:36][notice]Preparing to dump table wp_woocommerce_prl_tracking_conversions
+[2024-12-12 19:52:36][notice]Preparing to dump table wp_jetpack_sync_queue
+[2024-12-12 19:52:36][notice]Preparing to dump table wp_mailpoet_automation_run_logs
+[2024-12-12 19:52:36][notice]Preparing to dump table wp_postmeta
+[2024-12-12 19:52:36][notice]Preparing to dump table wp_wc_order_addresses
+[2024-12-12 19:52:36][notice]Preparing to dump table wp_wc_order_product_lookup
+[2024-12-12 19:52:36][notice]Preparing to dump table wp_woocommerce_downloadable_product_permissions
+[2024-12-12 19:52:36][notice]Preparing to dump table wp_woocommerce_gc_activity
+[2024-12-12 19:52:36][notice]Preparing to dump table wp_woocommerce_gc_cards
+[2024-12-12 19:52:36][notice]Preparing to dump table wp_woocommerce_prl_deployments
+[2024-12-12 19:52:36][notice]Preparing to dump table wp_woocommerce_tax_rates
+[2024-12-12 19:52:36][notice]Preparing to dump table wp_mailpoet_automation_runs
+[2024-12-12 19:52:36][notice]Preparing to dump table wp_mailpoet_statistics_opens
+[2024-12-12 19:52:36][notice]Preparing to dump table wp_mailpoet_statistics_woocommerce_purchases
+[2024-12-12 19:52:36][notice]Preparing to dump table wp_comments
+[2024-12-12 19:52:36][notice]Preparing to dump table wp_wc_orders
+[2024-12-12 19:52:36][notice]Preparing to dump table wp_wc_product_meta_lookup
+[2024-12-12 19:52:36][notice]Preparing to dump table wp_woocommerce_sessions
+[2024-12-12 19:52:36][notice]Preparing to dump table wp_posts
+[2024-12-12 19:52:36][notice]Preparing to dump table wp_mailpoet_subscribers
+[2024-12-12 19:52:36][notice]Preparing to dump table wp_options
+[2024-12-12 19:52:36][notice]Preparing to dump table wp_actionscheduler_logs
+[2024-12-12 19:52:36][notice]Preparing to dump table wp_mailpoet_newsletter_templates
+[2024-12-12 19:52:36][notice]Preparing to dump table wp_actionscheduler_actions
+[2024-12-12 19:52:37][notice]Exporting database finished.
+[2024-12-12 19:52:37][notice]Start compressing database
+[2024-12-12 19:52:37][notice]Prepare to zip file. file: ecom-technically-inspiring-widget.wpcomstaging.com_wpvivid-463ba9030c8d6_2024-12-12-19-52_backup_db.sql
+[2024-12-12 19:52:37][notice]Adding zip files completed.ecom-technically-inspiring-widget.wpcomstaging.com_wpvivid-463ba9030c8d6_2024-12-12-19-52_backup_db.part001.zip, filesize: 290.80 KB
+[2024-12-12 19:52:37][notice]Compressing database completed
+[2024-12-12 19:52:37][notice]Backing up backup_db completed.
+[2024-12-12 19:52:37][notice]Prepare to backup backup_themes files.
+[2024-12-12 19:52:37][notice]Compressing zip file:ecom-technically-inspiring-widget.wpcomstaging.com_wpvivid-463ba9030c8d6_2024-12-12-19-52_backup_themes.part001.zip index:159
+[2024-12-12 19:52:37][notice]Compressing zip file:ecom-technically-inspiring-widget.wpcomstaging.com_wpvivid-463ba9030c8d6_2024-12-12-19-52_backup_themes.part001.zip success. index:159 file size:2.94 MB
+[2024-12-12 19:52:37][notice]Backing up backup_themes completed.
+[2024-12-12 19:52:37][notice]Prepare to backup backup_plugin files.
+[2024-12-12 19:52:37][notice]Compressing zip file:ecom-technically-inspiring-widget.wpcomstaging.com_wpvivid-463ba9030c8d6_2024-12-12-19-52_backup_plugin.part001.zip index:5
+[2024-12-12 19:52:37][notice]Compressing zip file:ecom-technically-inspiring-widget.wpcomstaging.com_wpvivid-463ba9030c8d6_2024-12-12-19-52_backup_plugin.part001.zip success. index:5 file size:4.47 KB
+[2024-12-12 19:52:37][notice]Backing up backup_plugin completed.
+[2024-12-12 19:52:37][notice]Prepare to backup backup_uploads files.
+[2024-12-12 19:52:37][notice]Compressing zip file:ecom-technically-inspiring-widget.wpcomstaging.com_wpvivid-463ba9030c8d6_2024-12-12-19-52_backup_uploads.part001.zip index:19
+[2024-12-12 19:52:37][notice]Compressing zip file:ecom-technically-inspiring-widget.wpcomstaging.com_wpvivid-463ba9030c8d6_2024-12-12-19-52_backup_uploads.part001.zip success. index:19 file size:238.54 KB
+[2024-12-12 19:52:37][notice]Backing up backup_uploads completed.
+[2024-12-12 19:52:37][notice]Prepare to backup backup_content files.
+[2024-12-12 19:52:38][notice]Compressing zip file:ecom-technically-inspiring-widget.wpcomstaging.com_wpvivid-463ba9030c8d6_2024-12-12-19-52_backup_content.part001.zip index:2
+[2024-12-12 19:52:38][notice]Compressing zip file:ecom-technically-inspiring-widget.wpcomstaging.com_wpvivid-463ba9030c8d6_2024-12-12-19-52_backup_content.part001.zip success. index:2 file size:382.00 B
+[2024-12-12 19:52:38][notice]Backing up backup_content completed.
+[2024-12-12 19:52:38][notice]Prepare to backup backup_core files.
+[2024-12-12 19:52:38][notice]Compressing zip file:ecom-technically-inspiring-widget.wpcomstaging.com_wpvivid-463ba9030c8d6_2024-12-12-19-52_backup_core.part001.zip index:2793
+[2024-12-12 19:52:41][notice]Compressing zip file:ecom-technically-inspiring-widget.wpcomstaging.com_wpvivid-463ba9030c8d6_2024-12-12-19-52_backup_core.part001.zip success. index:2793 file size:14.34 MB
+[2024-12-12 19:52:41][notice]Backing up backup_core completed.
+[2024-12-12 19:52:41][notice]Prepare to backup backup_merge files.
+[2024-12-12 19:52:41][notice]Prepare to zip file. file: ecom-technically-inspiring-widget.wpcomstaging.com_wpvivid-463ba9030c8d6_2024-12-12-19-52_backup_db.zip
+[2024-12-12 19:52:41][notice]Adding zip files completed.ecom-technically-inspiring-widget.wpcomstaging.com_wpvivid-463ba9030c8d6_2024-12-12-19-52_backup_all.part001.zip, filesize: 254.15 KB
+[2024-12-12 19:52:41][notice]Prepare to zip file. file: ecom-technically-inspiring-widget.wpcomstaging.com_wpvivid-463ba9030c8d6_2024-12-12-19-52_backup_themes.zip
+[2024-12-12 19:52:42][notice]Adding zip files completed.ecom-technically-inspiring-widget.wpcomstaging.com_wpvivid-463ba9030c8d6_2024-12-12-19-52_backup_all.part001.zip, filesize: 3.17 MB
+[2024-12-12 19:52:42][notice]Prepare to zip file. file: ecom-technically-inspiring-widget.wpcomstaging.com_wpvivid-463ba9030c8d6_2024-12-12-19-52_backup_plugin.zip
+[2024-12-12 19:52:42][notice]Adding zip files completed.ecom-technically-inspiring-widget.wpcomstaging.com_wpvivid-463ba9030c8d6_2024-12-12-19-52_backup_all.part001.zip, filesize: 3.17 MB
+[2024-12-12 19:52:42][notice]Prepare to zip file. file: ecom-technically-inspiring-widget.wpcomstaging.com_wpvivid-463ba9030c8d6_2024-12-12-19-52_backup_uploads.zip
+[2024-12-12 19:52:42][notice]Adding zip files completed.ecom-technically-inspiring-widget.wpcomstaging.com_wpvivid-463ba9030c8d6_2024-12-12-19-52_backup_all.part001.zip, filesize: 3.40 MB
+[2024-12-12 19:52:42][notice]Prepare to zip file. file: ecom-technically-inspiring-widget.wpcomstaging.com_wpvivid-463ba9030c8d6_2024-12-12-19-52_backup_content.zip
+[2024-12-12 19:52:42][notice]Adding zip files completed.ecom-technically-inspiring-widget.wpcomstaging.com_wpvivid-463ba9030c8d6_2024-12-12-19-52_backup_all.part001.zip, filesize: 3.40 MB
+[2024-12-12 19:52:42][notice]Prepare to zip file. file: ecom-technically-inspiring-widget.wpcomstaging.com_wpvivid-463ba9030c8d6_2024-12-12-19-52_backup_core.zip
+[2024-12-12 19:52:42][notice]Adding zip files completed.ecom-technically-inspiring-widget.wpcomstaging.com_wpvivid-463ba9030c8d6_2024-12-12-19-52_backup_all.part001.zip, filesize: 17.33 MB
+[2024-12-12 19:52:42][notice]Backing up backup_merge completed.
+[2024-12-12 19:52:42][notice]Backup completed.

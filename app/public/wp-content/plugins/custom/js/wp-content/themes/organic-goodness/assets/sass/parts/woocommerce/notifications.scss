@@ -1,0 +1,128 @@
+.woocommerce-error,
+.woocommerce-info,
+.woocommerce-message,
+.woocommerce .woocommerce-error,
+.woocommerce .woocommerce-info,
+.woocommerce .woocommerce-message,
+div .wc-block-components-notice-banner {
+    border: 0 !important;
+    border-radius: $global--border-radius;
+    color: $global--body-color-1;
+    line-height: 1.35;
+    margin: 0 0 $size__site-gutter-tablet 0;
+    padding-top: calc( #{$size__global-input-padding-x} - 2px ) !important;
+    padding-bottom: calc( #{$size__global-input-padding-x} - 2px ) !important;
+    padding-left: 2*$size__global-input-padding-y !important;
+    padding-right: $size__global-input-padding-y !important;
+    position: relative;
+
+    > svg {
+        display: none;
+    }
+
+    >.wc-block-components-notice-banner__content a.wc-forward,
+    >.wc-block-components-notice-banner__content a.button.wc-forward,
+    a.button {
+        background-color: transparent;
+        border-radius: 0;
+        color: $global--body-color-1 !important;
+        opacity: 1 !important;
+        margin: 0 0 0 $size__element-small-spacing;
+        padding: 0;
+
+        @include media(large, up) {
+            top: 2px;
+        }
+
+        &:hover, &:focus {
+            box-shadow: 0px 0px 20px 5px rgba(0,0,0,0);
+            background-color: transparent;
+
+            @include globalLinkUnderline( $global--body-color-1-medium, $global--body-color-1 );
+        }
+
+        @include globalLinkUnderline( $global--body-color-1-medium, $global--body-color-1 );
+    }
+
+    a {
+        color: $global--body-color-1;
+        line-height: 1;
+
+        @include globalLinkUnderline( $global--body-color-1-medium, $global--body-color-1 );
+    }
+
+    a,
+    a.button,
+    .button {
+        @include media(medium, down) {
+            float: none;
+            margin: 0 $size__element-xsmall-spacing;
+        }
+    }
+
+    &:before {
+        position: absolute;
+        top: calc( #{$size__element-spacing} - 3px );
+        left: calc( #{$size__global-input-padding-y} - 3px );
+        right: auto;
+
+        @include media(medium, up) {
+            top: calc( #{$size__element-spacing} - 4px );
+            left: calc( #{$size__global-input-padding-y} - 4px );
+        }
+
+        @include media(large, up) {
+            top: calc( #{$size__element-spacing} - 2px );
+            left: calc( #{$size__global-input-padding-y} - 2px );
+            right: auto;
+        }
+    }
+}
+
+li.woocommerce-error,
+li.woocommerce-info,
+li.woocommerce-message {
+    &:last-child, &:only-child {
+        padding-bottom: $size__element-spacing;
+    }
+}
+
+.woocommerce-message,
+div .wc-block-components-notice-banner.is-success {
+    background-color: $global--body-color-4;
+
+    @include beforeIcon( $icon__checked-radio, $size__icon-default, $size__icon-default, $global--body-color-1 );
+}
+
+.woocommerce-error,
+div .wc-block-components-notice-banner.is-error {
+    background-color: $global--body-color-5;
+
+    @include beforeIcon( $icon__warning, $size__icon-default, $size__icon-default, $global--body-color-1 );
+}
+
+.woocommerce-info,
+div .wc-block-components-notice-banner.is-info,
+div .wc-block-components-notice-banner.is-warning {
+    background-color: $global--body-color-6;
+
+    @include beforeIcon( $icon__info, $size__icon-default, $size__icon-default, $global--body-color-1 );
+}
+
+.woocommerce-notices-wrapper {
+    .single-product & {
+        @include alignWider();
+    }
+}
+
+div .wc-block-components-notice-snackbar-list {
+    bottom: $size__element-spacing;
+    left: $size__element-spacing;
+    right: $size__element-spacing;
+
+    .wc-block-components-button {
+        svg {
+            fill: $global--body-color-1;
+        }
+    }
+}

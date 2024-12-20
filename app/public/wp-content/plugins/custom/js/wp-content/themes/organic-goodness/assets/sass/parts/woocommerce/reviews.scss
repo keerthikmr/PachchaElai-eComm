@@ -1,0 +1,122 @@
+#reviews.woocommerce-Reviews {
+    margin-top: $size__site-gutter-desktop;
+    position: relative;
+
+    .woocommerce-Reviews-title {
+        display: block;
+        font-size: $global--font-size-h5;
+        margin-top: 0;
+        margin-bottom: 2*$size__element-spacing;
+    }
+
+    p.comment-notes {
+        font-size: small;
+    }
+
+    #comments {
+        margin-bottom: $size__site-gutter-tablet;
+
+        ol.commentlist {
+            padding-left: 0;
+
+            li.review {
+                margin: 0;
+                padding-bottom: $size__site-gutter-mobile;
+
+                @include media(medium, up) {
+                    padding-bottom: $size__site-gutter-tablet;
+                }
+
+                &:last-child {
+                    padding-bottom: 0;
+                }
+
+                .comment_container {
+                    img.avatar {
+                        background-color: transparent;
+                        border: 0;
+                        border-radius: 50%;
+                        padding: 0;
+                        width: 45px;
+                    }
+
+                    .comment-text {
+                        border: 0;
+                        margin: 0 0 0 60px;
+                        padding: 0;
+                    }
+
+                    .star-rating {
+                        margin-top: calc( #{$size__element-small-spacing} + 2px );
+                    }
+
+                    p.meta {
+                        line-height: 1;
+                        margin-bottom: $size__element-spacing;
+                        margin-top: calc( #{$size__element-small-spacing} + 3px );
+
+                        .woocommerce-review__author {
+                            font-size: 1rem;
+                            font-weight: normal;
+                            color: $global--body-color-2;
+                            display: inline-block;
+                            vertical-align: middle;
+                        }
+
+                        .woocommerce-review__dash,
+                        .woocommerce-review__published-date {
+                            color: $global--body-color-2-medium;
+                            display: inline-block;
+                            font-size: small;
+                            padding-top: 2px;
+                            vertical-align: middle;
+                        }
+                    }
+                }
+            }
+        }
+
+        .woocommerce-pagination {
+            padding-left: 0;
+            padding-right: 0;
+
+            @include media(xlarge, up) {
+                padding-top: $size__site-gutter-tablet;
+                padding-bottom: $size__site-gutter-tablet;
+            }
+        }
+    }
+
+    #review_form_wrapper {
+        #review_form .comment-respond {
+            span.comment-reply-title {
+                display: block;
+                font-family: $global--headings-font-family;
+                font-size: $global--font-size-h2;
+                line-height: $global--line-height-heading;
+                margin-bottom: $size__element-spacing;
+            }
+
+            form.comment-form {
+
+                .form-submit input {
+                    margin: 0;
+                }
+
+                p {
+                    margin-bottom: $size__element-spacing;
+                    position: relative;
+                }
+
+                p.comment-form-comment {
+                    margin-bottom: $size__element-spacing;
+                    position: relative;
+
+                    textarea {
+                        height: $size__site-gutter-desktop-large;
+                    }
+                }
+            }
+        }
+    }
+}

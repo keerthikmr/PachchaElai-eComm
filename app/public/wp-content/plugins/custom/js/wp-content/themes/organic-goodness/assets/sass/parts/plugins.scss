@@ -1,0 +1,14 @@
+// wpml
+.wpml-ls-legacy-list-horizontal.wpml-ls-statics-footer {
+    background-color: $global--footer-background-color;
+    color: $global--footer-text-color;
+    margin: 0;
+    padding: 0 0 $size__site-gutter-tablet 0;
+
+    ul {
+        a {
+            background-color: $global--footer-background-color;
+            color: $global--footer-text-color;
+        }
+    }
+}

@@ -1,0 +1,121 @@
+@mixin alignCenter() {
+
+	@include media(large, down) {
+        margin-left: $size__site-gutter-mobile;
+        margin-right: $size__site-gutter-mobile;
+		max-width: calc( 100% - 2*#{$size__site-gutter-mobile} );
+    }
+
+	@include media(large, up) {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: $size__content-width;
+    }
+}
+
+@mixin alignWide() {
+
+	@include media(large, down) {
+		margin-left: $size__site-gutter-mobile;
+        margin-right: $size__site-gutter-mobile;
+		max-width: calc( 100% - 2*#{$size__site-gutter-mobile} );
+    }
+
+	@include media(large, up) {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: $size__wide-template-width;
+    }
+
+	@include media(xlarge, up) {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: $size__wide-width;
+    }
+}
+
+@mixin alignWider() {
+	margin-left: $size__site-gutter-mobile;
+	margin-right: $size__site-gutter-mobile;
+	max-width: calc( 100% - 2*#{$size__site-gutter-mobile} );
+
+	@include media(medium, up) {
+		margin-left: $size__site-gutter-tablet;
+        margin-right: $size__site-gutter-tablet;
+		max-width: calc( 100% - 2*#{$size__site-gutter-mobile} );
+    }
+
+	@include media(large, up) {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: $size__wide-template-width;
+		padding-right: 0;
+		padding-left: 0;
+    }
+}
+
+@mixin alignFull() {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 100%;
+}
+
+.align-content-width {
+	@include alignCenter();
+}
+
+.alignwide {
+	@include alignWide();
+}
+
+.alignfull {
+	@include alignFull();
+}
+
+.full-width {
+    @include generateResponsive() {
+        width: 100%;
+    }
+}
+
+.full-height {
+    @include generateResponsive() {
+        height: 100%;
+    }
+}
+
+.half-width {
+    @include generateResponsive() {
+        max-width: 50%;
+    }
+}
+
+.alignleft,
+[class*=wp-block-].alignleft {
+	display: inline;
+	float: left;
+	margin: $size__element-spacing $size__element-spacing $size__element-spacing 0;
+}
+
+.alignright,
+[class*=wp-block-].alignright {
+	display: inline;
+    float: right;
+	margin: $size__element-spacing 0 $size__element-spacing $size__element-spacing;
+}
+
+.aligncenter {
+	display: block;
+	float: none;
+	margin: 0 auto;
+}
+
+[class*="__inner-container"] > .alignfull {
+	max-width: 100%;
+}
+
+[class*="__inner-container"] > .alignwide {
+	margin-left: 0;
+	margin-right: 0;
+	width: 100%;
+}

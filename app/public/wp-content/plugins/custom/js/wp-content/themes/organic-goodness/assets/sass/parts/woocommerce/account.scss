@@ -1,0 +1,251 @@
+.woocommerce-account {
+
+    &.woocommerce-view-order {
+        .woocommerce-MyAccount-content {
+            > p {
+                text-align: center;
+                margin-bottom: $size__site-gutter-desktop;
+
+                + .woocommerce-order-details,
+                + .woocommerce-order-downloads {
+                    @include alignMarginTop();
+                }
+            }
+        }
+    }
+
+    &:not(.woocommerce-myaccount-dashboard):not(.woocommerce-lost-password) {
+        .entry-content {
+            > .woocommerce {
+                @include alignWide();
+            }
+        }
+    }
+
+    h1.entry-title {
+        margin-bottom: 0;
+
+        @include media(large, up) {
+            margin-bottom: $size__site-gutter-tablet;
+        }
+    }
+
+    .entry-title + .woocommerce-MyAccount-navigation {
+        margin-top: $size__site-gutter-tablet;
+    }
+
+    .woocommerce-MyAccount-navigation {
+        float: none;
+        margin-bottom: 0;
+        text-align: center;
+        width: 100%;
+
+        ul {
+            li.woocommerce-MyAccount-navigation-link {
+
+                a {
+                    padding: 0 0 $size__link-underline-padding 0;
+                }
+
+                &.is-active {
+                    a {
+                        background-size: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .woocommerce-MyAccount-content {
+        float: none;
+        width: 100%;
+
+        table.my_account_orders,
+        table.account-payment-methods-table {
+            @include media(large, down) {
+                tr {
+                    td {
+                        padding-left: 0;
+                        padding-right: 0;
+
+                        &.woocommerce-orders-table__cell-order-actions {
+                            .button {
+                                margin-top: 0;
+                            }
+                        }
+                    }
+
+                    &:nth-child(2n) {
+                        td {
+                            background-color: transparent;
+                        }
+                    }
+                }
+            }
+        }
+
+        > form > h3 {
+            margin-top: 0;
+        }
+
+        p.order-again .button {
+            margin: 0;
+        }
+
+        .addresses {
+            margin-top: $size__site-gutter-tablet;
+
+            .woocommerce-Address {
+                margin-bottom: $size__site-gutter-tablet;
+
+                .title .edit {
+                    display: inline-block;
+                    float: none;
+                    font-size: 1rem;
+                    line-height: $global--line-height-heading;
+                    margin-left: $size__element-spacing;
+                    top: -5px;
+                    position: relative;
+
+                    @include media(medium, up) {
+                        top: 3x;
+                    }
+
+                    @include media(large, up) {
+                        font-size: 1rem;
+                        top: 10px;
+                    }
+                }
+            }
+        }
+
+        form.edit-account,
+        .woocommerce-address-fields {
+            p.form-row {
+
+                label {
+                    .required {
+                        color: $global--body-color-2-medium;
+                    }
+                }
+
+                .input-checkbox {
+                    display: inline-block;
+                }
+
+                &.form-row-first,
+                &.form-row-last {
+                    width: 50%;
+
+                    @include media(xlarge, down) {
+                        width: 100%;
+                    }
+                }
+
+                &.form-row-first {
+                    @include media(xlarge, up) {
+                        padding-right: $size__element-spacing;
+                        padding-left: 0;
+                    }
+                }
+
+                &#billing_phone_field,
+                &#billing_phone_field + #billing_email_field {
+                    @include media(xlarge, up) {
+                        clear: right;
+                        float: left;
+                        width: 50%;
+                    }
+                }
+
+                &#billing_phone_field {
+                    @include media(xlarge, up) {
+                        float: left;
+                        padding-right: $size__element-spacing;
+                        padding-left: 0;
+                    }
+                }
+
+                &#billing_phone_field + #billing_email_field {
+                    @include media(xlarge, up) {
+                        float: right;
+                    }
+                }
+            }
+        }
+
+        form.edit-account {
+            fieldset {
+                border: 0;
+                padding: 0;
+                margin-top: $size__site-gutter-tablet;
+
+                legend {
+                    display: block;
+                    font-family: $global--headings-font-family;
+                    font-size: $global--font-size-h3;
+                    padding: 0;
+                    margin-bottom: $size__site-gutter-tablet;
+
+                }
+            }
+
+            em {
+                display: block;
+                font-size: small;
+                font-style: normal;
+                line-height: $global--line-height-body;
+                margin-top: $size__element-small-spacing;
+            }
+
+            .show-password-input {
+                right: $size__element-spacing;
+                top: $size__element-spacing;
+            }
+        }
+
+        .woocommerce-MyAccount-Giftcards-form {
+            margin-bottom: $size__site-gutter-desktop;
+
+            input {
+                width: auto;
+            }
+
+            .button {
+                flex-grow: 0;
+                margin: 0 0 0 $size__element-spacing;
+            }
+        }
+
+        .woocommerce-MyAccount-Giftcards-form {
+            @include media(medium, down) {
+                flex-direction: column;
+
+                .woocommerce-Button {
+                    margin-left: 0;
+                    margin-top: $size__element-spacing;
+                }
+            }
+        }
+    }
+
+    .order-again {
+        margin: $size__site-gutter-tablet 0;
+
+        .button {
+            @include media(medium, down) {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.woocommerce .woocommerce-customer-details,
+.woocommerce .woocommerce-order-details,
+.woocommerce .woocommerce-order-downloads {
+    margin-bottom: $size__site-gutter-tablet;
+
+    @include media(large, up) {
+        margin-bottom: $size__site-gutter-desktop;
+    }
+}

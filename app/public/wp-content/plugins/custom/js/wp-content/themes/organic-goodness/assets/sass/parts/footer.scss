@@ -1,0 +1,666 @@
+#site-footer {
+    background-image: var(--global--footer-background-image);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-color: $global--footer-background-color;
+    color: $global--footer-text-color;
+    position: relative;
+    padding-top: calc( #{$global--footer-spacing} / 2 );
+    padding-bottom: calc( #{$global--footer-spacing} / 2 );
+
+    @include media(large, up) {
+        padding-top: $global--footer-spacing;
+        padding-bottom: $global--footer-spacing;
+    }
+
+    a {
+        color: $global--footer-text-color;
+
+        @include globalLinkUnderline($global--footer-text-medium-color, $global--footer-text-color);
+    }
+
+    del {
+        color: $global--footer-text-dark-color;
+    }
+
+    mark {
+        color: $global--footer-text-color;
+    }
+
+    .count,
+    .tag-link-count {
+        color: $global--footer-text-medium-color;
+    }
+
+    .blockUI.blockOverlay {
+        background-color: $global--footer-background-color !important;
+
+        &:before {
+            border: solid 2px $global--footer-text-color;
+            border-right-color: $global--footer-text-light-color;
+            border-bottom-color: $global--footer-text-light-color;
+        }
+    }
+
+    .select2-container--default .select2-selection--single .select2-selection__placeholder {
+        color: $global--footer-text-medium-color;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="url"],
+    input[type="date"],
+    input[type="month"],
+    input[type="time"],
+    input[type="datetime"],
+    input[type="datetime-local"],
+    input[type="week"],
+    input[type="number"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="color"],
+    .wc-block-components-text-input input[type=email],
+    .wc-block-components-form .wc-block-components-text-input input[type=email],
+    .wc-block-components-text-input input[type=tel],
+    .wc-block-components-form .wc-block-components-text-input input[type=tel],
+    .wc-block-components-text-input input[type=text],
+    .wc-block-components-form .wc-block-components-text-input input[type=text],
+    .wc-block-components-text-input input[type=url],
+    .wc-block-components-form .wc-block-components-text-input input[type=url],
+    .wc-block-components-select .components-custom-select-control__button,
+    .wc-block-components-form .wc-block-components-select .components-custom-select-control__button,
+    textarea,
+    select,
+    .select2-container .select2-selection.select2-selection--single,
+    .select2-container .select2-selection.select2-selection--multiple,
+    .select2-container .select2-dropdown .select2-search__field,
+    .wc-block-components-textarea,
+    .wc-block-components-form .wc-block-components-textarea,
+    .is-multiple .wc-block-components-dropdown-selector__input,
+    .is-single .wc-block-components-dropdown-selector__input:first-child {
+        border: 2px solid $global--footer-text-medium-color;
+        color: $global--footer-text-color;
+        &::placeholder {
+            color: $global--footer-text-medium-color;
+        }
+        &:hover, &:focus, &:active {
+            border: 2px solid $global--footer-text-color;
+        }
+    }
+
+    button,
+    .button,
+    .faux-button,
+    .wp-block-file .wp-block-file__button,
+    input[type="button"],
+    input[type="reset"],
+    input[type="submit"],
+    .woocommerce #respond input#submit,
+    .woocommerce a.button,
+    .woocommerce button.button,
+    .woocommerce input.button,
+    .woocommerce #respond input#submit.alt,
+    .woocommerce a.button.alt,
+    .woocommerce button.button.alt,
+    .woocommerce input.button.alt,
+    .wc-block-product-categories__button,
+    .wp-block-search__button,
+    button.wc-block-components-button:not(.is-link) {
+        background-color: $global--footer-text-color;
+        color: $global--footer-background-color;
+
+        &:focus,
+        &:hover {
+            background-color: $global--footer-text-color;
+            color: $global--footer-background-color;
+        }
+
+        &.disabled,
+        &:disabled,
+        &:disabled[disabled] {
+            background-color: $global--footer-text-medium-color;
+            color: $global--footer-background-color;
+
+            &:hover, &:focus {
+                background-color: $global--footer-text-medium-color;
+                color: $global--footer-background-color;
+            }
+        }
+    }
+
+    input[type="radio"],
+    input[type="checkbox"],
+    .wc-block-components-checkbox .wc-block-components-checkbox__input[type=checkbox],
+    .wc-block-components-checkbox .wc-block-components-checkbox__input[type=radio],
+    .wc-block-components-radio-control .wc-block-components-radio-control__input {
+        border: 2px solid $global--footer-text-medium-color;
+
+        &:hover, &:focus {
+            border: 2px solid $global--footer-text-color;
+        }
+
+        &:checked {
+            border: 2px solid $global--footer-text-color;
+
+            &:before {
+                background: $global--footer-text-color;
+            }
+        }
+    }
+
+    .select2-container {
+        .select2-selection {
+            &.select2-selection--single {
+    			.select2-selection__clear {
+                    &:before {
+        				background-color: $global--footer-text-color;
+                    }
+    			}
+    		}
+            &.select2-selection--multiple,
+            &.select2-selection--single {
+                .select2-selection__rendered {
+                    color: $global--footer-text-color;
+                    .select2-selection__choice {
+                        background-color: $global--footer-text-color;
+                        color: $global--footer-background-color;
+                        .select2-selection__choice__remove {
+                            background-color: $global--footer-background-color;
+                            &:hover, &:focus {
+                                background-color: $global--footer-background-color;
+                            }
+                        }
+                    }
+                }
+                .select2-selection__arrow {
+                    &:before {
+                        background-color: $global--footer-text-color;
+                    }
+                }
+            }
+        }
+    }
+
+    input[type="radio"],
+    .wc-block-components-checkbox .wc-block-components-checkbox__input[type=radio] {
+        &:checked {
+            &:hover, &:focus {
+                background: $global--footer-text-xlight-color;
+            }
+        }
+    }
+
+    a.remove {
+        background-color: $global--footer-text-color;
+        color: $global--footer-text-color!important;
+
+        &:hover, &:focus {
+            background-color: $global--footer-text-color;
+        }
+    }
+
+    .widgets-area {
+        display: grid;
+        grid-gap: $size__site-gutter-tablet;
+        grid-template-columns: 1fr;
+        margin: 0;
+
+        @include media(medium, up) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @include media(large, up) {
+            grid-template-columns: repeat( calc( #{$global--footer-widget-columns} - 1 ), 1fr );
+            grid-gap: $size__site-gutter-desktop;
+        }
+
+        @include media(xlarge, up) {
+            grid-template-columns: repeat( $global--footer-widget-columns, 1fr );
+        }
+
+        @include alignWider();
+
+        .widget {
+
+            &:nth-child(6n+1),
+            &:nth-child(6n+6) {
+                @include media(medium, only) {
+                    grid-column: 1 / $global--footer-first-widget-columns;
+                }
+            }
+
+            &:nth-child(6n+1) {
+                @include media(large, up) {
+                    grid-column: 1 / $global--footer-first-widget-columns;
+                    padding-right: $size__site-gutter-desktop;
+                }
+
+                @include media(xlarge, up) {
+                    grid-column: 1 / calc( #{$global--footer-first-widget-columns} + 1 );
+                    padding-right: $size__site-gutter-desktop;
+                }
+            }
+
+            &:nth-child(6n+6) {
+                @include media(large, up) {
+                    grid-column: calc( 6 - #{$global--footer-first-widget-columns} ) / 6;
+                    padding-left: $size__site-gutter-desktop;
+                }
+            }
+
+            a {
+                @include globalLinkUnderline( transparent, $global--footer-text-color );
+            }
+
+            &.widget_text {
+                h1, h2, h3, h4, h5, h6 {
+                    margin-top: 0;
+                }
+            }
+
+            &.woocommerce.widget_shopping_cart {
+                p.woocommerce-mini-cart__empty-message {
+                    &:before {
+                        background-color: $global--footer-text-color;
+                    }
+                }
+
+                ul.cart_list {
+                    li.mini_cart_item {
+                        a.remove + a {
+                            color: $global--footer-text-color;
+                        }
+                        span.quantity {
+                            color: $global--footer-text-dark-color;
+                        }
+                    }
+                }
+
+                p.woocommerce-mini-cart__total {
+                    border-bottom: 1px solid $global--footer-text-light-color;
+                }
+
+                p.buttons {
+                    .button {
+                        &:not(.checkout) {
+                            color: $global--footer-text-color;
+                            @include globalLinkUnderline( transparent, $global--footer-text-color );
+                        }
+                    }
+                }
+
+                + .button.wc-forward {
+                    color: $global--footer-text-color;
+                    @include globalLinkUnderline( transparent, $global--footer-text-color );
+                }
+            }
+
+            &.widget_price_filter {
+                .price_slider_wrapper {
+                    .price_slider {
+                        background-color: $global--footer-text-light-color;
+
+                        .ui-slider-range {
+                            background-color: $global--footer-text-color;
+                        }
+
+                        .ui-slider-handle {
+                            background-color: $global--footer-background-color;
+                            border: 2px solid $global--footer-text-color;
+                        }
+                    }
+
+                    .price_slider_amount {
+                        .button {
+                            color: $global--footer-text-color;
+
+                            @include globalLinkUnderline( $global--footer-background-medium-color, $global--footer-text-color );
+                        }
+                        .price_label {
+                            color: $global--footer-text-medium-color;
+                        }
+                    }
+                }
+            }
+
+            ul.product_list_widget {
+                li {
+                    a {
+                        span {
+                            @include globalLinkUnderline( transparent, $global--footer-text-color );
+                        }
+                    }
+                    .amount {
+                        display: inline-block;
+                        color: $global--footer-text-dark-color;
+                    }
+                }
+            }
+
+            &.widget_layered_nav {
+                ul {
+                    li.woocommerce-widget-layered-nav-list__item {
+
+                        &:before {
+                            background-color: $global--footer-text-color;
+                        }
+
+                        &:hover, &:focus {
+                            &:before {
+                                background-color: $global--footer-text-color;
+                            }
+                        }
+
+                        &.chosen {
+                            &:before {
+                                background-color: $global--footer-text-color;
+                            }
+
+                            &:hover, &:focus {
+                                &:before {
+                                    background-color: $global--footer-text-color;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.widget_text {
+                a {
+                    @include globalLinkUnderline( $global--footer-background-medium-color, $global--footer-text-color );
+                }
+            }
+
+            &.widget_layered_nav_filters {
+                ul li {
+                    a {
+                        &:hover, &:focus, &:active {
+                            text-decoration-line: line-through;
+                            text-decoration-style: solid;
+                            text-decoration-color: $global--footer-text-color;
+                            text-decoration-thickness: 1px;
+                        }
+                    }
+                }
+            }
+
+            &.widget_categories {
+                li {
+                    color: $global--footer-text-medium-color;
+                }
+            }
+
+            &.widget_archive {
+                li {
+                    color: $global--footer-text-medium-color;
+                }
+            }
+
+            &.widget_rating_filter {
+                li.wc-layered-nav-rating {
+                    &:before {
+                        background-color: $global--footer-text-color;
+                    }
+                    &:hover, &:focus {
+                        &:before {
+                            background-color: $global--footer-text-color;
+                        }
+                    }
+                    a {
+                        color: $global--footer-text-medium-color;
+                        text-decoration: none;
+                    }
+                    &.chosen {
+                        &:before {
+                            background-color: $global--footer-text-color;
+                        }
+
+                        &:hover, &:focus {
+                            &:before {
+                                background-color: $global--footer-text-color;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.widget_search,
+            &.widget_product_search {
+                form {
+                    input[type="text"],
+                    .wp-block-search__input {
+                        border: 2px solid $global--footer-text-medium-color;
+
+                        &:hover, &:focus {
+                            border: 2px solid $global--footer-text-color;
+                        }
+                    }
+
+                    input[type="submit"],
+                    button[type="submit"] {
+                        color: $global--footer-text-color;
+                    }
+                    @include beforeIcon( $icon__search, $size__icon-default, $size__icon-default, $global--footer-text-color );
+                }
+            }
+
+            ul.product_list_widget {
+                color: $global--footer-text-color;
+
+                li {
+                    a span {
+                        @include globalLinkUnderline( transparent, $global--footer-text-color );
+                    }
+
+                    .amount {
+                        color: $global--footer-text-dark-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .widgets-area + .sub-footer {
+        margin-top: calc( #{$global--footer-spacing} / 2 );
+
+        @include media(large, up) {
+            margin-top: $global--footer-spacing;
+        }
+    }
+
+    .sub-footer {
+        @include alignWider();
+
+        .footer-text-note {
+            a {
+                @include globalLinkUnderline( $global--footer-text-medium-color, $global--footer-text-color );
+            }
+        }
+    }
+
+    .wp-block-woocommerce-active-filters {
+        ul.wc-block-active-filters__list {
+            li.wc-block-active-filters__list-item {
+                .wc-block-active-filters__list-item-name {
+                    .wc-block-active-filters__list-item-remove:before {
+                        background-color: $global--footer-text-color;
+                    }
+                }
+            }
+        }
+
+        .wc-block-active-filters__clear-all {
+            color: $global--footer-text-color !important;
+            > span {
+                @include globalLinkUnderline( $global--footer-text-medium-color, $global--footer-text-color );
+            }
+        }
+    }
+
+    .wp-block-woocommerce-price-filter {
+        .wc-block-price-slider {
+            .wc-block-price-filter__range-input-wrapper {
+                background-color: $global--footer-text-light-color;
+
+                .wc-block-price-filter__range-input-progress {
+                    background: linear-gradient(90deg,transparent var(--low), $global--footer-text-color 0, $global--footer-text-color var(--high),transparent 0) no-repeat 0 100%/100% 100%;
+                }
+
+                .wc-block-price-filter__range-input {
+                    &::-webkit-slider-thumb {
+                        background-color: $global--footer-background-color;
+                        border: 2px solid $global--footer-text-color;
+                    }
+                    &::-moz-range-thumb {
+                        background-color: $global--footer-background-color;
+                        border: 2px solid $global--footer-text-color;
+                    }
+                    &::-ms-thumb {
+                        background-color: $global--footer-background-color;
+                        border: 2px solid $global--footer-text-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .wp-block-woocommerce-attribute-filter {
+        ul.wc-block-checkbox-list {
+            li {
+                &:before {
+                    background-color: $global--footer-text-color;
+                }
+                &:hover:before {
+                    background-color: $global--footer-text-color;
+                }
+                label {
+                    @include globalLinkUnderline( transparent, $global--footer-text-color );
+                }
+                .wc-block-attribute-filter-list-count {
+                    color: $global--footer-text-medium-color;
+                }
+            }
+        }
+    }
+
+    .wc-block-components-chip,
+    .wc-block-active-filters .wc-block-active-filters__list--chips .wc-block-components-chip,
+    .wc-block-components-dropdown-selector .wc-block-components-dropdown-selector__selected-chip {
+        background: $global--footer-text-color;
+        color: $global--footer-background-color;
+
+        &:hover, &:active, &:focus {
+            background: $global--footer-text-color;
+            color: $global--footer-background-color;
+        }
+
+        .wc-block-components-chip__remove {
+            svg {
+                fill: $global--footer-background-color;
+            }
+        }
+    }
+
+    ul.wc-block-dropdown-selector__list {
+        border-color: $global--footer-text-light-color;
+        background-color: $global--footer-background-color;
+
+        li.wc-block-components-dropdown-selector__list-item {
+            color: $global--footer-text-color;
+
+            &.is-highlighted {
+                color: $global--footer-background-color;
+
+                &:hover, &:active, &:focus {
+                    color: $global--footer-background-color;
+                }
+            }
+
+            &.is-selected {
+                color: $global--footer-background-color;
+            }
+        }
+    }
+
+    .wp-block-calendar {
+        caption, th, tbody td {
+            color: $global--footer-text-color;
+        }
+    }
+
+    li.wc-block-product-categories-list-item {
+        a {
+            @include globalLinkUnderline( transparent, $global--footer-text-color );
+        }
+
+        .wc-block-product-categories-list-item-count {
+            color: $global--footer-text-medium-color;
+        }
+    }
+
+    .wc-block-grid {
+        li.wc-block-grid__product {
+            .wc-block-grid__product-title {
+                color: $global--footer-text-color;
+                @include globalLinkUnderline( transparent, $global--footer-text-color );
+            }
+
+            .wc-block-grid__product-price {
+                color: $global--footer-text-dark-color;
+            }
+
+            a.wp-block-button__link,
+            button.wp-block-button__link {
+                color: $global--footer-text-color;
+            }
+
+            a.wp-block-button__link {
+                @include globalLinkUnderline( $global--footer-text-medium-color, $global--footer-text-color );
+            }
+
+            button.wp-block-button__link {
+                @include globalLinkUnderline($global--footer-text-medium-color, $global--footer-text-color);
+            }
+
+            a.wp-block-button__link.loading,
+            button.wp-block-button__link.loading {
+                &:after {
+                    border:solid 1px $global--footer-text-color;
+                    border-right-color: $global--footer-text-light-color;
+                    border-bottom-color: $global--footer-text-light-color;
+                }
+            }
+        }
+    }
+
+    .wp-block-woocommerce-all-reviews,
+    .wp-block-woocommerce-reviews-by-product,
+    .wp-block-woocommerce-reviews-by-category {
+        .wc-block-review-list {
+            li.wc-block-review-list-item__item {
+                .wc-block-review-list-item__author,
+                .wc-block-review-list-item__published-date {
+                    color: $global--footer-text-medium-color;
+                }
+            }
+        }
+    }
+
+    ul.wp-block-latest-posts {
+
+        li > a,
+        .wp-block-latest-posts__featured-image + a {
+            color: $global--footer-text-color;
+            @include globalLinkUnderline( transparent, $global--footer-text-color );
+        }
+
+        .wp-block-latest-posts__post-author,
+        .wp-block-latest-posts__post-date {
+            color: $global--footer-text-medium-color;
+        }
+    }
+}

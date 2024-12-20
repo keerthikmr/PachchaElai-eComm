@@ -1,0 +1,102 @@
+.blog, .archive, .search-results {
+    #main {
+        .blog-posts-grid {
+            display: grid;
+            grid-gap: $size__site-gutter-tablet;
+            grid-template-columns: 1fr;
+            white-space: nowrap;
+
+            @include media(medium, up) {
+                grid-template-columns: 1fr 1fr;
+                grid-gap: $size__site-gutter-tablet;
+            }
+
+            @include media(large, up) {
+                grid-gap: $size__site-gutter-tablet $size__site-gutter-desktop;
+            }
+
+            @include media(xlarge, up) {
+                grid-gap: $size__site-gutter-desktop $size__site-gutter-desktop-large;
+            }
+
+            @include alignWider();
+        }
+
+        .post,
+        .page {
+            white-space: normal;
+            word-break: break-word;
+
+            .entry-header-inner {
+                position: relative;
+
+                @include alignPaddingRight();
+
+                &.with-logo {
+                    padding-left: 0;
+                    
+                    @include media(large, up) {
+                        padding-left: $size__site-gutter-tablet;
+                    }
+
+                    @include media(xlarge, up) {
+                        padding-left: $size__site-gutter-desktop;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.search-no-results {
+    .archive-subtitle,
+    .search-form-wrapper {
+        max-width: $size__content-width;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .archive-subtitle {
+        font-size: $global--font-size-h5;
+        margin-top: $size__site-gutter-tablet;
+        margin-bottom: $size__site-gutter-tablet;
+
+        @include media(large, up) {
+            font-size: $global--font-size-h4;
+        }
+
+        @include media(large, up) {
+            margin-bottom: $size__site-gutter-desktop;
+        }
+    }
+
+    .search-form-wrapper {
+        form {
+            display: flex;
+            flex-direction: row;
+
+            label,
+            .search-submit {
+                margin: 0;
+            }
+
+            label {
+                flex-grow: 1;
+                margin-right: $size__element-spacing;
+            }
+
+            .search-submit {
+                cursor: pointer;
+            }
+
+            @include media(medium, down) {
+                flex-direction: column;
+
+                label {
+                    margin-right: 0;
+                    margin-bottom: $size__element-spacing;
+                }
+            }
+        }
+    }
+}

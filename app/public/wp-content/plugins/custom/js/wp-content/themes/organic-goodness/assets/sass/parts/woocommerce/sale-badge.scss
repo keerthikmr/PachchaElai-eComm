@@ -1,0 +1,40 @@
+.onsale,
+span.onsale,
+.wc-block-grid__product-onsale,
+.wc-block-components-product-image .wc-block-components-product-sale-badge--align-right,
+.wc-block-components-product-sale-badge {
+    background-color: $global--body-color-3;
+    border-radius: 50%;
+    border: 0;
+    color: $global--body-color-1;
+    display: inline;
+    font-size: 0;
+    margin: 0;
+    padding: calc( #{$size__global-input-padding-x} / 2 );
+    position: absolute;
+    left: calc( #{$size__element-spacing} / 2 );
+    top: calc( #{$size__element-spacing} / 2 );
+    right: auto;
+    transition: $global--transition;
+    width: auto;
+    z-index: 1;
+
+    @include beforeIcon( $icon__percentage, $size__icon-default-smaller, $size__icon-default-smaller, $global--body-color-1 );
+
+    @include media(medium, up) {
+        left: $size__element-spacing;
+        top: $size__element-spacing;
+
+        @include beforeIcon( $icon__percentage, $size__icon-default-small, $size__icon-default-small, $global--body-color-1 );
+    }
+
+    @include media(large, up) {
+        padding: 0.75 * $size__global-input-padding-x;
+    }
+
+    @include media(xlarge, up) {
+        left: $size__element-spacing;
+        top: $size__element-spacing;
+        padding: $size__global-input-padding-x;
+    }
+}

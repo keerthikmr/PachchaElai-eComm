@@ -1,0 +1,102 @@
+// Grid Widths.
+$size__site-gutter-mobile: 		  	1.55rem;
+$size__site-gutter-tablet: 		  	2.75rem;
+$size__site-gutter-desktop: 	  	5rem;
+$size__site-gutter-desktop-large: 	10rem;
+
+// Fonts
+$global--base-font-family:       var(--global--font-primary);
+$global--headings-font-family:   var(--global--font-headings);
+$global--font-size-base: 	     var(--global--font-size-base);
+
+$global--font-size-h5: 	 	1.25rem;
+$global--font-size-h4: 	 	1.563rem;
+$global--font-size-h3: 	 	1.953rem;
+$global--font-size-h2: 	 	2.441rem;
+$global--font-size-h1: 	 	3.052rem;
+$global--font-size-post-title: 	4.111rem;
+$global--font-size-page-title: 	5.222rem;
+
+$global--body-color-1: 		     var(--global--body-color-1);
+$global--body-color-1-xlight:	 var(--global--body-color-1-xlight);
+$global--body-color-1-light:	 var(--global--body-color-1-light);
+$global--body-color-1-medium:	 var(--global--body-color-1-medium);
+$global--body-color-1-dark:	     var(--global--body-color-1-dark);
+$global--body-color-1-xdark:	 var(--global--body-color-1-xdark);
+
+$global--body-color-2: 			     var(--global--body-color-2);
+$global--body-color-2-rgb:           var(--global--body-color-2-rgb);
+$global--body-color-2-xlight:		 var(--global--body-color-2-xlight);
+$global--body-color-2-light:		 var(--global--body-color-2-light);
+$global--body-color-2-medium:		 var(--global--body-color-2-medium);
+$global--body-color-2-dark:		     var(--global--body-color-2-dark);
+
+$global--body-color-3: 			     var(--global--body-color-3);
+$global--body-color-3-medium: 	     var(--global--body-color-3-medium);
+$global--body-color-3-dark: 	     var(--global--body-color-3-dark);
+$global--body-color-3-rgb:           var(--global--body-color-3-rgb);
+
+$global--body-color-4: 			     var(--global--body-color-4);
+$global--body-color-5: 			     var(--global--body-color-5);
+$global--body-color-6: 			     var(--global--body-color-6);
+
+$global--store-notice-background-color: var(--global--store-notice-background-color);
+$global--store-notice-text-color:       var(--global--store-notice-text-color);
+
+$global--footer-background-color:           var(--global--footer-background--color);
+$global--footer-background-medium-color:    var(--global--footer-background-medium--color);
+
+$global--footer-text-color:          var(--global--footer-text--color);
+$global--footer-text-dark-color:     var(--global--footer-text-dark--color);
+$global--footer-text-medium-color:   var(--global--footer-text-medium--color);
+$global--footer-text-light-color:    var(--global--footer-text-light--color);
+$global--footer-text-xlight-color:   var(--global--footer-text-xlight--color);
+
+$global--footer-spacing:              var(--global--footer-spacing);
+$global--footer-first-widget-columns: var(--global--footer-first-widget-columns);
+$global--footer-widget-columns:       var(--global--footer-widget-columns);
+
+// Line Height.
+$global--line-height-body:  			1.5;
+$global--line-height-heading: 			1.3;
+$global--line-height-forms: 			1.35;
+
+// Border Radius.
+$global--border-radius: 30px;
+$global--border-radius-images: 15px;
+
+// Letter Spacing.
+$global--letter-spacing: normal;
+
+// Spacings
+$size__content-padding: 5rem;
+$size__link-underline-padding: 3px;
+$size__element-spacing: 22px;
+$size__element-xsmall-spacing: 5px;
+$size__element-small-spacing: 10px;
+
+$size__square-elements-width: 45px;
+$size__woocommerce-thumbs-width: 100px;
+
+$size__global-input-padding-x: 22px;
+$size__global-input-padding-y: 31px;
+
+$global--desktop-header-spacing: var(--global--desktop-header-spacing);
+$global--mobile-header-spacing:  var(--global--mobile-header-spacing);
+
+// Icons
+$size__icon-default-large:   48px;
+$size__icon-default-medium:  36px;
+$size__icon-default:         24px;
+$size__icon-default-small:   20px;
+$size__icon-default-smaller: 16px;
+
+/* Content widths. */
+$size__content-width: 775px;
+$size__wide-width: 65vw;
+$size__wide-template-width: 80vw;
+
+// Transitions
+$global--transition:        all .4s ease-in-out;
+$global--icon-transition:   all .4s ease;
+$global--open-transition:   all .7s ease;

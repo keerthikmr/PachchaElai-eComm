@@ -1,0 +1,1180 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Organic_Goodness\n"
+"POT-Creation-Date: 2022-10-24 16:10+0300\n"
+"PO-Revision-Date: 2021-05-10 12:06+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Poedit 3.1.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+"X-Poedit-SearchPathExcluded-1: assets\n"
+"X-Poedit-SearchPathExcluded-2: node_modules\n"
+
+#: 404.php:18
+msgctxt "404 Page Template"
+msgid "Page Not Found"
+msgstr ""
+
+#: 404.php:22
+msgctxt "404 Page Template"
+msgid ""
+"The page you were looking for could not be found. It might have been removed, "
+"renamed, or did not exist in the first place."
+msgstr ""
+
+#: class/class-organic-goodness-customize.php:314
+msgctxt "Theme customizer options"
+msgid "Header"
+msgstr ""
+
+#: class/class-organic-goodness-customize.php:336
+msgctxt "Theme customizer options"
+msgid "Logo Max Height"
+msgstr ""
+
+#: class/class-organic-goodness-customize.php:365
+msgctxt "Theme customizer options"
+msgid "Mobile Logo"
+msgstr ""
+
+#: class/class-organic-goodness-customize.php:366
+msgctxt "Theme customizer options"
+msgid "Used for mobile devices, iPads and tablets under 1024px screen width."
+msgstr ""
+
+#: class/class-organic-goodness-customize.php:390
+msgctxt "Theme customizer options"
+msgid "Mobile Logo Max Height"
+msgstr ""
+
+#: class/class-organic-goodness-customize.php:420
+msgctxt "Theme customizer options"
+msgid "Use the mobile logo on phone screens only"
+msgstr ""
+
+#: class/class-organic-goodness-customize.php:444
+msgctxt "Theme customizer options"
+msgid "Desktop Header Top-Bottom Spacing"
+msgstr ""
+
+#: class/class-organic-goodness-customize.php:474
+msgctxt "Theme customizer options"
+msgid "Mobile Header Top-Bottom Spacing"
+msgstr ""
+
+#: class/class-organic-goodness-customize.php:504
+msgctxt "Theme customizer options"
+msgid "Keep header visible when scrolling down"
+msgstr ""
+
+#: class/class-organic-goodness-customize.php:528
+msgctxt "Theme customizer options"
+msgid "Center logo on mobile devices"
+msgstr ""
+
+#: class/class-organic-goodness-customize.php:548
+msgctxt "Theme customizer options"
+msgid "Mobile Menu"
+msgstr ""
+
+#: class/class-organic-goodness-customize.php:570
+msgctxt "Theme customizer options"
+msgid "Show mobile menu on desktop"
+msgstr ""
+
+#: class/class-organic-goodness-customize.php:596
+msgctxt "Theme customizer options"
+msgid "Show categories list in mobile menu"
+msgstr ""
+
+#: class/class-organic-goodness-customize.php:617
+msgctxt "Theme customizer options"
+msgid "Footer"
+msgstr ""
+
+#: class/class-organic-goodness-customize.php:639
+msgctxt "Theme customizer options"
+msgid "Footer Text Note"
+msgstr ""
+
+#: class/class-organic-goodness-customize.php:640
+msgctxt "Theme customizer options"
+msgid "Allowed HTML tags: a, br, div, em, i, img, span, strong"
+msgstr ""
+
+#: class/class-organic-goodness-customize.php:672
+msgctxt "Theme customizer options"
+msgid "Footer Background Image"
+msgstr ""
+
+#: class/class-organic-goodness-customize.php:684
+msgctxt "Theme customizer options"
+msgid "Footer Background Color"
+msgstr ""
+
+#: class/class-organic-goodness-customize.php:696
+msgctxt "Theme customizer options"
+msgid "Footer Text Color"
+msgstr ""
+
+#: class/class-organic-goodness-customize.php:719
+msgctxt "Theme customizer options"
+msgid "Footer Spacing"
+msgstr ""
+
+#: class/class-organic-goodness-customize.php:749
+msgctxt "Theme customizer options"
+msgid "Footer Widget Columns"
+msgstr ""
+
+#: class/class-organic-goodness-customize.php:779
+msgctxt "Theme customizer options"
+msgid "Display The First Widget Over x Columns"
+msgstr ""
+
+#: class/class-organic-goodness-customize.php:806
+msgctxt "Theme customizer options"
+msgid "Fonts"
+msgstr ""
+
+#: class/class-organic-goodness-customize.php:828
+msgctxt "Theme customizer options"
+msgid "Headings Font Family"
+msgstr ""
+
+#: class/class-organic-goodness-customize.php:832
+#: class/class-organic-goodness-customize.php:865
+msgctxt "Theme customizer options"
+msgid "Enter the font name"
+msgstr ""
+
+#: class/class-organic-goodness-customize.php:861
+msgctxt "Theme customizer options"
+msgid "Base Font Family"
+msgstr ""
+
+#: class/class-organic-goodness-customize.php:894
+msgctxt "Theme customizer options"
+msgid "Base Font Size"
+msgstr ""
+
+#: class/class-organic-goodness-customize.php:895
+msgctxt "Theme customizer options"
+msgid ""
+"The Base Font Size refers to the size applied to the paragraph text. All other "
+"elements, such as headings, links, buttons, etc will adjusted automatically to "
+"keep the hierarchy of font sizes based on this one size. Easy-peasy!"
+msgstr ""
+
+#: class/class-organic-goodness-customize.php:920
+msgctxt "Theme customizer options"
+msgid "Colors"
+msgstr ""
+
+#: class/class-organic-goodness-customize.php:931
+msgctxt "Theme customizer options"
+msgid "Color 1"
+msgstr ""
+
+#: class/class-organic-goodness-customize.php:932
+msgctxt "Theme customizer options"
+msgid "Used as background color and contrast texts."
+msgstr ""
+
+#: class/class-organic-goodness-customize.php:943
+msgctxt "Theme customizer options"
+msgid "Color 2"
+msgstr ""
+
+#: class/class-organic-goodness-customize.php:944
+msgctxt "Theme customizer options"
+msgid "Used as global text color."
+msgstr ""
+
+#: class/class-organic-goodness-customize.php:955
+msgctxt "Theme customizer options"
+msgid "Color 3"
+msgstr ""
+
+#: class/class-organic-goodness-customize.php:967
+msgctxt "Theme customizer options"
+msgid "Color 4"
+msgstr ""
+
+#: class/class-organic-goodness-customize.php:968
+msgctxt "Theme customizer options"
+msgid "Used for success notifications."
+msgstr ""
+
+#: class/class-organic-goodness-customize.php:979
+msgctxt "Theme customizer options"
+msgid "Color 5"
+msgstr ""
+
+#: class/class-organic-goodness-customize.php:980
+msgctxt "Theme customizer options"
+msgid "Used for error notifications."
+msgstr ""
+
+#: class/class-organic-goodness-customize.php:991
+msgctxt "Theme customizer options"
+msgid "Color 6"
+msgstr ""
+
+#: class/class-organic-goodness-customize.php:992
+msgctxt "Theme customizer options"
+msgid "Used for info notifications."
+msgstr ""
+
+#: class/class-organic-goodness-customize.php:1003
+msgctxt "Theme customizer options"
+msgid "Store notice background color"
+msgstr ""
+
+#: class/class-organic-goodness-customize.php:1015
+msgctxt "Theme customizer options"
+msgid "Store notice text color"
+msgstr ""
+
+#: class/class-organic-goodness-customize.php:1034
+msgctxt "Theme customizer options"
+msgid "Blog"
+msgstr ""
+
+#: class/class-organic-goodness-customize.php:1056
+msgctxt "Theme customizer options"
+msgid "Display site logo next to blog post"
+msgstr ""
+
+#: class/class-organic-goodness-customize.php:1080
+msgctxt "Theme customizer options"
+msgid "Add Read More link to blog posts"
+msgstr ""
+
+#: class/class-organic-goodness-customize.php:1104
+msgctxt "Theme customizer options"
+msgid "\"Read More\" link text"
+msgstr ""
+
+#: class/class-organic-goodness-customize.php:1125
+msgctxt "Theme customizer options"
+msgid "Shop"
+msgstr ""
+
+#: class/class-organic-goodness-customize.php:1147
+msgctxt "Theme customizer options"
+msgid "Shop Pagination"
+msgstr ""
+
+#: class/class-organic-goodness-customize.php:1151
+msgctxt "Theme customizer options"
+msgid "Classic"
+msgstr ""
+
+#: class/class-organic-goodness-customize.php:1152
+msgctxt "Theme customizer options"
+msgid "Load More"
+msgstr ""
+
+#: class/class-organic-goodness-customize.php:1175
+msgctxt "Theme customizer options"
+msgid "Shop Filters Display"
+msgstr ""
+
+#: class/class-organic-goodness-customize.php:1179
+msgctxt "Theme customizer options"
+msgid "Dropdown Area"
+msgstr ""
+
+#: class/class-organic-goodness-customize.php:1180
+msgctxt "Theme customizer options"
+msgid "Sidebar"
+msgstr ""
+
+#: class/class-organic-goodness-customize.php:1203
+msgctxt "Theme customizer options"
+msgid "Mobile Products Display"
+msgstr ""
+
+#: class/class-organic-goodness-customize.php:1204
+msgctxt "Theme customizer options"
+msgid "This option affects the products blocks and the related/upsell product lists"
+msgstr ""
+
+#: class/class-organic-goodness-customize.php:1208
+msgctxt "Theme customizer options"
+msgid "2-Column Grid"
+msgstr ""
+
+#: class/class-organic-goodness-customize.php:1209
+msgctxt "Theme customizer options"
+msgid "Draggable Product List"
+msgstr ""
+
+#: class/class-organic-goodness-customize.php:1232
+msgctxt "Theme customizer options"
+msgid "Show categories list in product archives"
+msgstr ""
+
+#: class/class-organic-goodness-customize.php:1256
+msgctxt "Theme customizer options"
+msgid "Categories List Display"
+msgstr ""
+
+#: class/class-organic-goodness-customize.php:1257
+msgctxt "Theme customizer options"
+msgid "Choose what to display on product category pages."
+msgstr ""
+
+#: class/class-organic-goodness-customize.php:1261
+msgctxt "Theme customizer options"
+msgid "Subcategories"
+msgstr ""
+
+#: class/class-organic-goodness-customize.php:1262
+msgctxt "Theme customizer options"
+msgid "Main Shop Categories"
+msgstr ""
+
+#: class/class-organic-goodness-customize.php:1286
+msgctxt "Theme customizer options"
+msgid "Show default sorting on product archives"
+msgstr ""
+
+#: class/class-organic-goodness-customize.php:1310
+msgctxt "Theme customizer options"
+msgid "Show product navigation on product pages"
+msgstr ""
+
+#: class/class-organic-goodness-customize.php:1334
+msgctxt "Theme customizer options"
+msgid "Enable product gallery image zoom"
+msgstr ""
+
+#: comments.php:49
+msgid "Comments"
+msgstr ""
+
+#: comments.php:80
+msgid "Comments are closed."
+msgstr ""
+
+#: functions/function-block-patterns.php:66
+#: includes/theme-setup/theme-setup-config.php:121
+#: includes/theme-setup/theme-setup-config.php:283
+msgctxt "Theme starter content"
+msgid "Frontpage Image Two"
+msgstr ""
+
+#: functions/function-block-patterns.php:166
+#: includes/theme-setup/theme-setup-config.php:126
+#: includes/theme-setup/theme-setup-config.php:383
+msgctxt "Theme starter content"
+msgid "Frontpage Image Three"
+msgstr ""
+
+#: functions/function-block-patterns.php:505
+#: includes/theme-setup/theme-setup-config.php:148
+#: includes/theme-setup/theme-setup-config.php:744
+#: includes/theme-setup/theme-setup-config.php:1258
+msgctxt "Theme starter content"
+msgid "Post Image Two"
+msgstr ""
+
+#: functions/function-block-patterns.php:511
+#: includes/theme-setup/theme-setup-config.php:185
+#: includes/theme-setup/theme-setup-config.php:750
+#: includes/theme-setup/theme-setup-config.php:1264
+msgctxt "Theme starter content"
+msgid "Product Image One"
+msgstr ""
+
+#: functions/function-block-patterns.php:923
+msgctxt "Block Patterns Category"
+msgid "Organic Goodness"
+msgstr ""
+
+#. translators: %d: total results
+#: functions/function-enqueue.php:34
+#, php-format
+msgid "Showing all %d result"
+msgid_plural "Showing all %d results"
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions/function-theme-setup.php:99
+msgctxt "Menu Locations"
+msgid "Desktop Menu - Left"
+msgstr ""
+
+#: functions/function-theme-setup.php:100
+msgctxt "Menu Locations"
+msgid "Desktop Menu - Right"
+msgstr ""
+
+#: functions/function-theme-setup.php:101
+msgctxt "Menu Locations"
+msgid "Mobile Menu"
+msgstr ""
+
+#: functions/function-theme-setup.php:146
+msgctxt "Sidebar name"
+msgid "Shop Filters"
+msgstr ""
+
+#: functions/function-theme-setup.php:157
+msgctxt "Sidebar name"
+msgid "Footer Widgets"
+msgstr ""
+
+#: functions/function-woocommerce-setup.php:182
+msgid "All Products"
+msgstr ""
+
+#: functions/function-woocommerce-setup.php:286
+msgctxt "Shop filters"
+msgid "Filters"
+msgstr ""
+
+#: functions/function-woocommerce-setup.php:416
+msgctxt "Load More Pagination Button Text"
+msgid "Load More"
+msgstr ""
+
+#: header.php:30
+msgid "Skip to content"
+msgstr ""
+
+#: includes/template-tags.php:426 includes/template-tags.php:509
+msgctxt "Post meta"
+msgid "Comments"
+msgstr ""
+
+#: includes/template-tags.php:476
+msgctxt "Post meta"
+msgid "Categories"
+msgstr ""
+
+#: includes/template-tags.php:493
+msgctxt "Post meta"
+msgid "Post date"
+msgstr ""
+
+#: includes/template-tags.php:527
+msgctxt "Post meta"
+msgid "Tags"
+msgstr ""
+
+#: includes/template-tags.php:543
+msgctxt "Post meta"
+msgid "Full size"
+msgstr ""
+
+#: includes/template-tags.php:823
+msgid "Continue shopping"
+msgstr ""
+
+#: includes/template-tags.php:867 includes/template-tags.php:873
+msgid "Previous Product"
+msgstr ""
+
+#: includes/template-tags.php:884 includes/template-tags.php:890
+msgid "Next Product"
+msgstr ""
+
+#: includes/theme-setup/class-organic-goodness-theme-setup.php:390
+msgctxt "Theme setup"
+msgid "Something went wrong. Please refresh the page and try again!"
+msgstr ""
+
+#: includes/theme-setup/class-organic-goodness-theme-setup.php:506
+msgctxt "Theme setup"
+msgid "Welcome"
+msgstr ""
+
+#: includes/theme-setup/class-organic-goodness-theme-setup.php:511
+msgctxt "Theme setup"
+msgid "Child"
+msgstr ""
+
+#: includes/theme-setup/class-organic-goodness-theme-setup.php:515
+msgctxt "Theme setup"
+msgid "Plugins"
+msgstr ""
+
+#: includes/theme-setup/class-organic-goodness-theme-setup.php:519
+msgctxt "Theme setup"
+msgid "Content"
+msgstr ""
+
+#: includes/theme-setup/class-organic-goodness-theme-setup.php:523
+msgctxt "Theme setup"
+msgid "Ready"
+msgstr ""
+
+#: includes/theme-setup/class-organic-goodness-theme-setup.php:753
+#: includes/theme-setup/class-organic-goodness-theme-setup.php:1792
+msgctxt "Theme notification"
+msgid "Next"
+msgstr ""
+
+#: includes/theme-setup/class-organic-goodness-theme-setup.php:753
+#: includes/theme-setup/class-organic-goodness-theme-setup.php:1805
+msgctxt "Theme notification"
+msgid "Activate"
+msgstr ""
+
+#: includes/theme-setup/class-organic-goodness-theme-setup.php:753
+#: includes/theme-setup/class-organic-goodness-theme-setup.php:1826
+msgctxt "Theme notification"
+msgid "Install"
+msgstr ""
+
+#: includes/theme-setup/class-organic-goodness-theme-setup.php:830
+msgctxt "Theme setup"
+msgid "Pages"
+msgstr ""
+
+#: includes/theme-setup/class-organic-goodness-theme-setup.php:831
+msgctxt "Theme setup"
+msgid "Posts"
+msgstr ""
+
+#: includes/theme-setup/class-organic-goodness-theme-setup.php:832
+msgctxt "Theme setup"
+msgid "Products"
+msgstr ""
+
+#: includes/theme-setup/class-organic-goodness-theme-setup.php:833
+msgctxt "Theme setup"
+msgid "Menus"
+msgstr ""
+
+#: includes/theme-setup/class-organic-goodness-theme-setup.php:834
+msgctxt "Theme setup"
+msgid "Widgets"
+msgstr ""
+
+#: includes/theme-setup/class-organic-goodness-theme-setup.php:835
+msgctxt "Theme setup"
+msgid "Customizer"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:24
+msgid "Theme Setup"
+msgstr ""
+
+#. translators: 1: Title Tag 2: Theme Name 3: Closing Title Tag
+#: includes/theme-setup/theme-setup-config.php:27
+#, php-format
+msgid "%1$s%2$s Themes &lsaquo; Theme Setup: %3$s%4$s"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:28
+msgid "Return to the dashboard"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:29
+msgid "Disable this wizard"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:31
+msgid "Skip"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:32
+msgid "Next"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:33
+msgid "Start"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:34
+msgid "Try Again"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:35
+msgid "Cancel"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:36
+#: includes/theme-setup/theme-setup-config.php:38
+#: includes/theme-setup/theme-setup-config.php:40
+msgid "Install"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:37
+msgid "Activating..."
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:39
+msgid "Installing..."
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:41
+msgid "Import"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:42
+msgid "Importing..."
+msgstr ""
+
+#. translators: Theme Name
+#: includes/theme-setup/theme-setup-config.php:45
+#, php-format
+msgid "Welcome to %s"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:46
+msgid "Welcome back!"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:47
+msgid ""
+"This wizard will set up your theme, install plugins, and import content. It is "
+"optional & should take only a few minutes."
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:48
+msgid ""
+"You may have already run this theme setup wizard. If you would like to proceed "
+"anyway, click on the \"Start\" button below."
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:50
+msgid "Install Child Theme"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:51
+msgid "You're good to go!"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:52
+msgid "Let's build & activate a child theme so you may easily make theme changes."
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:53
+msgid ""
+"Your child theme has already been installed and is now activated, if it wasn't "
+"already."
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:54
+msgid "Learn about child themes"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:55
+msgid "Awesome. Your child theme has already been installed and is now activated."
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:56
+msgid "Awesome. Your child theme has been created and is now activated."
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:57
+msgid "The child theme could not be created. Please check your file permissions."
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:59
+msgid "Install WooCommerce"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:60
+msgid "You're up to speed!"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:61
+msgid ""
+"Let's install & activate the WooCommerce plugin to enable all the eCommerce "
+"features you need."
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:62
+msgid "WooCommerce plugin has been installed and is now activated."
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:63
+msgid ""
+"Installation failed: An unexpected error occurred. Something may be wrong with "
+"WordPress.org or this server's configuration."
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:64
+msgid ""
+"Activation failed: An unexpected error occurred. Something may be wrong with "
+"WordPress.org or this server's configuration."
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:65
+#: includes/theme-setup/theme-setup-config.php:70
+msgid "Advanced"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:67
+msgid "Import Content"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:68
+msgid ""
+"Let's import content to your website, to help you get familiar with the theme."
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:69
+msgid "The content has been successfully imported."
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:72
+msgid "All done. Have fun!"
+msgstr ""
+
+#. translators: Theme Author
+#: includes/theme-setup/theme-setup-config.php:75
+#, php-format
+msgid "Your theme has been all set up. Enjoy your new theme by %s."
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:76
+msgid "Extras"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:77
+msgid "Set up your store"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:78
+msgid "View your website"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:79
+msgid "Read Documentation"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:80
+msgid "Get Theme Support"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:86
+msgctxt "Theme starter content"
+msgid "Frontpage Icon One"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:91
+msgctxt "Theme starter content"
+msgid "Frontpage Icon Two"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:96
+msgctxt "Theme starter content"
+msgid "Frontpage Icon Three"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:101
+msgctxt "Theme starter content"
+msgid "Frontpage Icon Four"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:106
+msgctxt "Theme starter content"
+msgid "Frontpage Icon Five"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:111
+msgctxt "Theme starter content"
+msgid "Frontpage Icon Six"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:116
+msgctxt "Theme starter content"
+msgid "Frontpage Image One"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:131
+msgctxt "Theme starter content"
+msgid "Frontpage Image Four"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:136
+msgctxt "Theme starter content"
+msgid "Frontpage Background"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:143
+msgctxt "Theme starter content"
+msgid "Post Image One"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:153
+msgctxt "Theme starter content"
+msgid "Post Image Three"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:158
+msgctxt "Theme starter content"
+msgid "Post Image Four"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:163
+msgctxt "Theme starter content"
+msgid "Post Image Five"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:168
+msgctxt "Theme starter content"
+msgid "Post Image Six"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:173
+msgctxt "Theme starter content"
+msgid "Post Image Seven"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:178
+msgctxt "Theme starter content"
+msgid "Post Image Eight"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:190
+msgctxt "Theme starter content"
+msgid "Product Image Two"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:195
+msgctxt "Theme starter content"
+msgid "Product Image Three"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:200
+msgctxt "Theme starter content"
+msgid "Product Image Four"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:205
+msgctxt "Theme starter content"
+msgid "Product Image Five"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:210
+msgctxt "Theme starter content"
+msgid "Product Image Six"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:217
+msgctxt "Theme starter content"
+msgid "Organic Goodness Favicon"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:222
+msgctxt "Theme starter content"
+msgid "Organic Goodness Logo"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:233
+msgctxt "Theme starter content"
+msgid "Organic Goodness"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:507
+msgctxt "Theme starter content"
+msgid "About"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:685
+msgctxt "Theme starter content"
+msgid "Order Tracking"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:693
+msgctxt "Theme starter content"
+msgid "Journal"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:703
+msgctxt "Theme starter content"
+msgid "Six Ways To Style Out Summer In The City"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:782
+#: includes/theme-setup/theme-setup-config.php:1060
+msgctxt "Theme starter content"
+msgid "Lifestyle"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:792
+msgctxt "Theme starter content"
+msgid "New: Subscription Boxes Now Available"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:871
+#: includes/theme-setup/theme-setup-config.php:1056
+#: includes/theme-setup/theme-setup-config.php:1296
+#: includes/theme-setup/theme-setup-config.php:1385
+#: includes/theme-setup/theme-setup-config.php:1566
+#: includes/theme-setup/theme-setup-config.php:1709
+msgctxt "Theme starter content"
+msgid "Beauty Tips"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:875
+#: includes/theme-setup/theme-setup-config.php:1207
+msgctxt "Theme starter content"
+msgid "Incredible Women"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:885
+msgctxt "Theme starter content"
+msgid "Read and Shop - Shoppable Products in Blog Posts using WooCommerce Blocks"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:1070
+msgctxt "Theme starter content"
+msgid "The Three Eco-Concious Brands You Need to Know"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:1203
+msgctxt "Theme starter content"
+msgid "Editorial"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:1217
+msgctxt "Theme starter content"
+msgid "Great Hear at the Beach? No Longer a Problem"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:1306
+msgctxt "Theme starter content"
+msgid "Organic Skincare Recommendations For This Season"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:1395
+msgctxt "Theme starter content"
+msgid "The Ultimate Skincare Shopping Guide"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:1576
+msgctxt "Theme starter content"
+msgid "The Green Box Subscription Package"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:1719
+msgctxt "Theme starter content"
+msgid "Cold Pressed Extract"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:1760
+#: includes/theme-setup/theme-setup-config.php:1836
+#: includes/theme-setup/theme-setup-config.php:1895
+#: includes/theme-setup/theme-setup-config.php:1962
+#: includes/theme-setup/theme-setup-config.php:2030
+#: includes/theme-setup/theme-setup-config.php:2086
+msgctxt "Theme starter content"
+msgid "Skin Care"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:1766
+#: includes/theme-setup/theme-setup-config.php:1899
+#: includes/theme-setup/theme-setup-config.php:1966
+#: includes/theme-setup/theme-setup-config.php:2090
+msgctxt "Theme starter content"
+msgid "Hair Care"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:1774
+#: includes/theme-setup/theme-setup-config.php:1915
+#: includes/theme-setup/theme-setup-config.php:2096
+msgctxt "Theme starter content"
+msgid "Organic"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:1778
+#: includes/theme-setup/theme-setup-config.php:1911
+#: includes/theme-setup/theme-setup-config.php:2100
+msgctxt "Theme starter content"
+msgid "Cruelty Free"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:1785
+msgctxt "Theme starter content"
+msgid "Day Cream Moisturizer"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:1840
+#: includes/theme-setup/theme-setup-config.php:2034
+msgctxt "Theme starter content"
+msgid "Makeup"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:1848
+msgctxt "Theme starter content"
+msgid "Day Care"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:1855
+msgctxt "Theme starter content"
+msgid "Hyaluron-Filler Eye Cream"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:1903
+#: includes/theme-setup/theme-setup-config.php:1970
+#: includes/theme-setup/theme-setup-config.php:2038
+msgctxt "Theme starter content"
+msgid "Subscriptions"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:1922
+msgctxt "Theme starter content"
+msgid "Oxygen Face Mask"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:1976
+msgctxt "Theme starter content"
+msgid "Oxygen"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:1980
+msgctxt "Theme starter content"
+msgid "Mask"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:1987
+msgctxt "Theme starter content"
+msgid "Moisturizing Soothing Fluid"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:2045
+msgctxt "Theme starter content"
+msgid "Pomegranate Tea Cologne"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:2159
+msgctxt "Theme starter content"
+msgid "Desktop Navigation - Left"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:2162
+msgid "Home"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:2168
+msgid "About"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:2174
+#: includes/theme-setup/theme-setup-config.php:2234
+msgid "Shop"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:2179
+msgid "Simple Product"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:2186
+msgid "Variable Product"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:2193
+msgid "External Product"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:2200
+msgid "Grouped Product"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:2207
+#: includes/theme-setup/theme-setup-config.php:2239
+msgid "Journal"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:2214
+msgctxt "Theme starter content"
+msgid "Desktop Navigation - Right"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:2217
+msgid "My Account"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:2223
+msgid "Theme Documentation"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:2231
+msgctxt "Theme starter content"
+msgid "Mobile Navigation"
+msgstr ""
+
+#: includes/theme-setup/theme-setup-config.php:2244
+msgid "Order Tracking"
+msgstr ""
+
+#: index.php:21
+msgid "Search:"
+msgstr ""
+
+#: index.php:29
+#, php-format
+msgid "We found %s result for your search."
+msgid_plural "We found %s results for your search."
+msgstr[0] ""
+msgstr[1] ""
+
+#: index.php:37
+msgid ""
+"We could not find any results for your search. You can give it another try "
+"through the search form below."
+msgstr ""
+
+#: index.php:40
+msgid "Nothing Found"
+msgstr ""
+
+#: index.php:46 index.php:48 index.php:85
+msgid "All Articles"
+msgstr ""
+
+#. translators: %s: post title
+#: template-parts/content.php:24
+#, php-format
+msgid "Continue reading%s"
+msgstr ""
+
+#: template-parts/content/navigation.php:18 template-parts/content/navigation.php:21
+msgid "Previous Post"
+msgstr ""
+
+#: template-parts/content/navigation.php:43 template-parts/content/navigation.php:46
+msgid "Next Post"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Organic Goodness"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "https://organicgoodness.thunder-stores.com/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "A block theme for Health & Beauty online stores."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Thunderstores"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://www.thunder-stores.com/"
+msgstr ""

@@ -1,0 +1,108 @@
+.site-header-wrapper {
+    border-bottom: 1px solid transparent;
+    z-index: 1002;
+    top: 0;
+    transition: $global--transition;
+    width: 100%;
+
+    @include media(large, up) {
+        transition: $global--open-transition;
+        z-index: 1001;
+    }
+
+    .admin-bar & {
+        @media screen and (max-width: 600px) {
+            &:not(.fixed) {
+                top: 46px;
+            }
+        }
+
+        @media screen and (min-width: 601px) and (max-width: 782px) {
+            top: 46px;
+        }
+
+        @media screen and (min-width: 783px) {
+            top: 32px;
+        }
+    }
+
+    &.header-fixed {
+        position: fixed;
+
+        // used to push the content and avoid scroll jumping
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 1;
+            pointer-events: none;
+        }
+    }
+
+    &.fixed {
+        border-bottom: 1px solid $global--body-color-2-xlight;
+
+        #site-header {
+            @include media(medium, up) {
+                padding: $global--mobile-header-spacing $size__site-gutter-tablet;
+            }
+        }
+    }
+
+    #site-header {
+        background-color: $global--body-color-1-xdark;
+        box-sizing: border-box;
+        position: relative;
+        padding: $global--mobile-header-spacing $size__site-gutter-mobile;
+        transition: $global--transition;
+        z-index: 1001;
+
+        @include media(medium, up) {
+            padding: $global--desktop-header-spacing $size__site-gutter-tablet;
+        }
+
+        @import 'header/menu-primary';
+
+        #site-identity-wrapper {
+            flex: 1;
+            padding-left: $size__element-small-spacing;
+            padding-right: $size__element-small-spacing;
+            z-index: 999;
+
+            @include media(medium, up) {
+                flex: 1.5;
+                padding-left: $size__element-spacing;
+                padding-right: $size__element-spacing;
+            }
+
+            @include media(large, up) {
+                flex: unset;
+                flex-grow: 0;
+            }
+
+            &.text-left {
+                @include media(large, down) {
+                    margin-left: $size__element-small-spacing;
+                }
+            }
+
+            @import 'header/site-identity';
+        }
+
+        #secondary-menu-wrapper {
+            @import 'header/menu-secondary';
+        }
+
+        .logo img {
+            max-width: 150px;
+            height: auto;
+        }
+    }
+
+    @import 'header/menu-mobile';
+}

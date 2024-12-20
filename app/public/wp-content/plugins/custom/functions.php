@@ -33,14 +33,6 @@ function register_custom_endpoint()
             'methods' => 'GET',
             'callback' => 'fetch_leads',
             'permission_callback' => '__return_true',
-            'args' => array(
-                'helper_id' => array(
-                    'required' => true,
-                    'validate_callback' => function ($param, $request, $key) {
-                        return is_numeric($param);
-                    },
-                ),
-            )
         )
     );
 
@@ -73,16 +65,60 @@ function register_custom_endpoint()
         'callback' => 'mark_done',
         'permission_callback' => '__return_true',
     ));
+
+    register_rest_route('custom/v1', '/get-products', array(
+        'methods' => 'GET',
+        'callback' => 'get_products',
+        'permission_callback' => '__return_true',
+    ));
+
+    register_rest_route('custom/v1', '/get-user-id', array(
+        'methods' => 'GET',
+        'callback' => 'get_user_ID',
+        'permission_callback' => '__return_true',
+    ));
+
+    register_rest_route('custom/v1', '/export-csv', array(
+        'methods' => 'GET',
+        'callback' => 'export_csv',
+        'permission_callback' => '__return_true',
+    ));
+
+    register_rest_route(
+        'custom/v1',
+        '/set-order',
+        array(
+            'methods' => 'POST',
+            'callback' => 'set_order',
+            'permission_callback' => '__return_true',
+        )
+    );
 }
 
 add_action('rest_api_init', 'register_custom_endpoint');
 
+add_action('wp_loaded', 'send_user_id_to_api');
+
+function send_user_id_to_api()
+{
+    if (is_user_logged_in()) {
+        global $current_user_id;
+        $current_user_id = get_current_user_id();
+        error_log('Current User ID: ' . $current_user_id);
+        // my_custom_api_function($current_user_id);
+        global $this_var;
+        $this_var = $current_user_id;
+        // return $current_user_id;
+    }
+}
+
 function fetch_leads(WP_REST_Request $request)
 {
+    $helper_id = $request->get_param('helper_id');
     global $wpdb;
     $table_name = 'custom_customer';
 
-    $helper_id = $request->get_param('helper_id');
+    error_log('Helper ID: ' . $helper_id);
 
     $count_current = $wpdb->get_results(
         $wpdb->prepare(
@@ -143,7 +179,7 @@ function fetch_leads(WP_REST_Request $request)
     return new WP_REST_Response(
         array(
             'success' => false,
-            'message' => 'No leads found.',
+            'message' => `No leads found. for ` . $helper_id,
         ),
         500
     );
@@ -172,9 +208,9 @@ function mark_done(WP_REST_Request $request)
         )
     );
 
+    // 15 minute buffer
     $interest_time = strtotime($interest_time[0]->interest_time) - 900;
 
-    // 15 minute buffer
     if ($recentOrder == null) {
         return new WP_REST_Response(array(
             'success' => false,
@@ -187,12 +223,13 @@ function mark_done(WP_REST_Request $request)
         $updated = $wpdb->update(
             $customer_table,
             array(
+                'priority_flag' => 0,
                 'interest_flag' => 0,
                 'interest_time' => null,
                 'helper_id' => null,
             ),
             array('mobile_number' => $mobile_number),
-            array('%d', '%s', '%d'),
+            array('%d', '%d', '%s', '%d'),
             array('%s')
         );
         if ($updated !== false) {
@@ -396,7 +433,10 @@ function set_no_interest_flag(WP_REST_Request $request)
 
     $updated = $wpdb->update(
         $table_name,
-        array('interest_flag' => 0),
+        array(
+            'interest_flag' => 0,
+            'helper_id' => 0
+        ),
         array('mobile_number' => $mobile_number),
         array('%d'),
         array('%s')
@@ -483,9 +523,16 @@ function check_order_time($mobileNumber, $productID)
     }
 }
 
-function get_helper_id(WP_REST_Request $request)
+function get_helper_id($param)
 {
-    $mobile_number = $request->get_param('mobile_number');
+
+    if ($param instanceof WP_REST_Request) {
+        $mobile_number = $param->get_param('mobile_number');
+    } else {
+        $mobile_number = $param;
+        error_log(print_r($mobile_number, true));
+    }
+    // $mobile_number = $request->get_param('mobile_number');
 
     global $wpdb;
     $table_name = 'custom_customer';
@@ -498,14 +545,18 @@ function get_helper_id(WP_REST_Request $request)
     );
 
     if (!empty($helper_id)) {
-        return new WP_REST_Response(
-            array(
-                'success' => true,
-                'message' => 'Helper found.',
-                'data' => $helper_id,
-            ),
-            200
-        );
+        if ($param instanceof WP_REST_Request) {
+            return new WP_REST_Response(
+                array(
+                    'success' => true,
+                    'message' => 'Helper found.',
+                    'data' => $helper_id,
+                ),
+                200
+            );
+        } else {
+            return $helper_id[0]->helper_id;
+        }
     }
 
     return new WP_REST_Response(
@@ -517,10 +568,289 @@ function get_helper_id(WP_REST_Request $request)
     );
 }
 
-add_action('my_custom_daily_task', 'run_my_daily_task');
+function get_products()
+{
+    $args = array(
+        'post_type' => 'product',
+        'posts_per_page' => -1,
+        'fields' => 'ids',
+    );
 
-run_my_daily_task();
-function run_my_daily_task()
+    $product_ids = get_posts($args);
+
+    $product_data = array();
+    foreach ($product_ids as $product_id) {
+        $product_data[] = array(
+            'ID' => $product_id,
+            'post_title' => get_the_title($product_id),
+        );
+    }
+
+    if (!empty($product_data)) {
+        return new WP_REST_Response(
+            array(
+                'success' => true,
+                'message' => 'Products fetched successfully.',
+                'data' => $product_data,
+            ),
+            200
+        );
+    }
+
+    return new WP_REST_Response(
+        array(
+            'success' => false,
+            'message' => 'No products found.',
+        ),
+        500
+    );
+}
+
+function set_order(WP_REST_Request $request)
+{
+    $data = $request->get_json_params();
+    $customer_table = 'custom_customer';
+
+    error_log(print_r($data, true));
+
+    if (!empty($data)) {
+        $customer_name = sanitize_text_field($data['name']);
+        $customer_number = sanitize_text_field($data['number']);
+        $alternate_mobile = sanitize_text_field($data['alternate_mobile']);
+        $product_name = sanitize_text_field($data['products']);
+        $city = sanitize_text_field($data['city']);
+        $state = sanitize_text_field($data['state']);
+        $pincode = sanitize_text_field($data['pincode']);
+        $address = sanitize_text_field($data['address']);
+        $helper_id = get_helper_id($customer_number);
+
+        error_log(print_r($helper_id, true));
+
+        global $wpdb;
+        $table_name = 'custom_order';
+
+        $statusCheck = $wpdb->insert(
+            $table_name,
+            array(
+                'customer_name' => $customer_name,
+                'customer_number' => $customer_number,
+                'alternate_number' => $alternate_mobile,
+                'helper_id' => $helper_id,
+                'order_time' => current_time('mysql'),
+                'pincode' => $pincode,
+                'city' => $city,
+                'state' => $state,
+                'address' => $address,
+                'product_name' => $product_name,
+            ),
+            array(
+                '%s',
+                '%s',
+                '%s',
+                '%d',
+                '%s',
+                '%d',
+                '%s',
+                '%s',
+                '%s',
+                '%s',
+            )
+        );
+
+        if ($statusCheck !== 1) {
+            return new WP_REST_Response(
+                array(
+                    'success' => false,
+                    'message' => 'Failed to set order.',
+                ),
+                500
+            );
+        }
+        $wpdb->update(
+            $customer_table,
+            array(
+                'priority_flag' => 0,
+                'interest_flag' => 0,
+                'interest_time' => null,
+                'helper_id' => null,
+            ),
+            array('mobile_number' => $customer_number),
+            array('%d', '%d', '%s', '%d'),
+            array('%s')
+        );
+
+        return new WP_REST_Response(
+            array(
+                'success' => true,
+                'message' => 'Order set successfully.',
+                'data' => $data,
+            ),
+            200
+        );
+    }
+
+    return new WP_REST_Response(
+        array(
+            'success' => false,
+            'message' => 'No data provided.',
+        ),
+        400
+    );
+}
+
+function get_user_ID()
+{
+    global $current_user_id;
+
+    return new WP_REST_Response(
+        array(
+            'success' => true,
+            'message' => 'Helper ID found.',
+            'data' => $current_user_id,
+        ),
+        200
+    );
+
+    // if (is_user_logged_in()) {
+    //     $helper_id = wp_get_current_user()->ID;
+
+    //     return new WP_REST_Response(
+    //         array(
+    //             'success' => true,
+    //             'message' => 'Helper ID found.',
+    //             'data' => $helper_id,
+    //         ),
+    //         200
+    //     );
+    // } else {
+
+    //     return new WP_REST_Response(
+    //         array(
+    //             'success' => false,
+    //             'message' => 'No user logged in.',
+    //         ),
+    //         500
+    //     );
+    // }
+}
+
+
+function prepare_order_format($order_id)
+{
+
+    global $wpdb;
+    $table_name = 'custom_order';
+
+    $order_data = $wpdb->get_results(
+        $wpdb->prepare(
+            "SELECT * FROM $table_name WHERE order_id = %d",
+            $order_id
+        )
+    );
+
+    if (empty($order_data)) {
+        return new WP_REST_Response(
+            array(
+                'success' => false,
+                'message' => 'No data found for order.',
+            ),
+            404
+        );
+    }
+
+    $order_data = $order_data[0];
+
+    $order_data = array(
+        'order_id' => $order_id,
+        'pickup_location' => 'Valasaravakkam', // Change this later
+        'Transport Mode' => 'Surface', // Change this later
+        'Payment Mode' => 'COD', // Change this later
+        'COD Amount' => 245, // Change this later
+        'Customer Name' => $order_data->customer_name,
+        'Customer Phone' => $order_data->customer_number,
+        'Shipping Address Line 1' => $order_data->address,
+        'Shipping Address Line 2' => '',
+        'Shipping City' => $order_data->city,
+        'Shipping State' => $order_data->state,
+        'Shipping Pincode' => $order_data->pincode,
+        'Item Sku Code' => 'SKU123', // Change this later
+        'Item Sku Name' => "Pachchaelai Ortho Oil", // Change this later
+        'Quantity' => 1, // Change this later
+        'Unit Item Price' => 245, // Change this later
+        'Length (cm)' => 10, // Change this later
+        'Breadth (cm)' => 10, // Change this later
+        'Height (cm)' => 10, // Change this later
+        'Weight (gm)' => 70, // Change this later
+        'Fragile Shipment' => '', // Change this later
+        'Discount Type' => '', // Change this later
+        'Discount Value' => '', // Change this later
+        'Tax Class Code' => '', // Change this later
+        'Customer Email' => '', // Change this later
+        'Billing Address same as Shipping Address' => 'Yes', // Change this later
+        'Billing Address Line 1' => '',
+        'Billing Address Line 2' => '',
+        'Billing City' => '',
+        'Billing State' => '',
+        'Billing Pincode' => '',
+        'Seller Name' => 'Pachchaelai', // Change this later
+        'Seller GST Number' => '', // Change this later
+        'Seller Address Line1' => 'PachchaElai NaturoCare, Ph: 8610830573 , 9080566666',
+        'Seller Address Line2' => '',
+        'Seller City' => 'Chennai',
+        'Seller State' => 'Tamil Nadu',
+        'Seller Pincode' => '600087',
+    );
+
+    return $order_data;
+}
+
+function export_csv()
+{
+    // global $wpdb;
+
+    // $table_name = 'custom_customer';
+    // $leads = $wpdb->get_results("SELECT * FROM $table_name", ARRAY_A);
+
+    // if (empty($leads)) {
+    //     return new WP_REST_Response(
+    //         array(
+    //             'success' => false,
+    //             'message' => 'No data found to export.',
+    //         ),
+    //         404
+    //     );
+    // }
+
+    global $wpdb;
+    $table_name = 'custom_order';
+
+    $order_ids = $wpdb->get_results(
+        "SELECT order_id FROM $table_name",
+        ARRAY_A
+    );
+
+    header('Content-Type: text/csv; charset=utf-8');
+    header('Content-Disposition: attachment; filename="leads.csv"');
+
+    $output = fopen('php://output', 'w');
+
+    $titles = ['order_id', 'pickup_location', 'Transport Mode', 'Payment Mode', 'COD Amount', 'Customer Name', 'Customer Phone', 'Shipping Address Line 1', 'Shipping Address Line 2', 'Shipping City', 'Shipping State', 'Shipping Pincode', 'Item Sku Code', 'Item Sku Name', 'Quantity', 'Unit Item Price', 'Length (cm)', 'Breadth (cm)', 'Height (cm)', 'Weight (gm)', 'Fragile Shipment', 'Discount Type', 'Discount Value', 'Tax Class Code', 'Customer Email', 'Billing Address same as Shipping Address', 'Billing Address Line 1', 'Billing Address Line 2', 'Billing City', 'Billing State', 'Billing Pincode', 'Seller Name', 'Seller GST Number', 'Seller Address Line1', 'Seller Address Line2', 'Seller City', 'Seller State', 'Seller Pincode'];
+
+    fputcsv($output, $titles);
+
+    foreach ($order_ids as $order_id) {
+        $order_data = prepare_order_format($order_id);
+        fputcsv($output, $order_data);
+    }
+
+    fclose($output);
+    exit;
+}
+
+
+add_action('custom_daily_task', 'daily_task');
+
+function daily_task()
 {
     global $wpdb;
 
@@ -604,7 +934,7 @@ function run_my_daily_task()
     error_log('Daily database task executed at ' . current_time('mysql'));
 }
 
-function enqueue_my_custom_script()
+function enqueue_custom_scripts()
 {
     if (is_page('caller-page')) {
         wp_enqueue_script(
@@ -614,8 +944,16 @@ function enqueue_my_custom_script()
             true
         );
     }
+    if (is_page('admin')) {
+        wp_enqueue_script(
+            'admin-page-script',
+            get_template_directory_uri() . '../../../plugins/custom/js/admin-page.js',
+            null,
+            true
+        );
+    }
 }
-add_action('wp_enqueue_scripts', 'enqueue_my_custom_script');
+add_action('wp_enqueue_scripts', 'enqueue_custom_scripts');
 
 function enqueue_datatables_scripts()
 {
@@ -648,9 +986,10 @@ add_action('wp_enqueue_scripts', 'enqueue_datatables_scripts');
 function add_cors_headers()
 {
 
-    header("Access-Control-Allow-Origin: http://pachchaelai.local");
+    header("Access-Control-Allow-Origin: https://ecom-technically-inspiring-widget.wpcomstaging.com/");
     header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
     header("Access-Control-Allow-Headers: Content-Type, Authorization");
+    header("Access-Control-Allow-Credentials: true");
 }
 
 add_action('init', 'add_cors_headers');

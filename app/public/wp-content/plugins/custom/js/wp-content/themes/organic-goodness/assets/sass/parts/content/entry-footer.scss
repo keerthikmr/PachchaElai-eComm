@@ -1,0 +1,9 @@
+.entry-footer {
+    clear: both;
+
+    @include alignWide();
+
+    &:empty {
+        display: none;
+    }
+}
